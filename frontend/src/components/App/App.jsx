@@ -1,4 +1,4 @@
-import './App.styled';
+import '../App/App.styled';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import HomeScreen from "../../screens/HomeScreen/HomeScreen";
@@ -11,11 +11,13 @@ function App() {
     {/* NavBar */}
     {/* SideDrawer */}
     {/* Backdrop */}
-    <Main>
-      <Router exact path="/" component={HomeScreen} />
-      <Router exact path="/product/:id" component={ProductScreen} />
-      <Router exact path="/cart" component={CartScreen} />
-    </Main>
+    <App>
+      <Switch>
+      <Route exact path="/" component={HomeScreen} />
+      <Route exact path="/product/:id" component={ProductScreen} />
+      <Route exact path="/cart" component={CartScreen} />
+      </Switch>      
+    </App>
     </Router>
   ); 
 }
