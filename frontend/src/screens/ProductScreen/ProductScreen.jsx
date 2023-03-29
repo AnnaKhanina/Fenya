@@ -1,7 +1,11 @@
-import "../ProductScreen/ProductScreen.styled";
+import { ProductScreenStyled, ProductScreenTitle } from "../ProductScreen/ProductScreen.styled";
 
 const ProductScreen = () => {
-    return <ProductScreenStyled>
-        Товари
-    </ProductScreenStyled>
-}
+    return (
+        <ProductScreenStyled>
+            <ProductScreenTitle>Товари</ProductScreenTitle>
+        </ProductScreenStyled>
+    );
+};
+
+export default ProductScreen;

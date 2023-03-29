@@ -1,28 +1,39 @@
-import { Main } from "../App/App.styled"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
-import HomeScreen from "../../screens/HomeScreen/HomeScreen";
-import ProductScreen from "../../screens/ProductScreen/ProductScreen";
-import CartScreen from "../../screens/CartScreen/CartScreen";
+import { Route, Routes } from "react-router-dom";
+import { HomeScreen } from "../../screens/HomeScreen/HomeScreen";
+import { ProductScreen } from "../../screens/ProductScreen/ProductScreen";
+import { CartScreen } from "../../screens/CartScreen/CartScreen";
+import { NotFoundScreen  } from "../../screens/NotFoundScreen/NotFoundScreen";
+import { Container, Header, Logo, Link, Navbar } from "../App/App.styled";
 
 import Navbar from "../Navbar/Navbar";
 
 const App = () => {
   return (
-    <Router>
-    {/* NavBar */}
-    {/* SideDrawer */}
-    {/* Backdrop */}
-    
-      <Main>
-        <Switch>
-          <Route exact path="/" component={HomeScreen} />
-          <Route exact path="/product/:id" component={ProductScreen} />
-          <Route exact path="/cart" component={CartScreen} />
-        </Switch>
-      </Main>      
-   
-    </Router>
+    <Container>
+      <Header>
+        <Logo>
+          
+        </Logo>
+      <Navbar>
+        <Link to="/" end>
+          Головна          
+        </Link>
+        <Link to="/products">
+          Товари          
+        </Link>
+        <Link to="/cart">
+          Кошик         
+        </Link>
+      </Navbar>  
+      </Header>
+
+        <Routes>                    
+          <Route path="/" element={<HomeScreen />} />
+          <Route path="/product/:id" element={<ProductScreen />} />
+          <Route path="/cart" element={<CartScreen />} />     
+          <Route path="*" element={<NotFoundScreen />} />
+        </Routes>
+    </Container>  
   ); 
 }
 

@@ -1,7 +1,9 @@
-import "../CartScreen/CartScreen.styled";
+import styled from "styled-components";
 
-const CartScreen = () => {
-    return <CartScreenStyled>
-        Кошик
-    </CartScreenStyled>
-}
+export const CartScreenStyled = styled.main`
+
+`;
+
+export const CartScreenTitle = styled.h1`
+
+`;
