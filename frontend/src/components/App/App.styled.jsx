@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const App = styled.div`
+export const Main = styled.main`
     height: 80vh;
 `
    
