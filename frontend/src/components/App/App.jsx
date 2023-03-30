@@ -3,17 +3,12 @@ import  HomeScreen  from "../../screens/HomeScreen/HomeScreen";
 import  ProductScreen  from "../../screens/ProductScreen/ProductScreen";
 import  CartScreen  from "../../screens/CartScreen/CartScreen";
 import  NotFoundScreen   from "../../screens/NotFoundScreen/NotFoundScreen";
-import { Container, Header, Logo, Link, Navbar } from "../App/App.styled";
+import { Container, Header, Link, Navbar } from "../App/App.styled";
 
 const App = () => {
   return (
     <Container>
-      <Header>
-        <Logo>
-        <svg>
-          <use href="../../images/icons.svg#icon-logoFenya"></use>
-        </svg>
-        </Logo>
+      <Header>  
       <Navbar>
         <Link to="/" end>
           Головна          
