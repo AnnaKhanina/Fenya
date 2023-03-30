@@ -38,4 +38,7 @@ export const Link = styled(NavLink)`
     background-color: orangered;
   }
 `;
+
+export const Navbar = styled.nav`
+`;
   

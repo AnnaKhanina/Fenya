@@ -3,7 +3,7 @@ import { CartScreenStyled, CartScreenTitle } from "../CartScreen/CartScreen.styl
 const CartScreen = () => {
     return (
         <CartScreenStyled>
-            <CartScreenTitle>Товари</CartScreenTitle>
+            <CartScreenTitle>Кошик</CartScreenTitle>
         </CartScreenStyled>
     );
 };
