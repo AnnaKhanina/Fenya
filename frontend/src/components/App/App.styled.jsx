@@ -24,6 +24,7 @@ export const Header = styled.header`
 export const Logo = styled.p`
   font-weight: 700;
   margin: 0;
+  cursor: pointer;
 `;
 
 export const Link = styled(NavLink)`
@@ -40,5 +41,12 @@ export const Link = styled(NavLink)`
 `;
 
 export const Navbar = styled.nav`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 16px;
+  z-index: 50;
 `;
+
   

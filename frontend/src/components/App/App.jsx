@@ -5,14 +5,14 @@ import  CartScreen  from "../../screens/CartScreen/CartScreen";
 import  NotFoundScreen   from "../../screens/NotFoundScreen/NotFoundScreen";
 import { Container, Header, Logo, Link, Navbar } from "../App/App.styled";
 
-//import Navbar from "../Navbar/Navbar";
-
 const App = () => {
   return (
     <Container>
       <Header>
         <Logo>
-          
+        <svg>
+          <use href="../../images/icons.svg#icon-logoFenya"></use>
+        </svg>
         </Logo>
       <Navbar>
         <Link to="/" end>
