@@ -40,13 +40,13 @@ export const Link = styled(NavLink)`
   }
 `;
 
-export const Navbar = styled.nav`
-  width: 100%;
-  display: flex;
+// export const Navbar = styled.nav`
+//   width: 100%;
+//   display: flex;
   
-  align-items: center;
-  padding: 24px 16px;
-  z-index: 50;
-`;
+//   align-items: center;
+//   padding: 24px 16px;
+//   z-index: 50;
+// `;
 
   

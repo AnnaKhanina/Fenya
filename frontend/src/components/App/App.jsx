@@ -3,7 +3,8 @@ import  HomeScreen  from "../../screens/HomeScreen/HomeScreen";
 import  ProductScreen  from "../../screens/ProductScreen/ProductScreen";
 import  CartScreen  from "../../screens/CartScreen/CartScreen";
 import  NotFoundScreen   from "../../screens/NotFoundScreen/NotFoundScreen";
-import { Container, Header, Link, Navbar } from "../App/App.styled";
+import { Container, Header, Link } from "../App/App.styled";
+import Navbar from 
 
 const App = () => {
   return (
