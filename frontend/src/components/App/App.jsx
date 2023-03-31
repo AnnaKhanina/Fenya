@@ -31,7 +31,7 @@ const App = () => {
                 </Link>
                 <Link to="/favorite">
                     <NavbarIcon>
-
+                  
                     </NavbarIcon>
                     Бажане      
                 </Link>
@@ -61,23 +61,4 @@ const App = () => {
 
 export default App;
 
-// import Layout from "../Layout/Layout";
 
-// const App = () => {
-  
-//   return (
-    
-//       <Routes>
-//         <Route path="/" element={<Layout />}/>
-//           <Route index element={<HomeScreen  />}/>
-//           <Route path="/products" element={<ProductScreen />}/>
-//           <Route path="/payment_delivery" element={<PaymentDeliveryScreen />}/>                <Route path="/contacts" element={<ContactsScreen />} /> 
-//           <Route path="/favorite" element={<FavoriteScreen />}/> 
-//           <Route path="/cart" element={<CartScreen />}/> 
-//           <Route path="*" element={<NotFoundScreen />}/>
-//         </Routes>        
- 
-//   ); 
-// };
-
-//export default App;
