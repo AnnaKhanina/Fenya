@@ -3,7 +3,7 @@ import { FavoriteScreenStyled, FavoriteScreenTitle } from "../FavoriteScreen/Fav
 const FavoriteScreen = () => {
     return (
         <FavoriteScreenStyled>
-            <FavoriteScreenTitle>Контакти</FavoriteScreenTitle>
+            <FavoriteScreenTitle>Бажане</FavoriteScreenTitle>
         </FavoriteScreenStyled>
     );
 };

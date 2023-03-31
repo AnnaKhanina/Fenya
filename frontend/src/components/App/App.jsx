@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Link} from "react-router-dom";
 import  HomeScreen  from "../../screens/HomeScreen/HomeScreen";
 import  ProductScreen  from "../../screens/ProductScreen/ProductScreen";
 import PaymentDeliveryScreen from "../../screens/PaymentDeliveryScreen/PaymentDeliveryScreen"
@@ -6,24 +6,44 @@ import ContactsScreen from "../../screens/ContactsScreen/ContactsScreen";
 import  CartScreen  from "../../screens/CartScreen/CartScreen";
 import FavoriteScreen from "../../screens/FavoriteScreen/FavoriteScreen";
 import  NotFoundScreen   from "../../screens/NotFoundScreen/NotFoundScreen";
-import { Container, Header, Link } from "../App/App.styled";
-import Navbar from "../Navbar/Navbar";
+import { Container, Header, Navbar, NavbarLogo, NavbarTitle, NavbarLinks, NavbarButton, NavbarIcon } from "../App/App.styled";
+// import  Navbar  from "../Navbar/Navbar";
 
 const App = () => {
   return (
     <Container>
       <Header>  
-      <Navbar />
-        {/* <Link to="/" end>
-          Головна          
-        </Link>
-        <Link to="/products">
-          Товари          
-        </Link>
-        <Link to="/cart">
-          Кошик         
-        </Link> */}
-      {/* </Navbar>   */}
+      <Navbar> 
+            <NavbarLinks>
+                <Link to="/" end>
+                    <NavbarLogo>
+                        <NavbarTitle>Fenya</NavbarTitle>
+                    </NavbarLogo>                         
+                </Link>
+                <Link to="/products">
+                    Товари          
+                </Link>
+                <Link to="/payment_delivery">
+                    Оплата і доставка        
+                </Link>
+                <Link to="/contacts">
+                    Контакти        
+                </Link>
+                <Link to="/favorite">
+                    <NavbarIcon>
+
+                    </NavbarIcon>
+                    Бажане      
+                </Link>
+                <Link to="/cart">
+                   <NavbarIcon>
+                    
+                   </NavbarIcon>
+                    Кошик       
+                </Link>
+             </NavbarLinks> 
+            <NavbarButton>Увійти</NavbarButton>  
+      </Navbar>     
       </Header>
         {/* Route path="/product/:id" element={<ProductScreen />} />*/}
       <Routes>                    
@@ -37,6 +57,27 @@ const App = () => {
       </Routes>
     </Container>  
   ); 
-}
+};
 
 export default App;
+
+// import Layout from "../Layout/Layout";
+
+// const App = () => {
+  
+//   return (
+    
+//       <Routes>
+//         <Route path="/" element={<Layout />}/>
+//           <Route index element={<HomeScreen  />}/>
+//           <Route path="/products" element={<ProductScreen />}/>
+//           <Route path="/payment_delivery" element={<PaymentDeliveryScreen />}/>                <Route path="/contacts" element={<ContactsScreen />} /> 
+//           <Route path="/favorite" element={<FavoriteScreen />}/> 
+//           <Route path="/cart" element={<CartScreen />}/> 
+//           <Route path="*" element={<NotFoundScreen />}/>
+//         </Routes>        
+ 
+//   ); 
+// };
+
+//export default App;

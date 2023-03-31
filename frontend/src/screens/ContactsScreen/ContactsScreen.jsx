@@ -1,4 +1,4 @@
-import { ContactsScreenStyled, ContactsScreenTitle } from "../ContactsScreen/ContactsScreen.styled";
+import { ContactsScreenStyled, ContactsScreenTitle } from "../ContactsScreen/ContactsSreen.styled";
 
 const ContactsScreen = () => {
     return (
