@@ -1,17 +1,20 @@
 import { Route, Routes } from "react-router-dom";
 import  HomeScreen  from "../../screens/HomeScreen/HomeScreen";
 import  ProductScreen  from "../../screens/ProductScreen/ProductScreen";
+import PaymentDeliveryScreen from "../../screens/PaymentDeliveryScreen/PaymentDeliveryScreen"
+import ContactsScreen from "../../screens/ContactsScreen/ContactsScreen";
 import  CartScreen  from "../../screens/CartScreen/CartScreen";
+import FavoriteScreen from "../../screens/FavoriteScreen/FavoriteScreen";
 import  NotFoundScreen   from "../../screens/NotFoundScreen/NotFoundScreen";
 import { Container, Header, Link } from "../App/App.styled";
-import Navbar from 
+import Navbar from "../Navbar/Navbar";
 
 const App = () => {
   return (
     <Container>
       <Header>  
-      <Navbar>
-        <Link to="/" end>
+      <Navbar />
+        {/* <Link to="/" end>
           Головна          
         </Link>
         <Link to="/products">
@@ -19,23 +22,19 @@ const App = () => {
         </Link>
         <Link to="/cart">
           Кошик         
-        </Link>
-      </Navbar>  
+        </Link> */}
+      {/* </Navbar>   */}
       </Header>
-
-        {/* <Routes>                    
-          <Route path="/" element={<HomeScreen />} />
-          <Route path="/product/:id" element={<ProductScreen />} />
-          <Route path="/cart" element={<CartScreen />} />     
-          <Route path="*" element={<NotFoundScreen />} />
-        </Routes> */}
-
-<Routes>                    
+        {/* Route path="/product/:id" element={<ProductScreen />} />*/}
+      <Routes>                    
           <Route path="/" element={<HomeScreen />} />
           <Route path="/products" element={<ProductScreen />} />
-          <Route path="/cart" element={<CartScreen />} />     
+          <Route path="/payment_delivery" element={<PaymentDeliveryScreen />} />     
+          <Route path="/contacts" element={<ContactsScreen />} /> 
+          <Route path="/favorite" element={<FavoriteScreen />} /> 
+          <Route path="/cart" element={<CartScreen />} /> 
           <Route path="*" element={<NotFoundScreen />} />
-        </Routes>
+      </Routes>
     </Container>  
   ); 
 }
