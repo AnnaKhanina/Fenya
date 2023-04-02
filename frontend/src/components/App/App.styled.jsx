@@ -61,7 +61,10 @@ export const NavbarTitle = styled.h2`
 `;
 
 export const NavbarIcon = styled.span`
-`;
+  width: 15px;
+  height: 15px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  `;
 
 export const NavbarButton = styled.button`
   font-family: "Raleway";

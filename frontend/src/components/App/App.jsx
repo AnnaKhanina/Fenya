@@ -31,13 +31,17 @@ const App = () => {
                 </Link>
                 <Link to="/favorite">
                     <NavbarIcon>
-                  
+                      <svg>
+                        <use href="../../images/icons.svg#"></use>
+                      </svg>
                     </NavbarIcon>
                     Бажане      
                 </Link>
                 <Link to="/cart">
                    <NavbarIcon>
-                    
+                    <svg>
+                        <use href="../../images/icons.svg#icon-shopping-cart"></use>
+                      </svg>
                    </NavbarIcon>
                     Кошик       
                 </Link>
