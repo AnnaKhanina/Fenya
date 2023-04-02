@@ -21,7 +21,7 @@ export const Header = styled.header`
   }
 `;
 
-export const Navbar = styled.nav`
+export const Nav = styled.nav`
   width: 100%;
   display: flex;
   justify-content: space-between;
