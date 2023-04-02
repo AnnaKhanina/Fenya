@@ -30,18 +30,16 @@ const App = () => {
                     Контакти        
                 </Link>
                 <Link to="/favorite">
-                    <NavbarIcon>
-                      <svg>
-                        <use href="../../images/icons.svg#"></use>
-                      </svg>
-                    </NavbarIcon>
-                    Бажане      
+                <NavbarIcon>
+                  <img src="../images/favorite.png" alt=""/>
+                    Бажане 
+                  </NavbarIcon>     
                 </Link>
                 <Link to="/cart">
                    <NavbarIcon>
-                    <svg>
-                        <use href="../../images/icons.svg#icon-shopping-cart"></use>
-                      </svg>
+                    {/* <svg>
+                        <use href="../images/icons.svg#icon-shopping-cart"></use>
+                      </svg> */}
                    </NavbarIcon>
                     Кошик       
                 </Link>
