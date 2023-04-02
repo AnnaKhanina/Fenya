@@ -6,47 +6,19 @@ import ContactsScreen from "../../screens/ContactsScreen/ContactsScreen";
 import  CartScreen  from "../../screens/CartScreen/CartScreen";
 import FavoriteScreen from "../../screens/FavoriteScreen/FavoriteScreen";
 import  NotFoundScreen   from "../../screens/NotFoundScreen/NotFoundScreen";
-import { Container, Header, Navbar, NavbarLogo, NavbarTitle, NavbarLinks, NavbarButton, NavbarIcon } from "../App/App.styled";
-// import  Navbar  from "../Navbar/Navbar";
+import { Container, Header } from "../App/App.styled";
+import  Navbar  from "../Navbar/Navbar";
+import SideDrawer from "../SideDrawer/SideDrawer";
+import Backdrop from "../Backdrop/Backdrop";
 
 const App = () => {
   return (
     <Container>
-      <Header>  
-      <Navbar> 
-            <NavbarLinks>
-                <Link to="/" end>
-                    <NavbarLogo>
-                        <NavbarTitle>Fenya</NavbarTitle>
-                    </NavbarLogo>                         
-                </Link>
-                <Link to="/products">
-                    Товари          
-                </Link>
-                <Link to="/payment_delivery">
-                    Оплата і доставка        
-                </Link>
-                <Link to="/contacts">
-                    Контакти        
-                </Link>
-                <Link to="/favorite">
-                <NavbarIcon>
-                  <img src="../images/favorite.png" alt=""/>
-                    Бажане 
-                  </NavbarIcon>     
-                </Link>
-                <Link to="/cart">
-                   <NavbarIcon>
-                    {/* <svg>
-                        <use href="../images/icons.svg#icon-shopping-cart"></use>
-                      </svg> */}
-                   </NavbarIcon>
-                    Кошик       
-                </Link>
-             </NavbarLinks> 
-            <NavbarButton>Увійти</NavbarButton>  
-      </Navbar>     
+      <Header>
+      <Navbar />         
       </Header>
+      <SideDrawer />  
+      <Backdrop />
         {/* Route path="/product/:id" element={<ProductScreen />} />*/}
       <Routes>                    
           <Route path="/" element={<HomeScreen />} />
