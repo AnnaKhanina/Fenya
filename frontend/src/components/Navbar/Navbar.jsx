@@ -1,40 +1,48 @@
-import { Link } from "react-router-dom";
-import { NavbarLogo, NavbarTitle, NavbarLinks, NavbarButton, NavbarIcon } from "../Navbar/Navbar.styled";
+// import { Link } from "react-router-dom";
+// import { Nav, NavbarLinks, NavbarLinksItem, NavbarLogo, NavbarTitle, NavbarButton, NavbarIcon } from "../Navbar/Navbar.styled";
 
-const Navbar = () => {
-    return (
-        <Navbar> 
-            <NavbarLinks>
-                <Link to="/" end>
-                    <NavbarLogo>
-                        <NavbarTitle>Fenya</NavbarTitle>
-                    </NavbarLogo>                         
-                </Link>
-                <Link to="/products">
-                    Товари          
-                </Link>
-                <Link to="/payment_delivery">
-                    Оплата і доставка        
-                </Link>
-                <Link to="/contacts">
-                    Контакти        
-                </Link>
-                <Link to="/favorite">
-                    <NavbarIcon>
+// const Navbar = () => {
+//     return (
+//         <Nav> 
+//             <NavbarLinks>
+//                 <NavbarLinksItem>
+//                     <Link to="/" end>
+//                         <NavbarLogo>
+//                             <NavbarTitle>Fenya</NavbarTitle>
+//                         </NavbarLogo>                         
+//                     </Link>
+//                 </NavbarLinksItem>
+//                 <NavbarLinksItem>
+//                     <Link to="/products">Товари</Link>
+//                 </NavbarLinksItem>
+//                 <NavbarLinksItem>
+//                     <Link to="/payment_delivery">Оплата і доставка</Link>
+//                 </NavbarLinksItem>
+//                 <NavbarLinksItem>
+//                     <Link to="/contacts">Контакти</Link>
+//                 </NavbarLinksItem>
+                
+//                 <NavbarLinksItem>
+//                     <Link to="/favorite">
+//                         <NavbarIcon>
 
-                    </NavbarIcon>
-                    Бажане      
-                </Link>
-                <Link to="/cart">
-                   <NavbarIcon>
+//                         </NavbarIcon>
+//                         Бажане      
+//                     </Link>
+//                 </NavbarLinksItem>
+//                 <NavbarLinksItem>
+//                 <Link to="/cart">
+//                    <NavbarIcon>
                     
-                   </NavbarIcon>
-                    Кошик       
-                </Link>
-             </NavbarLinks> 
-            <NavbarButton>Увійти</NavbarButton>  
-      </Navbar>  
-    )
-};
+//                    </NavbarIcon>
+//                     Кошик       
+//                 </Link>
+//                 </NavbarLinksItem> 
+                
+//              </NavbarLinks> 
+//             <NavbarButton>Увійти</NavbarButton>  
+//       </Nav>  
+//     )
+// };
 
-export default Navbar;
+// export default Navbar;
