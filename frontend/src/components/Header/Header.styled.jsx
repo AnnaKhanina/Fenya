@@ -1,29 +1,32 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-export const Header = styled.header`
+// export const Header = styled.header`
+//   //display: flex;
+//   //align-items: center;
+//   //justify-content: space-between;
+//   //gap: 12px;
+//   //padding: 8px 0;
+//   //margin-bottom: 16px;
+//   //border-bottom: 1px solid black;
+
+//   > nav {
+//     display: flex;
+//   }
+// `;
+
+export const Navbar = styled.nav`
+  //width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  // padding: 24px 16px;
+  //z-index: 50;
+  font-family: "Raleway";
+  background-color: #171717;
   gap: 12px;
   padding: 8px 0;
   margin-bottom: 16px;
-  border-bottom: 1px solid black;
-
-  > nav {
-    display: flex;
-  }
-`;
-
-export const Navbar = styled.nav`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 16px;
-  z-index: 50;
-  font-family: "Raleway";
-  background-color: #171717;
 `;
 
 export const NavbarLinks = styled.ul`
@@ -34,37 +37,24 @@ export const NavbarLinks = styled.ul`
 
 export const NavbarLinksItem = styled.li`
   padding-left: 24px;
-
+ 
   > a {
     text-decoration: none;
-    color: tomato;
-    font-size: 20px;
+    color: #f4f4f4;
+    font-size: 16px;
     display: flex;
     align-items: center;
   }
 `;
 
-export const NavbarLogo = styled.h2`
-  color: #f4f4f4;
-  font-size: 18px;
-  cursor: pointer;
-  font-family: "Raleway";
+export const NavbarLogo = styled.span`
+  cursor: pointer;  
 `;
 
 export const Link = styled(NavLink)`
   padding: 10px;
   border-radius: 8px; 
   background: #333;  
-
-  &.hover {
-    background: #dd219e;
-    color: #f4f4f4; 
-  }
-
-  &.active {
-    color: white;
-    background-color: orangered;
-  }
 `;
 
 export const CartLogoBadge = styled.span`
