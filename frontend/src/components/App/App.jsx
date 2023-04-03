@@ -1,4 +1,4 @@
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import  HomeScreen  from "../../screens/HomeScreen/HomeScreen";
 import  ProductScreen  from "../../screens/ProductScreen/ProductScreen";
 import PaymentDeliveryScreen from "../../screens/PaymentDeliveryScreen/PaymentDeliveryScreen"
@@ -6,56 +6,19 @@ import ContactsScreen from "../../screens/ContactsScreen/ContactsScreen";
 import  CartScreen  from "../../screens/CartScreen/CartScreen";
 import FavoriteScreen from "../../screens/FavoriteScreen/FavoriteScreen";
 import  NotFoundScreen   from "../../screens/NotFoundScreen/NotFoundScreen";
-import { Container, Header, Navbar, NavbarLinks, NavbarLinksItem, NavbarLogo, NavbarTitle, NavbarIcon, NavbarButton } from "../App/App.styled";
+import { Container } from "../App/App.styled";
 // import SideDrawer from "../SideDrawer/SideDrawer";
 // import Backdrop from "../Backdrop/Backdrop";
+// import Main from "../Main/Main";
+import Header from "../Header/Header";
 
 const App = () => {
   return (
      <Container>
-       <Header>
-       <Navbar> 
-             <NavbarLinks>
-                 <NavbarLinksItem>
-                     <Link to="/" end>
-                         <NavbarLogo>
-                             <NavbarTitle>Fenya</NavbarTitle>
-                         </NavbarLogo>                         
-                     </Link>
-                 </NavbarLinksItem>
-                 <NavbarLinksItem>
-                     <Link to="/products">Товари</Link>
-                 </NavbarLinksItem>
-                 <NavbarLinksItem>
-                     <Link to="/payment_delivery">Оплата і доставка</Link>
-                 </NavbarLinksItem>
-                 <NavbarLinksItem>
-                     <Link to="/contacts">Контакти</Link>
-                 </NavbarLinksItem>
-                
-                 <NavbarLinksItem>
-                     <Link to="/favorite">
-                         <NavbarIcon>
-
-                         </NavbarIcon>
-                         Бажане      
-                     </Link>
-                 </NavbarLinksItem>
-                 <NavbarLinksItem>
-                 <Link to="/cart">
-                    <NavbarIcon>
-                    
-                    </NavbarIcon>
-                     Кошик       
-                 </Link>
-                </NavbarLinksItem> 
-                
-              </NavbarLinks> 
-             <NavbarButton>Увійти</NavbarButton>  
-       </Navbar>          
-       </Header>
+       <Header />    
       {/* <SideDrawer />  
       <Backdrop /> */}
+      {/* <Main /> */}
         {/* Route path="/product/:id" element={<ProductScreen />} />*/}         
   
       <Routes>                    

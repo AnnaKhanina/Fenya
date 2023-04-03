@@ -7,6 +7,7 @@ import "modern-normalize";
 import  App  from './components/App/App';
 //import './index.css';
 
+
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
