@@ -23,6 +23,7 @@ export const Navbar = styled.nav`
   padding: 24px 16px;
   z-index: 50;
   font-family: "Raleway";
+  background-color: #171717;
 `;
 
 export const NavbarLinks = styled.ul`
@@ -33,20 +34,32 @@ export const NavbarLinks = styled.ul`
 
 export const NavbarLinksItem = styled.li`
   padding-left: 24px;
+
+  > a {
+    text-decoration: none;
+    color: tomato;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+  }
 `;
 
-export const NavbarLogo = styled.div`
-  display: flex;
-  margin: 0;
+export const NavbarLogo = styled.h2`
+  color: #f4f4f4;
+  font-size: 18px;
   cursor: pointer;
+  font-family: "Raleway";
 `;
 
 export const Link = styled(NavLink)`
-  padding: 8px 16px;
-  border-radius: 4px;
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
+  padding: 10px;
+  border-radius: 8px; 
+  background: #333;  
+
+  &.hover {
+    background: #dd219e;
+    color: #f4f4f4; 
+  }
 
   &.active {
     color: white;
@@ -54,10 +67,19 @@ export const Link = styled(NavLink)`
   }
 `;
 
-export const NavbarTitle = styled.h2`
-    font-family: "Raleway";
-    color: red:
-    font-wight: 700;
+export const CartLogoBadge = styled.span`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 8px;
+  width: 30px;
+  height: 30px;
+  background: #f4f4f4;
+  border-radius: 50%;
+  margin-left: 8px;
+  color: #171717;
+  font-size: 16px;
 `;
 
 export const NavbarButton = styled.button`

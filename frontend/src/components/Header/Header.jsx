@@ -1,4 +1,4 @@
-import { Navbar, NavbarLinks, NavbarLinksItem, NavbarLogo, NavbarTitle, NavbarButton } from "../Header/Header.styled";
+import { Navbar, NavbarLinks, NavbarLinksItem, NavbarLogo, CartLogoBadge, NavbarButton } from "../Header/Header.styled";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faHeart, faUser } from "@fortawesome/free-solid-svg-icons";
@@ -9,9 +9,7 @@ const Header = () => {
         <NavbarLinks>
             <NavbarLinksItem>
                 <Link to="/" end>
-                    <NavbarLogo>
-                        <NavbarTitle>Fenya</NavbarTitle>
-                    </NavbarLogo>                         
+                    <NavbarLogo>Fenya</NavbarLogo>                         
                 </Link>
             </NavbarLinksItem>
             <NavbarLinksItem>
@@ -27,7 +25,14 @@ const Header = () => {
                 <Link to="/favorite"><FontAwesomeIcon icon={faHeart} /></Link>
             </NavbarLinksItem>
             <NavbarLinksItem>
-                <Link to="/cart"><FontAwesomeIcon icon={faCartShopping} /></Link>
+                <Link to="/cart">
+                <FontAwesomeIcon icon={faCartShopping} />
+                <span>
+                    Кошик
+                    <CartLogoBadge>0</CartLogoBadge>
+                </span>
+                </Link>
+                
            </NavbarLinksItem>            
          </NavbarLinks> 
         <NavbarButton><FontAwesomeIcon icon={faUser} /></NavbarButton>  
