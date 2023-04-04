@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const SizeScreenStyled = styled.main`
+export const ProductScreenStyled = styled.main`
 
 `;
 
-export const SizeScreenTitle = styled.h1`
+export const ProductScreenTitle = styled.h1`
 
 `;

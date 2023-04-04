@@ -1,4 +1,4 @@
-import { SizeScreenStyled, SizeScreenTitle } from "../SizeScreen/ProductScreen.styled";
+import { SizeScreenStyled, SizeScreenTitle } from "../SizeScreen/SizeScreen.styled";
 
 const SizeScreen = () => {
     return (

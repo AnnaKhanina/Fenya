@@ -6,6 +6,7 @@ import PaymentDeliveryScreen from "../../screens/PaymentDeliveryScreen/PaymentDe
 import ContactsScreen from "../../screens/ContactsScreen/ContactsScreen";
 import  CartScreen  from "../../screens/CartScreen/CartScreen";
 import FavoriteScreen from "../../screens/FavoriteScreen/FavoriteScreen";
+import ProfileScreen from "../../screens/ProfileScreen/ProfileScreen";
 import  NotFoundScreen   from "../../screens/NotFoundScreen/NotFoundScreen";
 import { Container } from "../App/App.styled";
 // import SideDrawer from "../SideDrawer/SideDrawer";
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/contacts" element={<ContactsScreen />} /> 
           <Route path="/favorite" element={<FavoriteScreen />} /> 
           <Route path="/cart" element={<CartScreen />} /> 
+          <Route path="/profile" element={<ProfileScreen />} /> 
           <Route path="*" element={<NotFoundScreen />} />
       </Routes>
     </Container>  
