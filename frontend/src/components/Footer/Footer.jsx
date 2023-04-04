@@ -1,8 +1,11 @@
-import { Footer, FooterLinks, FooterLinksItem } from "../Footer/Footer.styled";
+import { FooterNav, FooterLinks, FooterLinksItem } from "../Footer/Footer.styled";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping, faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
     return (
-        <Footer>
+        <FooterNav>
             <FooterLinks>
                 <FooterLinksItem>
                     <Link to="/products">Товари</Link>
@@ -22,6 +25,8 @@ const Footer = () => {
                     </Link>                
                 </FooterLinksItem>            
             </FooterLinks>
-        </Footer>
+        </FooterNav>
     )
-}
+};
+
+export default Footer;

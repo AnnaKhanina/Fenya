@@ -1,15 +1,20 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-export const Footer = styled.footer`
+export const FooterNav = styled.footer`
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     gap: 12px;
-    padding: 8px 0;
-    margin-bottom: 16px;
-    border-bottom: 2px solid black;
+    // padding: 8px 0;
+    // margin-bottom: 16px;
+    border-top: 1px solid black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
 `;
 
 export const FooterLinks = styled.ul`
@@ -18,7 +23,7 @@ export const FooterLinks = styled.ul`
     align-items: center;
 `;
 
-export const FooterLinksitem = styled.li`
+export const FooterLinksItem = styled.li`
     padding-left: 24px;
     
     > a {
@@ -32,4 +37,10 @@ export const FooterLinksitem = styled.li`
     display: flex;
     align-items: center;
     }
+`;
+
+export const Link = styled(NavLink)`
+  padding: 10px;
+  border-radius: 8px; 
+  background: #333;  
 `;

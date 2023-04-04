@@ -7,9 +7,9 @@ export const Navbar = styled.nav`
   align-items: center; 
   background-color: white;
   gap: 12px;
-  padding: 8px 0;
-  margin-bottom: 16px;
-  border-bottom: 2px solid black;
+  //padding: 8px 0;
+  // margin-bottom: 16px;
+  border-bottom: 1px solid black;
 `;
 
 export const NavbarLinks = styled.ul`
@@ -36,7 +36,6 @@ export const NavbarLinksItem = styled.li`
 
 export const NavbarLogo = styled.span`
   cursor: pointer; 
-  margin-left: -40px; 
 `;
 
 export const Link = styled(NavLink)`
