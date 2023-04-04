@@ -1,26 +1,10 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-// export const Header = styled.header`
-//   //display: flex;
-//   //align-items: center;
-//   //justify-content: space-between;
-//   //gap: 12px;
-//   //padding: 8px 0;
-//   //margin-bottom: 16px;
-//   //border-bottom: 1px solid black;
-
-//   > nav {
-//     display: flex;
-//   }
-// `;
-
 export const Navbar = styled.nav`
   display: flex;
   justify-content: space-between;
-  align-items: center;
- 
-  
+  align-items: center; 
   background-color: white;
   gap: 12px;
   padding: 8px 0;
@@ -32,7 +16,6 @@ export const NavbarLinks = styled.ul`
   display: flex;
   list-style: none;
   align-items: center;
-
 `;
 
 export const NavbarLinksItem = styled.li`
@@ -41,7 +24,7 @@ export const NavbarLinksItem = styled.li`
   > a {
     text-decoration: none;
     color: black;
-    font-family: "OpenSans";
+    font-family: "Raleway";
     font-style: normal;
     font-weight: 300;
     font-size: 18px;

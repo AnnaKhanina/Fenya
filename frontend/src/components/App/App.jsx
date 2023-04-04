@@ -11,11 +11,13 @@ import { Container } from "../App/App.styled";
 // import Backdrop from "../Backdrop/Backdrop";
 // import Main from "../Main/Main";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const App = () => {
   return (
      <Container>
-       <Header />    
+       <Header />  
+       <Footer />  
       {/* <SideDrawer />  
       <Backdrop /> */}
       {/* <Main /> */}
