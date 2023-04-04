@@ -16,23 +16,23 @@ import { NavLink } from "react-router-dom";
 // `;
 
 export const Navbar = styled.nav`
-  //width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // padding: 24px 16px;
-  //z-index: 50;
-  font-family: "Raleway";
-  background-color: #171717;
+ 
+  
+  background-color: white;
   gap: 12px;
   padding: 8px 0;
   margin-bottom: 16px;
+  border-bottom: 2px solid black;
 `;
 
 export const NavbarLinks = styled.ul`
   display: flex;
   list-style: none;
   align-items: center;
+
 `;
 
 export const NavbarLinksItem = styled.li`
@@ -40,15 +40,20 @@ export const NavbarLinksItem = styled.li`
  
   > a {
     text-decoration: none;
-    color: #f4f4f4;
-    font-size: 16px;
+    color: black;
+    font-family: "OpenSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
     display: flex;
     align-items: center;
   }
 `;
 
 export const NavbarLogo = styled.span`
-  cursor: pointer;  
+  cursor: pointer; 
+  margin-left: -40px; 
 `;
 
 export const Link = styled(NavLink)`
@@ -62,12 +67,11 @@ export const CartLogoBadge = styled.span`
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-left: 8px;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   background: #f4f4f4;
   border-radius: 50%;
-  margin-left: 8px;
+  margin-left: 7px;
   color: #171717;
   font-size: 16px;
 `;

@@ -28,12 +28,10 @@ const Header = () => {
             <NavbarLinksItem>
                 <Link to="/cart">
                 <FontAwesomeIcon icon={faCartShopping} />
-                <span>
-                    
+                <span>                    
                     <CartLogoBadge>0</CartLogoBadge>
                 </span>
-                </Link>
-                
+                </Link>                
            </NavbarLinksItem>            
          </NavbarLinks> 
         <NavbarButton><FontAwesomeIcon icon={faUser} /></NavbarButton>  
