@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import  HomeScreen  from "../../screens/HomeScreen/HomeScreen";
 import  ProductScreen  from "../../screens/ProductScreen/ProductScreen";
+import SizeScreen from "../../screens/SizeScreen/SizeScreen";
 import PaymentDeliveryScreen from "../../screens/PaymentDeliveryScreen/PaymentDeliveryScreen"
 import ContactsScreen from "../../screens/ContactsScreen/ContactsScreen";
 import  CartScreen  from "../../screens/CartScreen/CartScreen";
@@ -26,6 +27,7 @@ const App = () => {
       <Routes>                    
           <Route path="/" element={<HomeScreen />} />
           <Route path="/products" element={<ProductScreen />} />
+          <Route path="/size" element={<SizeScreen />} />
           <Route path="/payment_delivery" element={<PaymentDeliveryScreen />} />     
           <Route path="/contacts" element={<ContactsScreen />} /> 
           <Route path="/favorite" element={<FavoriteScreen />} /> 

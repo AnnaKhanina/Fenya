@@ -1,4 +1,4 @@
-import { Navbar, NavbarLinks, NavbarLinksItem, NavbarLogo, CartLogoBadge, NavbarButton } from "../Header/Header.styled";
+import { Navbar, NavbarLinks, NavbarLinksItem, NavbarLogo, CartLogoBadge } from "../Header/Header.styled";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faHeart, faUser } from "@fortawesome/free-solid-svg-icons";
@@ -17,6 +17,9 @@ const Header = () => {
                 <Link to="/products">Товари</Link>
             </NavbarLinksItem>
             <NavbarLinksItem>
+                <Link to="/size">Розмірна сітка</Link>
+            </NavbarLinksItem>
+            <NavbarLinksItem>
                 <Link to="/payment_delivery">Оплата і доставка</Link>
             </NavbarLinksItem>
             <NavbarLinksItem>
@@ -32,9 +35,11 @@ const Header = () => {
                     <CartLogoBadge>0</CartLogoBadge>
                 </span>
                 </Link>                
-           </NavbarLinksItem>            
+           </NavbarLinksItem> 
+           <NavbarLinksItem>
+                <Link to="/profile"><FontAwesomeIcon icon={faUser} />Увійти</Link>
+            </NavbarLinksItem>           
          </NavbarLinks> 
-        <NavbarButton><FontAwesomeIcon icon={faUser} /></NavbarButton>  
   </Navbar>          
        
         

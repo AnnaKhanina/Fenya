@@ -7,8 +7,6 @@ export const FooterNav = styled.footer`
     align-items: center;
     background-color: white;
     gap: 12px;
-    // padding: 8px 0;
-    // margin-bottom: 16px;
     border-top: 1px solid black;
     position: absolute;
     left: 0;

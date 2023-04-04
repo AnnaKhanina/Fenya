@@ -57,14 +57,3 @@ export const CartLogoBadge = styled.span`
   color: #171717;
   font-size: 16px;
 `;
-
-export const NavbarButton = styled.button`
-  font-family: "Raleway";
-  background-color: #fff;
-  width: 85px;
-  height: 32px;
-  border-radius: 16px;
-  border: 2px solid #e3e8f0;
-  font-size: 13px;
-  color: #343e5c;
-`;
