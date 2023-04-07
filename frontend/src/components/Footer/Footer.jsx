@@ -1,29 +1,33 @@
-import { FooterNav, FooterLinks, FooterLinksItem } from "../Footer/Footer.styled";
+import { FooterNav, FooterLinks, FooterLinksItem, FooterSocialList,FooterSocialListItem } from "../Footer/Footer.styled";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
     return (
         <FooterNav>
             <FooterLinks>
                 <FooterLinksItem>
-                    <Link to="/products">Товари</Link>
+                    <Link to="/about">Про нас</Link>
                 </FooterLinksItem>
                 <FooterLinksItem>
-                    <Link to="/payment_delivery">Оплата і доставка</Link>
-                </FooterLinksItem>
+                    <Link to="/сooperation">Співробітництво</Link>
+                </FooterLinksItem>  
                 <FooterLinksItem>
-                    <Link to="/contacts">Контакти</Link>
-                </FooterLinksItem>           
-                <FooterLinksItem>
-                    <Link to="/favorite"><FontAwesomeIcon icon={faHeart} /></Link>
-                </FooterLinksItem>
-                <FooterLinksItem>
-                    <Link to="/cart">
-                        <FontAwesomeIcon icon={faCartShopping} />
-                    </Link>                
-                </FooterLinksItem>            
+                    <Link to="/social">Ми в соцмережі
+                        <FooterSocialList>
+                            <FooterSocialListItem>
+                                <FontAwesomeIcon icon={faHeart} />
+                            </FooterSocialListItem>
+                            <FooterSocialListItem>
+                                <FontAwesomeIcon icon={faHeart} />
+                            </FooterSocialListItem>
+                        </FooterSocialList>
+                        <FooterLinksItem>
+                    <Link to="/blog">Lady on the Like</Link>
+                </FooterLinksItem> 
+                    </Link>    
+                </FooterLinksItem>                                   
             </FooterLinks>
         </FooterNav>
     )

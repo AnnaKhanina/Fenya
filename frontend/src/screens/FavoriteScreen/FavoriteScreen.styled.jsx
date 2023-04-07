@@ -4,7 +4,7 @@ export const FavoriteScreenStyled = styled.main`
     textAlign: "center"; 
 `;
 
-export const FavoriteScreenTitle  = styled.b`
+export const FavoriteScreenTitle  = styled.h2`
     fontSize: 64;
 `;
 

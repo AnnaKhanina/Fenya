@@ -4,7 +4,7 @@ export const ContactsScreenStyled = styled.main`
     textAlign: "center"; 
 `;
 
-export const ContactsScreenTitle  = styled.b`
+export const ContactsScreenTitle  = styled.h2`
     fontSize: 64;
 `;
 
