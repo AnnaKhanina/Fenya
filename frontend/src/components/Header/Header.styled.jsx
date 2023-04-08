@@ -7,8 +7,6 @@ export const Navbar = styled.nav`
   align-items: center; 
   background-color: white;
   gap: 12px;
-  //padding: 8px 0;
-  // margin-bottom: 16px;
   border-bottom: 1px solid black;
 `;
 
@@ -59,13 +57,22 @@ export const CartLogoBadge = styled.span`
 `;
 
 export const NavbarSearch = styled.div`
-
+  padding: 8px;  
+  margin-right: 16px;
 `;
 
 export const NavbarForm = styled.form`
-
+ 
 `;
 
 export const NavbarInput = styled.input`
-
+  color: #2a2a2a;
+  font-size: 14px;
+  padding-left: 4px;
 `;
+
+
+export const NavbarButton = styled.button`
+  background-color: white;
+  border: none;
+`

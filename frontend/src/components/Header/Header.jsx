@@ -1,7 +1,7 @@
-import { Navbar, NavbarLinks, NavbarLinksItem, NavbarLogo, CartLogoBadge, NavbarSearch, NavbarForm, NavbarInput } from "../Header/Header.styled";
+import { Navbar, NavbarLinks, NavbarLinksItem, NavbarLogo, CartLogoBadge, NavbarSearch, NavbarForm, NavbarInput, NavbarButton } from "../Header/Header.styled";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping, faHeart, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping, faHeart, faUser, faSearch } from "@fortawesome/free-solid-svg-icons";
 import logo from '../../images/logoFenya.png';
 
 const Header = () => {
@@ -26,12 +26,14 @@ const Header = () => {
                 <Link to="/contacts">Контакти</Link>
             </NavbarLinksItem>
             <NavbarLinksItem>
-                <NavbarSearch>
-                    <NavbarForm>
-                        <NavbarInput type="text" placeholder="Пошук.."  name="search"/>
-                    </NavbarForm>                    
-                </NavbarSearch>                
-                {/* <NavbarSearch /> */}
+                <NavbarSearch>                               
+                        <NavbarForm>                            
+                             <NavbarInput type="text" name="filter" placeholder="Пошук"></NavbarInput>                                
+                             <NavbarButton type="submit">
+                                <FontAwesomeIcon icon={faSearch} />                                                                                        
+                             </NavbarButton>
+                        </NavbarForm>                      
+                </NavbarSearch>          
             </NavbarLinksItem>
             <NavbarLinksItem>
                 <Link to="/profile"><FontAwesomeIcon icon={faUser} />Увійти</Link>
@@ -47,7 +49,7 @@ const Header = () => {
                 </span>
                 </Link>                
            </NavbarLinksItem>                    
-         </NavbarLinks> 
+         </NavbarLinks>       
   </Navbar>          
        
         
