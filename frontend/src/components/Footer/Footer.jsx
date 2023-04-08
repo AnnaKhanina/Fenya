@@ -1,7 +1,7 @@
 import { FooterNav, FooterLinks, FooterLinksItem, FooterSocialList,FooterSocialListItem } from "../Footer/Footer.styled";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram, faViber, faTelegram } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
     return (
@@ -17,10 +17,13 @@ const Footer = () => {
                     <Link to="/social">Ми в соцмережі
                         <FooterSocialList>
                             <FooterSocialListItem>
-                                <FontAwesomeIcon icon={faHeart} />
+                                <FontAwesomeIcon icon={faInstagram} />
                             </FooterSocialListItem>
                             <FooterSocialListItem>
-                                <FontAwesomeIcon icon={faHeart} />
+                                <FontAwesomeIcon icon={faViber} />
+                            </FooterSocialListItem>
+                            <FooterSocialListItem>
+                                <FontAwesomeIcon icon={faTelegram} />
                             </FooterSocialListItem>
                         </FooterSocialList>
                         <FooterLinksItem>
