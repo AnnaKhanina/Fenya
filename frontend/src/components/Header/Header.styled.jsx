@@ -57,3 +57,15 @@ export const CartLogoBadge = styled.span`
   color: #171717;
   font-size: 16px;
 `;
+
+export const NavbarSearch = styled.div`
+
+`;
+
+export const NavbarForm = styled.form`
+
+`;
+
+export const NavbarInput = styled.input`
+
+`;
