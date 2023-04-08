@@ -75,4 +75,4 @@ export const NavbarInput = styled.input`
 export const NavbarButton = styled.button`
   background-color: white;
   border: none;
-`
+`;

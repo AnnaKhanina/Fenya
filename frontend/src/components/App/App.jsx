@@ -23,11 +23,11 @@ const App = () => {
   return (
      <Container>
        <Header />  
-       <Footer />  
+        
       {/* <SideDrawer />  
       <Backdrop /> */}
       {/* <Main /> */}
-        {/* Route path="/product/:id" element={<ProductScreen />} />*/}         
+      <Footer />       
   
       <Routes>                    
           <Route path="/" element={<HomeScreen />} />
@@ -43,7 +43,7 @@ const App = () => {
           <Route path="/social" element={<SocialScreen />} /> 
           <Route path="/blog" element={<BlogScreen />} /> 
           <Route path="*" element={<NotFoundScreen />} />
-      </Routes>
+      </Routes>      
     </Container>  
   ); 
 };
