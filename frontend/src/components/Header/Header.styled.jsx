@@ -1,14 +1,22 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
+export const HeaderWrapper = styled.header`
+  border-bottom: 1px solid #ececec;
+`;
+
+export const HeaderContainer = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 export const Navbar = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center; 
   background-color: white;
   gap: 12px;
-  border-bottom: 1px solid black;
-  // height: 110px;
+
 `;
 
 export const NavbarLinks = styled.ul`
@@ -18,8 +26,7 @@ export const NavbarLinks = styled.ul`
 `;
 
 export const NavbarLinksItem = styled.li`
-  padding-left: 24px;
- 
+  padding-left: 24px; 
   & a {
     text-decoration: none;
     color: black;
@@ -31,24 +38,23 @@ export const NavbarLinksItem = styled.li`
     display: flex;
     align-items: center;
     transition: transform 250ms linear, color 250ms linear;
+    &:hover,
+    &:focus {
+      color:red;
+    } 
   }
 
-  &:hover,
-  &:focus {
-    color:red;
-    background: black;
-  }  
-
-  @media (max-width: 960px) {
+  @media (max-width: 767px) {
     display:none;
   } 
 `;
 
 export const NavbarLogo = styled.span`
   cursor: pointer; 
-  @media (max-width: 960px) {
-    width: 50px;
-    height: 50px;  ;
+  padding-left: 50px;
+  
+  @media (max-width: 767px) {
+    padding-left: 30px;
   } 
 `;
 
@@ -95,28 +101,16 @@ export const NavbarButton = styled.button`
 
 export const HamburgerMenu = styled.div`
   width: 30px;
-  height: 30px
-  // display: flex;
-  display: none;
+  height: 30px;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
 
-  & div {
-    width: 100%;
-    height: 3px;
-    background: red;
-
-    &:hover,
-    &:focus {
-      background: green;
-    }
+  @media screen and (min-width: 767px) {
+    display: none;
   }
-
-  @media (max-width: 960px) {
-    display: flex;
-  }  
 `;
 
 

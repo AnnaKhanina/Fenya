@@ -4,7 +4,7 @@ const HomeScreen = () => {
     return (
         <HomeScreenStyled>
             <HomeScreenTitle>Головна</HomeScreenTitle>
-            <img src="https://via.placeholder.com/960x240" alt="" />
+            {/* <img src="https://via.placeholder.com/960x240" alt="" /> */}
             <HomeScreenText>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                 laboriosam placeat incidunt rem illum animi nemo quibusdam quia
