@@ -8,6 +8,7 @@ export const Navbar = styled.nav`
   background-color: white;
   gap: 12px;
   border-bottom: 1px solid black;
+  // height: 110px;
 `;
 
 export const NavbarLinks = styled.ul`
@@ -19,7 +20,7 @@ export const NavbarLinks = styled.ul`
 export const NavbarLinksItem = styled.li`
   padding-left: 24px;
  
-  > a {
+  & a {
     text-decoration: none;
     color: black;
     font-family: "Raleway";
@@ -29,11 +30,26 @@ export const NavbarLinksItem = styled.li`
     line-height: 21px;
     display: flex;
     align-items: center;
+    transition: transform 250ms linear, color 250ms linear;
   }
+
+  &:hover,
+  &:focus {
+    color:red;
+    background: black;
+  }  
+
+  @media (max-width: 960px) {
+    display:none;
+  } 
 `;
 
 export const NavbarLogo = styled.span`
   cursor: pointer; 
+  @media (max-width: 960px) {
+    width: 50px;
+    height: 50px;  ;
+  } 
 `;
 
 export const Link = styled(NavLink)`
@@ -76,3 +92,31 @@ export const NavbarButton = styled.button`
   background-color: white;
   border: none;
 `;
+
+export const HamburgerMenu = styled.div`
+  width: 30px;
+  height: 30px
+  // display: flex;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  & div {
+    width: 100%;
+    height: 3px;
+    background: red;
+
+    &:hover,
+    &:focus {
+      background: green;
+    }
+  }
+
+  @media (max-width: 960px) {
+    display: flex;
+  }  
+`;
+
+

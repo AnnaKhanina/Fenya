@@ -1,7 +1,8 @@
-import { Navbar, NavbarLinks, NavbarLinksItem, NavbarLogo, CartLogoBadge, NavbarSearch, NavbarForm, NavbarInput, NavbarButton } from "../Header/Header.styled";
+import { Navbar, NavbarLinks, NavbarLinksItem, NavbarLogo, CartLogoBadge, NavbarSearch, NavbarForm, NavbarInput, NavbarButton, HamburgerMenu } from "../Header/Header.styled";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping, faHeart, faUser, faSearch } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCartShopping, faHeart, faUser, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { HiSearch, HiOutlineUser, HiOutlineHeart, HiOutlineShoppingCart } from "react-icons/hi";
 import logo from '../../images/logoFenya.png';
 
 const Header = () => {
@@ -30,29 +31,36 @@ const Header = () => {
                         <NavbarForm>                            
                              <NavbarInput type="text" name="filter" placeholder="Пошук"></NavbarInput>                                
                              <NavbarButton type="submit">
-                                <FontAwesomeIcon icon={faSearch} />                                                                                        
+                                {/* <FontAwesomeIcon icon={faSearch} /> */}
+                                <HiSearch />
                              </NavbarButton>
                         </NavbarForm>                      
                 </NavbarSearch>          
             </NavbarLinksItem>
             <NavbarLinksItem>
-                <Link to="/profile"><FontAwesomeIcon icon={faUser} />Увійти</Link>
+                {/* <Link to="/profile"><FontAwesomeIcon icon={faUser} />Увійти</Link> */}
+                <Link to="/profile"><HiOutlineUser />Увійти</Link>
             </NavbarLinksItem>            
             <NavbarLinksItem>
-                <Link to="/favorite"><FontAwesomeIcon icon={faHeart} /></Link>
+                {/* <Link to="/favorite"><FontAwesomeIcon icon={faHeart} /></Link> */}
+                <Link to="/favorite"><HiOutlineHeart /></Link>
             </NavbarLinksItem>
             <NavbarLinksItem>
                 <Link to="/cart">
-                <FontAwesomeIcon icon={faCartShopping} />
+                {/* <FontAwesomeIcon icon={faCartShopping} /> */}
+                <HiOutlineShoppingCart />
                 <span>                    
                     <CartLogoBadge>0</CartLogoBadge>
                 </span>
                 </Link>                
            </NavbarLinksItem>                    
-         </NavbarLinks>       
-  </Navbar>          
-       
-        
+         </NavbarLinks> 
+         <HamburgerMenu>
+            <div></div>
+            <div></div>
+            <div></div>
+         </HamburgerMenu>
+  </Navbar>      
     )
 }
 
