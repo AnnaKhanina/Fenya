@@ -1,4 +1,4 @@
-import { HeaderWrapper, HeaderContainer, Navbar, NavbarLogo, NavbarLinks, NavbarLinksItem, CartLogoBadge, HeaderIconsList, Search, Form, HamburgerMenu } from "../Header/Header.styled";
+import { HeaderWrapper, HeaderContainer, Navbar, NavbarLogo, NavbarLinks, NavbarLinksItem, CartLogoBadge, HeaderIconsList, HeaderIconsListItem, HamburgerMenu } from "../Header/Header.styled";
 import { Container } from "../App/App.styled";
 import { Link } from "react-router-dom";
 import { HiSearch, HiOutlineUser, HiOutlineHeart, HiOutlineShoppingCart, HiOutlineMenu  } from "react-icons/hi";
@@ -10,12 +10,10 @@ const Header = () => {
             <Container>
                 <HeaderContainer>
                     <Navbar> 
-                        <NavbarLogo>
-                            <span>
+                        <NavbarLogo>                          
                                 <Link to="/" end>                   
                                     <img src={logo} alt="Logo" />                                     
-                                </Link>
-                            </span>
+                                </Link>                          
                         </NavbarLogo>
                         <NavbarLinks>            
                             <NavbarLinksItem>
@@ -34,35 +32,35 @@ const Header = () => {
                     </Navbar>
                     <HeaderIconsList>
                         <HeaderIconsListItem>
-                            <Search>                               
-                                <Form>
+                            <div>                               
+                                <span>
                                     <HiSearch />                            
                                         {/* <Input type="text" name="filter" placeholder="Пошук" />                                */}
                                             {/* <Button type="submit"><HiSearch /></Button> */}
-                                </Form>                      
-                            </Search> 
+                                </span>                      
+                            </div> 
                         </HeaderIconsListItem>
                         <HeaderIconsListItem>
-                            <Profile>                
-                                <Link to="/profile"><HiOutlineUser />Увійти</Link>
-                            </Profile>
+                            <div>                
+                                <Link to="/profile"><HiOutlineUser /></Link>
+                            </div>
                         </HeaderIconsListItem>                       
                         <HeaderIconsListItem>
-                            <Favorite>                
+                            <div>                
                                 <Link to="/favorite"><HiOutlineHeart /></Link>
-                            </Favorite>
+                            </div>
                         </HeaderIconsListItem>
                         <HeaderIconsListItem>
-                            <Cart>
+                            <div>
                                 <Link to="/cart"><HiOutlineShoppingCart /><span><CartLogoBadge>0</CartLogoBadge></span></Link> 
-                            </Cart> 
+                            </div> 
                         </HeaderIconsListItem>                                         
                     </HeaderIconsList> 
+                    <HamburgerMenu>
+                        <button type="button"><HiOutlineMenu /></button>           
+                    </HamburgerMenu> 
                 </HeaderContainer> 
-            </Container>                       
-            <HamburgerMenu>
-                <span><HiOutlineMenu/></span>
-            </HamburgerMenu>         
+            </Container>                    
         </HeaderWrapper> 
     )
 };

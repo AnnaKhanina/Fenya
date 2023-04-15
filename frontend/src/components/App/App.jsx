@@ -16,7 +16,7 @@ import { Container } from "../App/App.styled";
 // import SideDrawer from "../SideDrawer/SideDrawer";
 // import Backdrop from "../Backdrop/Backdrop";
 import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 
 const App = () => {
   return (
@@ -40,7 +40,7 @@ const App = () => {
           <Route path="/blog" element={<BlogScreen />} /> 
           <Route path="*" element={<NotFoundScreen />} />        
       </Routes>
-      <Footer />       
+      {/* <Footer />        */}
    </Container>   
   ); 
 };
