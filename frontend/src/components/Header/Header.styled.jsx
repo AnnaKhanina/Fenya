@@ -3,30 +3,36 @@ import { NavLink } from "react-router-dom";
 
 export const HeaderWrapper = styled.header`
   border-bottom: 1px solid #ececec;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  text-align: center;
 `;
 
 export const HeaderContainer = styled.div`
   display: flex;
-  align-items: center;
+  align-items: center;  
+  justify-content: center;
+  text-align: center;
 `;
 
 export const Navbar = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center; 
-  background-color: #FFA4A4;
+  background-color: #fff;
   gap: 12px;
 
 `;
 
 export const NavbarLogo = styled.span`
-  cursor: pointer; 
-  padding-left: 50px;
-  padding-bottom: 20px;
+   cursor: pointer; 
+   padding-left: 50px;
+   padding-bottom: 20px;   
   & a {
     display: inline-block;
     padding-top: 24px;
-    margin-right: 93px;
+    margin-right: 93px;   
   }
 `;
 
@@ -36,7 +42,7 @@ export const NavbarLinks = styled.ul`
   align-items: center;
   margin-left: auto;
   text-decoration: none;
-  color: #fff;   
+  color: #FFA4A4;   
   @media (max-width: 767px) {
     display:none;
   } 
@@ -46,7 +52,7 @@ export const NavbarLinksItem = styled.li`
   margin-left: 24px;     
    & a {
     text-decoration: none;
-    color: #fff;
+    color: #FFA4A4;
     font-family: "Raleway";
     font-style: normal;
     font-weight: 300;
@@ -86,12 +92,12 @@ export const HeaderIconsList = styled.ul`
   list-style: none;
   align-items: center;
   text-decoration: none;
-  color: #fff; 
+  color: #FFA4A4; 
   gap: 8px;
   justify-content: space-between;
   @media (max-width: 767px) {
     display:none;
-  }
+  } 
 `;
 
 
@@ -99,7 +105,7 @@ export const HeaderIconsListItem = styled.li`
   margin-left: 24px;    
   & a {
   text-decoration: none;
-  color: #fff;
+  color: #FFA4A4;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 300;
@@ -119,8 +125,8 @@ export const HeaderIconsListItem = styled.li`
 `;
 
 export const HamburgerMenu = styled.div`   
-  & button {  
-    //margin-left: 150px;
+  margin-left: auto;
+  & button {
     background-color: transparent;
     border: none; 
     display: block;
