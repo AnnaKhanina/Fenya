@@ -14,6 +14,7 @@ export const HeaderContainer = styled.div`
   align-items: center;  
   justify-content: center;
   text-align: center;
+  
 `;
 
 export const Navbar = styled.nav`

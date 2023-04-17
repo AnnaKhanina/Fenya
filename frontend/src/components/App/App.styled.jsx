@@ -24,31 +24,31 @@ export const Container = styled.div`
   //   width: 1200px;
   // }
 
-  // @media ${size.desktop} {
-  //   max-width: 320px;
-  // }
+  @media ${size.mobileS} {
+    max-width: 320px;
+  }
 
-  // @media ${size.desktop} {
-  //   max-width: 375px;
-  // }
+  @media ${size.mobileM} {
+    max-width: 375px;
+  }
 
-  // @media ${size.desktop} {
-  //   max-width: 425px;
-  // }
+  @media ${size.mobileL} {
+    max-width: 425px;
+  }
 
-  // @media ${size.laptop} { 
-  //   max-width: 768px;
-  // }
+  @media ${size.tablet} { 
+    max-width: 768px;
+  }
 
-  // @media ${size.desktop} {
-  //   max-width: 1024px;
-  // }
+  @media ${size.laptop} {
+    max-width: 1024px;
+  }
 
-  // @media ${size.desktop} {
-  //   max-width: 1440px;
-  // }
+  @media ${size.laptopL} {
+    max-width: 1440px;
+  }
 
-  // @media ${size.desktop} {
-  //   max-width: 2560px;
-  // }
+  @media ${size.desktop} {
+    max-width: 2560px;
+  }
 `;
