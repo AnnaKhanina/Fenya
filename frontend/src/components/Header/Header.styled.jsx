@@ -14,7 +14,7 @@ export const Navbar = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center; 
-  background-color: #fff;
+  background-color: #FFA4A4;
   gap: 12px;
 
 `;
@@ -36,7 +36,7 @@ export const NavbarLinks = styled.ul`
   align-items: center;
   margin-left: auto;
   text-decoration: none;
-  color: black;   
+  color: #fff;   
   @media (max-width: 767px) {
     display:none;
   } 
@@ -46,7 +46,7 @@ export const NavbarLinksItem = styled.li`
   margin-left: 24px;     
    & a {
     text-decoration: none;
-    color: black;
+    color: #fff;
     font-family: "Raleway";
     font-style: normal;
     font-weight: 300;
@@ -86,7 +86,7 @@ export const HeaderIconsList = styled.ul`
   list-style: none;
   align-items: center;
   text-decoration: none;
-  color: black; 
+  color: #fff; 
   gap: 8px;
   justify-content: space-between;
   @media (max-width: 767px) {
@@ -99,7 +99,7 @@ export const HeaderIconsListItem = styled.li`
   margin-left: 24px;    
   & a {
   text-decoration: none;
-  color: black;
+  color: #fff;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 300;
@@ -120,9 +120,14 @@ export const HeaderIconsListItem = styled.li`
 
 export const HamburgerMenu = styled.div`   
   & button {  
-    margin-left: 50px;
+    //margin-left: 150px;
     background-color: transparent;
-    border: none;    
+    border: none; 
+    display: block;
+    margin-left: auto;
+    border-radius: 4px;
+    padding: 0;
+
     @media(min-width: 767px) {
       display: none;
     }
