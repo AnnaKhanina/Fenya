@@ -28,9 +28,8 @@ const Header = () => {
                             <NavbarLinksItem>
                                 <Link to="/contacts">Контакти</Link>
                             </NavbarLinksItem>
-                        </NavbarLinks> 
-                    </Navbar>
-                    <HeaderIconsList>
+                        </NavbarLinks>
+                        <HeaderIconsList>
                         <HeaderIconsListItem>
                             <div>                               
                                 <span>
@@ -55,7 +54,9 @@ const Header = () => {
                                 <Link to="/cart"><HiOutlineShoppingCart /><span><CartLogoBadge>0</CartLogoBadge></span></Link> 
                             </div> 
                         </HeaderIconsListItem>                                         
-                    </HeaderIconsList> 
+                    </HeaderIconsList>  
+                    </Navbar>
+                    
                     <HamburgerMenu>
                         <button type="button"><HiOutlineMenu /></button>           
                     </HamburgerMenu> 

@@ -6,15 +6,20 @@ export const HeaderWrapper = styled.header`
   display: flex;
   align-items: center;  
   justify-content: center;
-  text-align: center;
-`;
+  text-align: center;   
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto;
+  `;
 
 export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;  
   justify-content: center;
   text-align: center;
-  
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto;  
 `;
 
 export const Navbar = styled.nav`
@@ -22,19 +27,25 @@ export const Navbar = styled.nav`
   justify-content: space-between;
   align-items: center; 
   background-color: #fff;
-  gap: 12px;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+   }
 
+   @media (min-width: 1440px) {
+    gap: 280px;
+  }
+
+  @media(min-width: 4320px) {
+    gap: 1000px;
+  }
 `;
 
 export const NavbarLogo = styled.span`
    cursor: pointer; 
-   padding-left: 50px;
-   padding-bottom: 20px;   
-  & a {
-    display: inline-block;
-    padding-top: 24px;
-    margin-right: 93px;   
-  }
+   padding: 0;     
+  
 `;
 
 export const NavbarLinks = styled.ul`
@@ -50,7 +61,22 @@ export const NavbarLinks = styled.ul`
 `;
 
 export const NavbarLinksItem = styled.li`
-  margin-left: 24px;     
+  padding-left: 24px; 
+  @media (min-width: 767px) {
+    padding-left: 15px;
+  } 
+  
+  @media (min-width: 1024px) {
+    padding-left: 20px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 25px;
+  }
+
+  @media (min-width: 2560px) {
+    padding-left: 30px;
+  }
    & a {
     text-decoration: none;
     color: #FFA4A4;
@@ -64,7 +90,7 @@ export const NavbarLinksItem = styled.li`
     transition: transform 250ms linear, color 250ms linear;
     &:hover,
     &:focus {
-      color:red;
+      color: #7D26CD;
     } 
   }
 `;
@@ -78,26 +104,30 @@ export const CartLogoBadge = styled.span`
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   background: #f4f4f4;
   border-radius: 40%;
-  margin-left: 7px;
-  color: #171717;
+  margin-left: 5px;
+  color: #A9A9A9;
   font-size: 16px;
 `;
 
-export const HeaderIconsList = styled.ul`
-  display: flex;
-  margin-left: auto;  
-  list-style: none;
-  align-items: center;
-  text-decoration: none;
-  color: #FFA4A4; 
-  gap: 8px;
-  justify-content: space-between;
+export const HeaderIconsList = styled.ul`  
   @media (max-width: 767px) {
     display:none;
+  } 
+
+  @media (min-width: 767px) {
+    display: flex;
+    margin-left: auto;  
+    list-style: none;
+    align-items: center;
+    text-decoration: none;
+    color: #FFA4A4; 
+    gap: 8px;
+    justify-content: space-between;  
+    padding-left: 2px;   
   } 
 `;
 
@@ -131,11 +161,10 @@ export const HamburgerMenu = styled.div`
     background-color: transparent;
     border: none; 
     display: block;
-    margin-left: auto;
     border-radius: 4px;
     padding: 0;
 
-    @media(min-width: 767px) {
+    @media(min-width: 768px) {
       display: none;
     }
   }  
