@@ -4,6 +4,7 @@ export const Container = styled.div`
   width: 100%; 
   margin-left: auto;
   margin-right: auto;
+ 
 
   @media(min-width: 320px) {
     width: 320px;   
@@ -13,17 +14,17 @@ export const Container = styled.div`
     width: 480px;     
   }
 
-  // @media(min-width: 320px) and (max-width: 480px) {
-  //   padding-left: 8px;
-  //   padding-right: 8px; 
-  // }
+  @media(min-width: 320px) and (max-width: 480px) {
+    padding-left: 8px;
+    padding-right: 8px; 
+  }
 
   @media(min-width: 768px) {
     width: 768px;
   }
 
-  @media(min-width: 1200px) {
-    width: 1200px;
+  @media(min-width: 1024px) {
+    width: 1024px;
   }
 
   @media(min-width: 1440px) {

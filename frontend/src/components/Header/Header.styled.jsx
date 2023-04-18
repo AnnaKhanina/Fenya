@@ -27,11 +27,16 @@ export const Navbar = styled.nav`
   justify-content: space-between;
   align-items: center; 
   background-color: #fff;
+
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
     gap: 8px;
    }
+
+   @media (min-width: 1024px) {
+    gap: 86px;
+  }
 
    @media (min-width: 1440px) {
     gap: 280px;

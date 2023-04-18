@@ -1,4 +1,4 @@
-import { FooterNav, FooterContainer, FooterTop, FooterLinks, FooterLinksItem, FooterSocialList, FooterSocialListItem, FooterRightsWrapper, FooterRightsContainer } from "../Footer/Footer.styled";
+import { FooterWrapper, FooterContainer, FooterTop, FooterLinks, FooterLinksItem, FooterSocialList, FooterSocialListItem, FooterRightsContainer } from "../Footer/Footer.styled";
 import { Link } from "react-router-dom";
 import { Container } from "../App/App.styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,7 +6,7 @@ import { faInstagram, faViber, faTelegram } from "@fortawesome/free-brands-svg-i
 
 const Footer = () => {
     return (       
-        <FooterNav>
+        <FooterWrapper>
             <Container>
                 <FooterContainer>
                     <FooterTop>
@@ -37,15 +37,14 @@ const Footer = () => {
                             </FooterLinksItem>                                                
                         </FooterLinks>
                     </FooterTop>
-                </FooterContainer>
-                
-                <FooterRightsWrapper>
+                </FooterContainer>                
+                <div>
                     <FooterRightsContainer>
                         <p>&copy; Fenya</p>
                     </FooterRightsContainer>
-                </FooterRightsWrapper> 
+                </div> 
             </Container>                                  
-        </FooterNav>  
+        </FooterWrapper >  
     )
 };
 
