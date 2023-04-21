@@ -1,4 +1,10 @@
 import { Route, Routes } from "react-router-dom";
+import { useState } from "react";
+
+import { Container } from "../App/App.styled";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+
 import  HomeScreen  from "../../screens/HomeScreen/HomeScreen";
 import  ProductScreen  from "../../screens/ProductScreen/ProductScreen";
 import SizeScreen from "../../screens/SizeScreen/SizeScreen";
@@ -12,18 +18,20 @@ import AboutUsScreen from "../../screens/AboutUsScreen/AboutUsScreen";
 import CooperationScreen from "../../screens/CooperationScreen/CooperationScreen";
 import SocialScreen from "../../screens/SocialScreen/SocialScreen";
 import BlogScreen from "../../screens/BlogScreen/BlogScreen";
-import { Container } from "../App/App.styled";
-// import SideDrawer from "../SideDrawer/SideDrawer";
-// import Backdrop from "../Backdrop/Backdrop";
-import Header from "../Header/Header";
- import Footer from "../Footer/Footer";
+
+import SideDrawer from "../SideDrawer/SideDrawer";
+import Backdrop from "../Backdrop/Backdrop";
+
 
 const App = () => {
+
+  const [ sideToggle, setSideToggle ] = useState(false);
+
   return (
      <Container>
-      <Header />       
-      {/* <SideDrawer />  
-      <Backdrop /> */}
+      <Header click={() => setSideToggle(true)}/>       
+      <SideDrawer show={sideToggle} click={() => setSideToggle(false)} />  
+      <Backdrop show={sideToggle} click={() => setSideToggle(false)} />
        
       <Routes>
           <Route path="/" element={<HomeScreen />} />

@@ -30,36 +30,39 @@ const Header = () => {
                             </NavbarLinksItem>
                         </NavbarLinks>
                         <HeaderIconsList>
-                        <HeaderIconsListItem>
-                            <div>                               
-                                <span>
-                                    <HiSearch />                            
-                                        {/* <Input type="text" name="filter" placeholder="Пошук" />                                */}
-                                            {/* <Button type="submit"><HiSearch /></Button> */}
-                                </span>                      
-                            </div> 
-                        </HeaderIconsListItem>
-                        <HeaderIconsListItem>
-                            <div>                
-                                <Link to="/profile"><HiOutlineUser /></Link>
-                            </div>
-                        </HeaderIconsListItem>                       
-                        <HeaderIconsListItem>
-                            <div>                
-                                <Link to="/favorite"><HiOutlineHeart /></Link>
-                            </div>
-                        </HeaderIconsListItem>
-                        <HeaderIconsListItem>
-                            <div>
-                                <Link to="/cart"><HiOutlineShoppingCart /><span><CartLogoBadge>0</CartLogoBadge></span></Link> 
-                            </div> 
-                        </HeaderIconsListItem>                                         
-                    </HeaderIconsList>  
+                            <HeaderIconsListItem>
+                                <div>                               
+                                    <span>
+                                        <HiSearch />                            
+                                            {/* <Input type="text" name="filter" placeholder="Пошук" />                                */}
+                                                {/* <Button type="submit"><HiSearch /></Button> */}
+                                    </span>                      
+                                </div> 
+                            </HeaderIconsListItem>
+                            <HeaderIconsListItem>
+                                <div>                
+                                    <Link to="/profile"><HiOutlineUser /></Link>
+                                </div>
+                            </HeaderIconsListItem>                       
+                            <HeaderIconsListItem>
+                                <div>                
+                                    <Link to="/favorite"><HiOutlineHeart /></Link>
+                                </div>
+                            </HeaderIconsListItem>
+                            <HeaderIconsListItem>
+                                <div>
+                                    <Link to="/cart"><HiOutlineShoppingCart /><span><CartLogoBadge>0</CartLogoBadge></span></Link> 
+                                </div> 
+                            </HeaderIconsListItem>                                         
+                        </HeaderIconsList> 
+                        <HamburgerMenu onClick={click}>                        
+                            <button type="button"><HiOutlineMenu /></button>           
+                        </HamburgerMenu>  
                     </Navbar>
                     
-                    <HamburgerMenu>
+                    {/* <HamburgerMenu onClick={}>                        
                         <button type="button"><HiOutlineMenu /></button>           
-                    </HamburgerMenu> 
+                    </HamburgerMenu>  */}
                 </HeaderContainer> 
             </Container>                    
         </HeaderWrapper> 

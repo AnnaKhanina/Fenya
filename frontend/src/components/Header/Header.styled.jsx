@@ -152,7 +152,7 @@ export const HeaderIconsListItem = styled.li`
   transition: transform 250ms linear, color 250ms linear;
   &:hover,
   &:focus {
-    color:red;
+    color: black;
    } 
  }
   @media (max-width: 767px) {
@@ -178,6 +178,13 @@ export const HamburgerMenu = styled.div`
     width: 40px;
     height: 40px; 
   }
+
+  &:hover,
+  &:focus {
+    color: black;
+   }
 `;
+
+
 
 
