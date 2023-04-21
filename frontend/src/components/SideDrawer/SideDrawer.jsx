@@ -5,15 +5,14 @@ import { CartLogoBadge } from "../Header/Header.styled";
 
 const SideDrawer = ({show, click}) => {
 
-    const sideDrawerClass = [SideDrawerWrapper];
+    const sideDrawerClass = {SideDrawerWrapper};
 
       if(show) {
         sideDrawerClass.push("show");
       }
 
     return (
-        <>
-          {sideDrawerClass.join(" ")}
+        <div classname={sideDrawerClass.join(" ")}>
             <ul onClick={click}>
               <li>
                 <Link to="/cart">
@@ -25,8 +24,9 @@ const SideDrawer = ({show, click}) => {
                 </Link>
               </li>
             </ul>
-        </>
+        </div>
     )      
 };
+
 
 export default SideDrawer;

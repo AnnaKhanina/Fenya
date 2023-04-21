@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SideDrawerWrapper = styled.div`
+export const SideDrawerWrapper = styled.sidedrawer`
     width: 70%;
     height: 100vh;
     background: #fff;
@@ -19,20 +19,21 @@ export const SideDrawerWrapper = styled.div`
         display: flex;
         flex-direction: column;
         list-style: none;
-        & li {
-            display: flex;
-            align-items: center; 
-        }
-          & a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            flex: 1;
-            padding: 16px;
-            text-decoration: none;
-            color: #171717;
-            font-size: 25px;
-          }
+       
     }
+    & li {
+        display: flex;
+        align-items: center; 
+    }
+      & a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex: 1;
+        padding: 16px;
+        text-decoration: none;
+        color: #171717;
+        font-size: 25px;
+      }
 `;

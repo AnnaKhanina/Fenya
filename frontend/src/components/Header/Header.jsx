@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { HiSearch, HiOutlineUser, HiOutlineHeart, HiOutlineShoppingCart, HiOutlineMenu  } from "react-icons/hi";
 import logo from '../../images/logoFenya.png';
 
-const Header = () => {
+const Header = (click) => {
     return (   
         <HeaderWrapper>
             <Container>
@@ -55,14 +55,12 @@ const Header = () => {
                                 </div> 
                             </HeaderIconsListItem>                                         
                         </HeaderIconsList> 
-                        <HamburgerMenu onClick={click}>                        
-                            <button type="button"><HiOutlineMenu /></button>           
-                        </HamburgerMenu>  
+                         
                     </Navbar>
                     
-                    {/* <HamburgerMenu onClick={}>                        
+                    <HamburgerMenu onClick={click}>                        
                         <button type="button"><HiOutlineMenu /></button>           
-                    </HamburgerMenu>  */}
+                    </HamburgerMenu> 
                 </HeaderContainer> 
             </Container>                    
         </HeaderWrapper> 
