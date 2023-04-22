@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SideDrawerWrapper = styled.sidedrawer`
+export const SideDrawerWrapper = styled.div`
     width: 70%;
     height: 100vh;
     background: #fff;
@@ -9,23 +9,27 @@ export const SideDrawerWrapper = styled.sidedrawer`
     top: 0;
     left: 0;
     translate: transformX(-100%);
-    transition: all 0.3s ease-out;
-
+    transition: all 0.3s ease-out;  
+    
     & show {
-        tansform: translateX(0);
+        transform: translateX(0);
     }
+    
+    @media (min-width: 767px) {
+        display:none;
+    }
+`;
 
-    & ul {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-       
-    }
-    & li {
-        display: flex;
-        align-items: center; 
-    }
-      & a {
+export const SideDrawerList = styled.ul`
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+`;
+
+export const SideDrawerItem = styled.li`
+    display: flex;
+    align-items: center; 
+    & a {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -35,5 +39,9 @@ export const SideDrawerWrapper = styled.sidedrawer`
         text-decoration: none;
         color: #171717;
         font-size: 25px;
+        &:hover,
+        &:focus {
+          color: #7D26CD;
+        
       }
 `;

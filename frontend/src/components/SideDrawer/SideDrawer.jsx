@@ -1,30 +1,42 @@
-import { SideDrawerWrapper } from "../SideDrawer/SideDrawer.styled";
+import { SideDrawerWrapper, SideDrawerList, SideDrawerItem } from "../SideDrawer/SideDrawer.styled";
 import { Link } from "react-router-dom";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { CartLogoBadge } from "../Header/Header.styled";
+//import { useSelector } from "react-redux";
 
 const SideDrawer = ({show, click}) => {
 
-    const sideDrawerClass = {SideDrawerWrapper};
+    //const sideDrawerClass = ["sidedrawer"];
 
-      if(show) {
-        sideDrawerClass.push("show");
+    const SideDrawerClass = [SideDrawerWrapper];
+
+    // const cart = useSelector((state) => state.cart);
+    // const { cartItems } = cart;
+
+    // const getCartCount = () => {
+    //   return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
+    // };
+
+    if(show) {
+        SideDrawerClass.push("show");
       }
 
     return (
-        <div classname={sideDrawerClass.join(" ")}>
-            <ul onClick={click}>
-              <li>
+        <>
+        {SideDrawerClass.join(" ")}       
+            <SideDrawerList onClick={click}>
+              <SideDrawerItem>
                 <Link to="/cart">
                     <HiOutlineShoppingCart /><span><CartLogoBadge>0</CartLogoBadge></span>
                 </Link>
-              </li>
-              <li>
+              </SideDrawerItem>
+              <SideDrawerItem>
                 <Link to="/">Головна
                 </Link>
-              </li>
-            </ul>
-        </div>
+              </SideDrawerItem>
+            </SideDrawerList>
+            </>
+      
     )      
 };
 
