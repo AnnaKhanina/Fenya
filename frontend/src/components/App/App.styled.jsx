@@ -1,5 +1,7 @@
- .container {
-    width: 100%; 
+import styled from "styled-components";
+ 
+ export const Container = styled.div`
+  width: 100%; 
     margin-left: auto;
     margin-right: auto;  
 
@@ -35,5 +37,6 @@
     @media(min-width: 4320px) {
       width: 4320px;
     } 
- }   
+ `;
+  
   

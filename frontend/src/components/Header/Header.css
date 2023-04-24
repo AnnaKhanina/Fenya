@@ -3,32 +3,11 @@
   }
 
   .navbar {
-    background-color: var(--navBg);
+    background-color: tomato;
     height: 80px;
     display: flex;
     justify-content: start;
-    align-items: center;
-
-    @media (min-width: 768px) {
-      display: none;
-    }
-    @media (min-width: 768px) {
-      display: flex;
-      flex-direction: row;
-      gap: 8px;
-     }
-  
-     @media (min-width: 1024px) {
-      gap: 86px;
-    }
-  
-     @media (min-width: 1440px) {
-      gap: 280px;
-    }
-  
-    @media(min-width: 4320px) {
-      gap: 1000px;
-    }
+    align-items: center;   
   }
 
   .navbar-logo {
@@ -41,36 +20,17 @@
     list-style: none;
     align-items: center;
     margin-left: auto;
-    text-decoration: none;
-    color: #FFA4A4;   
-    @media (max-width: 767px) {
-      display:none;
-    } 
+   
+    
   }
 
   .navbar-links__item {
-    padding-left: 24px; 
-    @media (min-width: 767px) {
-      padding-left: 15px;
-    } 
-    
-    @media (min-width: 1024px) {
-      padding-left: 20px;
-    }
-
-    @media (min-width: 1440px) {
-      padding-left: 25px;
-    }
-
-    @media (min-width: 2560px) {
-      padding-left: 30px;
-    }
-   
+    padding-left: 24px;   
   }
 
   .navbar-links__item .a {
     text-decoration: none;
-    color: #FFA4A4;
+
     font-family: "Raleway";
     font-style: normal;
     font-weight: 300;
@@ -98,6 +58,35 @@
     color: #A9A9A9;
     font-size: 16px;
   }
+
+  .header-icons-list {
+    display: flex;
+    margin-left: auto;  
+    list-style: none;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    gap: 8px;
+    justify-content: space-between;  
+    padding-left: 2px;  
+  }
+
+  .header-icons-list__item .a {
+    text-decoration: none;
+    color: #FFA4A4;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    transition: transform 250ms linear, color 250ms linear;   
+  }
+
+  .header-icons-list__item .a:hover {
+    color: #7D26CD;
+  } 
   
   .navbar-mob {
     background-color: var(--navBg);
@@ -105,9 +94,6 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    @media (max-width: 768px) {
-      display: none;
-    }
   }
   
   .menu-bars {
@@ -175,4 +161,62 @@
   span {
     margin-left: 16px;
   }
+
+
+  @media (min-width: 767px) {
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+    }   
+    .navbar-links__item {
+      padding-left: 15px;
+    } 
+   }
+
+   @media (min-width: 1024px) {
+    .navbar {
+      gap: 86px;
+    }
+    .navbar-links__item {
+      padding-left: 20px;
+    } 
+  }
+
+   @media (min-width: 1440px) {
+    .navbar {
+      gap: 280px;
+    }
+    .navbar-links__item {
+      padding-left: 25px;
+    }
+  }
+
+  @media (min-width: 2560px) {
+    .navbar-links__item {
+      padding-left: 30px;
+    }
+  }
+
+  @media(min-width: 4320px) {
+    .navbar {
+      gap: 1000px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .navbar-mob {
+      display: none;
+    }   
+  }
+
+  @media (max-width: 768px) {
+    .navbar-links,
+    .header-icons-list {
+      display: none;
+    }
+  }
+  
+
+
   

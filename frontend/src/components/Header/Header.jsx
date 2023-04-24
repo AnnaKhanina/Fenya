@@ -77,8 +77,10 @@ import React, { useState } from "react";
 import { IconContext } from "react-icons";
 import * as FaIcons from "react-icons/fa"; 
 import * as AiIcons from "react-icons/ai";
+
 import "../Header/Header.css";
 import { SidebarData } from "../SliderbarData/SliderbarData";
+import logo from '../../images/logoFenya.png';
 
 const Header = () => {
 
@@ -108,33 +110,30 @@ const Header = () => {
                     <li className="navbar-links__item">
                     <Link to="/contacts">Контакти</Link>
                     </li>
+                    {/* <li className="navbar-links__item">
+                    <FaIcons.FaSistrix />
+                    </li> */}
                 </ul>
                 <ul className="header-icons-list">
-                    <li className="header-icons-list__item">
-                        <div>                               
-                            <span>
-                            <HiSearch />                            
-                                     
-                            </span>                      
-                        </div> 
-                    </li>
+                    <li className="header-icons-list__item">                                                
+                        <FaIcons.FaSearch />                     
+                    </li>                    
                     <li className="header-icons-list__item">
                         <div>                
-                            <Link to="/profile"><HiOutlineUser /></Link>
+                           <FaIcons.FaUser/>
                         </div>
                     </li>                       
                     <li className="header-icons-list__item">
                         <div>                
-                            <Link to="/favorite"><HiOutlineHeart /></Link>
+                    <FaIcons.FaHeart />
                         </div>
                     </li>
                     <li className="header-icons-list__item">
                         <div>
-                            <Link to="/cart"><HiOutlineShoppingCart />
-                                <span className="cart-logo-badge">0</span>
-                            </Link> 
+                           <FaIcons.FaShoppingCart />
+                                <span className="cart-logo-badge">0</span>                       
                         </div> 
-                    </li>                                         
+                    </li> 
                 </ul> 
 
                 <div className="navbar-mob">

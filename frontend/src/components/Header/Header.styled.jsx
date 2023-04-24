@@ -124,15 +124,15 @@
 //   } 
 
 //   @media (min-width: 767px) {
-//     display: flex;
-//     margin-left: auto;  
-//     list-style: none;
-//     align-items: center;
-//     text-decoration: none;
-//     color: #FFA4A4; 
-//     gap: 8px;
-//     justify-content: space-between;  
-//     padding-left: 2px;   
+    // display: flex;
+    // margin-left: auto;  
+    // list-style: none;
+    // align-items: center;
+    // text-decoration: none;
+    // color: #FFA4A4; 
+    // gap: 8px;
+    // justify-content: space-between;  
+    // padding-left: 2px;   
 //   } 
 // `;
 
