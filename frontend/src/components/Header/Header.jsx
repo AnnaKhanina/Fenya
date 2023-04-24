@@ -78,7 +78,7 @@ import { IconContext } from "react-icons";
 import * as FaIcons from "react-icons/fa"; 
 import * as AiIcons from "react-icons/ai";
 import "../Header/Header.css";
-import { SidebarData } from "./SlidebarData";
+import { SidebarData } from "../SliderbarData/SliderbarData";
 
 const Header = () => {
 
