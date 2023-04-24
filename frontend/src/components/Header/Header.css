@@ -1,13 +1,113 @@
 :root {
     --navBg: #060b26;
   }
-  
+
   .navbar {
     background-color: var(--navBg);
     height: 80px;
     display: flex;
     justify-content: start;
     align-items: center;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+     }
+  
+     @media (min-width: 1024px) {
+      gap: 86px;
+    }
+  
+     @media (min-width: 1440px) {
+      gap: 280px;
+    }
+  
+    @media(min-width: 4320px) {
+      gap: 1000px;
+    }
+  }
+
+  .navbar-logo {
+    cursor: pointer; 
+    padding: 0; 
+  }
+
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-left: auto;
+    text-decoration: none;
+    color: #FFA4A4;   
+    @media (max-width: 767px) {
+      display:none;
+    } 
+  }
+
+  .navbar-links__item {
+    padding-left: 24px; 
+    @media (min-width: 767px) {
+      padding-left: 15px;
+    } 
+    
+    @media (min-width: 1024px) {
+      padding-left: 20px;
+    }
+
+    @media (min-width: 1440px) {
+      padding-left: 25px;
+    }
+
+    @media (min-width: 2560px) {
+      padding-left: 30px;
+    }
+   
+  }
+
+  .navbar-links__item .a {
+    text-decoration: none;
+    color: #FFA4A4;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    transition: transform 250ms linear, color 250ms linear;    
+  }
+
+  .navbar-links__item .a:hover {
+    color: #7D26CD;
+  } 
+
+  .cart-logo-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    background: #f4f4f4;
+    border-radius: 40%;
+    margin-left: 5px;
+    color: #A9A9A9;
+    font-size: 16px;
+  }
+  
+  .navbar-mob {
+    background-color: var(--navBg);
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   
   .menu-bars {

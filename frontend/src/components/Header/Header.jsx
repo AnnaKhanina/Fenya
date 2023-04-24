@@ -89,31 +89,80 @@ const Header = () => {
     return ( 
         <>   
             <IconContext.Provider value={{ color: "#FFF" }}>
-             <div className="navbar">
-                <Link to="#" className="menu-bars">
-                    <FaIcons.FaBars onClick={showSidebar} />
-                </Link>
-                </div>
-                <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
-                <ul className="nav-menu-items" onClick={showSidebar}>
-                    <li className="navbar-toggle">
-                    <Link to="#" className="menu-bars">
-                        <AiIcons.AiOutlineClose />
-                    </Link>
-                    </li>
+            <div className="navbar">  
 
-                    {SidebarData.map((item, index) => {
-                    return (
-                        <li key={index} className={item.cName}>
-                        <Link to={item.path}>
-                            {item.icon}
-                            <span>{item.title}</span>
+                <span className="navbar-logo">                          
+                    <Link to="/" end>                   
+                        <img src={logo} alt="Logo" />                                                                      </Link>                          
+                </span>
+                <ul className="navbar-links">            
+                    <li className="navbar-links__item">
+                        <Link to="/products">Товари</Link>
+                    </li>
+                    <li className="navbar-links__item">
+                        <Link to="/size">Розмірна сітка</Link>
+                    </li>
+                    <li className="navbar-links__item">
+                        <Link to="/payment_delivery">Оплата і доставка</Link>
+                    </li>
+                    <li className="navbar-links__item">
+                    <Link to="/contacts">Контакти</Link>
+                    </li>
+                </ul>
+                <ul className="header-icons-list">
+                    <li className="header-icons-list__item">
+                        <div>                               
+                            <span>
+                            <HiSearch />                            
+                                     
+                            </span>                      
+                        </div> 
+                    </li>
+                    <li className="header-icons-list__item">
+                        <div>                
+                            <Link to="/profile"><HiOutlineUser /></Link>
+                        </div>
+                    </li>                       
+                    <li className="header-icons-list__item">
+                        <div>                
+                            <Link to="/favorite"><HiOutlineHeart /></Link>
+                        </div>
+                    </li>
+                    <li className="header-icons-list__item">
+                        <div>
+                            <Link to="/cart"><HiOutlineShoppingCart />
+                                <span className="cart-logo-badge">0</span>
+                            </Link> 
+                        </div> 
+                    </li>                                         
+                </ul> 
+
+                <div className="navbar-mob">
+                    <Link to="#" className="menu-bars">
+                        <FaIcons.FaBars onClick={showSidebar} />
+                    </Link>
+                    </div>
+                    <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+                    <ul className="nav-menu-items" onClick={showSidebar}>
+                        <li className="navbar-toggle">
+                        <Link to="#" className="menu-bars">
+                            <AiIcons.AiOutlineClose />
                         </Link>
                         </li>
-                    );
-                    })}
-                </ul>
-             </nav>
+
+                        {SidebarData.map((item, index) => {
+                        return (
+                            <li key={index} className={item.cName}>
+                            <Link to={item.path}>
+                                {item.icon}
+                                <span>{item.title}</span>
+                            </Link>
+                            </li>
+                        );
+                        })}
+                    </ul>
+                </nav>
+            </div> 
             </IconContext.Provider>
         </>
     )
