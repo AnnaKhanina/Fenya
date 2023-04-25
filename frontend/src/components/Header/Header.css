@@ -3,10 +3,11 @@
   }
 
   .navbar {
-    background-color: tomato;
+    background-color: var(--navBg);
     height: 80px;
     display: flex;
     justify-content: start;
+    list-style: none;
     align-items: center;   
   }
 
@@ -15,22 +16,43 @@
     padding: 0; 
   }
 
-  .navbar-links {
+  .logo-title {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Verdana";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 21px;   
+  }
+
+  .logo-links {
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .navbar-list,
+  .icons-list  {
     display: flex;
+    margin-left: auto;  
     list-style: none;
     align-items: center;
-    margin-left: auto;
-   
-    
-  }
-
-  .navbar-links__item {
-    padding-left: 24px;   
-  }
-
-  .navbar-links__item .a {
     text-decoration: none;
+    list-style: none;
+    gap: 8px;
+    justify-content: space-between;  
+    padding-left: 2px;     
+  }
 
+  .navbar-list-item {
+    padding-left: 24px;  
+    display: flex; 
+  }
+
+  .navbar-links,
+  .icons-links  {
+    text-decoration: none;
+    color: #fff;
     font-family: "Raleway";
     font-style: normal;
     font-weight: 300;
@@ -41,8 +63,13 @@
     transition: transform 250ms linear, color 250ms linear;    
   }
 
-  .navbar-links__item .a:hover {
-    color: #7D26CD;
+  .navbar-links:hover {
+    color: #FFA4A4;
+  }  
+ 
+
+  .icons-list-item:hover {
+    color: #FFA4A4;
   } 
 
   .cart-logo-badge {
@@ -58,35 +85,6 @@
     color: #A9A9A9;
     font-size: 16px;
   }
-
-  .header-icons-list {
-    display: flex;
-    margin-left: auto;  
-    list-style: none;
-    align-items: center;
-    text-decoration: none;
-    list-style: none;
-    gap: 8px;
-    justify-content: space-between;  
-    padding-left: 2px;  
-  }
-
-  .header-icons-list__item .a {
-    text-decoration: none;
-    color: #FFA4A4;
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    transition: transform 250ms linear, color 250ms linear;   
-  }
-
-  .header-icons-list__item .a:hover {
-    color: #7D26CD;
-  } 
   
   .navbar-mob {
     background-color: var(--navBg);
