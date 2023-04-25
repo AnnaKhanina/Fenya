@@ -1,50 +1,51 @@
-import { FooterWrapper, FooterContainer, FooterTop, FooterLinks, FooterLinksItem, FooterSocialList, FooterSocialListItem, FooterRightsContainer } from "../Footer/Footer.styled";
 import { Link } from "react-router-dom";
-import { Container } from "../App/App.styled";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faViber, faTelegram } from "@fortawesome/free-brands-svg-icons";
+import  "../Container/Container.css";
+import "../Footer/Footer.css"
+import * as FaIcons from "react-icons/fa"; 
 
 const Footer = () => {
-    return (       
-        <FooterWrapper>
-            <Container>
-                <FooterContainer>
-                    <FooterTop>
-                        <FooterLinks>
-                            <FooterLinksItem>
-                                <Link to="/about">Про нас</Link>
-                            </FooterLinksItem>
-                            <FooterLinksItem>
-                                <Link to="/сooperation">Співробітництво</Link>
-                            </FooterLinksItem>  
-                            <FooterLinksItem>
-                                <Link to="/social">Ми в соцмережі
-                                    <FooterSocialList>
-                                        <FooterSocialListItem>
-                                            <FontAwesomeIcon icon={faInstagram} />
-                                        </FooterSocialListItem>
-                                        <FooterSocialListItem>
-                                            <FontAwesomeIcon icon={faViber} />
-                                        </FooterSocialListItem>
-                                        <FooterSocialListItem>
-                                            <FontAwesomeIcon icon={faTelegram} />
-                                        </FooterSocialListItem>
-                                    </FooterSocialList>                
-                                </Link>  
-                            </FooterLinksItem> 
-                            <FooterLinksItem>
-                                <Link to="/blog">Lady on the Like</Link>
-                            </FooterLinksItem>                                                
-                        </FooterLinks>
-                    </FooterTop>
-                </FooterContainer>                
-                <div>
-                    <FooterRightsContainer>
-                        <p>&copy; Fenya</p>
-                    </FooterRightsContainer>
-                </div> 
-            </Container>                                  
-        </FooterWrapper >  
+    return (  
+        <IconContext.Provider value={{ color: "#0a0a0a" }}>     
+            <footer className="footer-wrapper">
+                <div className="container">
+                    <div className="footer-container">
+                        <div className="footer-top">
+                            <ul className="footer-list">
+                                <li className="footer-list-item">
+                                    <Link to="/about">Про нас</Link>
+                                </li>
+                                <li className="footer-list-item">
+                                    <Link to="/сooperation">Співробітництво</Link>
+                                </li>  
+                                <li className="footer-list-item">
+                                    <Link to="/social" className="social-links">Ми в соцмережі
+                                        <ul className="social-list">
+                                            <li className="social-list-item">
+                                                <FaIcons.faInstagram />
+                                            </li>
+                                            <li className="social-list-item">
+                                                <FaIcons.faViber />
+                                            </li>
+                                            <li className="social-list-item">
+                                                <FaIcons.faTelegram />
+                                            </li>
+                                        </ul>                
+                                    </Link>  
+                                </li> 
+                                <li className="footer-list-item">
+                                    <Link to="/blog" className="social-links">Lady on the Like</Link>
+                                </li>                                                
+                            </ul>
+                        </div>
+                    </div>                
+                    <div>
+                        <div className="footer-rights">
+                            <p>&copy; Fenya</p>
+                        </div>
+                    </div> 
+                </div>                                  
+            </footer > 
+        </IconContext.Provider> 
     )
 };
 

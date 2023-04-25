@@ -1,18 +1,12 @@
-import styled from "styled-components";
-import { NavLink } from "react-router-dom";
-
-export const FooterWrapper  = styled.footer` 
+.footer-wrapper {
     gap: 12px;
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    @media (max-width: 767px) {
-        display:none;
-      } 
-`;
+}
 
-export const FooterContainer = styled.div`
+.footer-container {
     display: flex;
     align-items: center;  
     justify-content: center;
@@ -21,23 +15,25 @@ export const FooterContainer = styled.div`
     margin-right: auto;
     padding: auto; 
     border-top: 1px solid #ececec; 
-`;
+}  
 
-export const FooterTop = styled.div`
+.footer-top {
     display: flex;
     justify-content: space-around;
     align-items: baseline;    
-`;
+}    
 
-export const FooterLinks = styled.ul`
+ .footer-list {
     display: flex;
     list-style: none;
     align-items: center;
-`;
+ } 
 
-export const FooterLinksItem = styled.li`
-    padding-left: 24px;    
-    > a {
+ .footer-list-item {
+    padding-left: 24px; 
+ }
+    
+ .social-links {
     text-decoration: none;
     color: black;
     font-family: "Raleway";
@@ -47,27 +43,23 @@ export const FooterLinksItem = styled.li`
     line-height: 21px;
     display: flex;
     align-items: center;
-    }
-`;
 
-export const Link = styled(NavLink)`
-  border-radius: 8px; 
-  background: #333;  
-`;
+    border-radius: 8px; 
+    background: #333; 
+ }   
 
-export const FooterSocialList = styled.ul`
+.social-list {
     display: flex;
     align-items: center;
     list-style: none;
     flex-direction: row;
-`;
-
-export const FooterSocialListItem = styled.li`
+}
+   
+.social-list {
     padding-left: 10px;
-`;
+}
 
-
-export const FooterRightsContainer = styled.div`
+.footer-rights {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -76,5 +68,12 @@ export const FooterRightsContainer = styled.div`
     color: gray;
     width: 100%;
     margin-left: auto;
-    margin-right: auto;    
-`;
+    margin-right: auto; 
+}
+
+@media (max-width: 767px) {
+    .footer-wrapper {
+        display:none;
+    }    
+} 
+   
