@@ -1,10 +1,10 @@
-import { AboutUsScreenStyled, AboutUsScreenTitle } from "../AboutUsScreen/AboutUsScreen.styled";
+import  "../AboutUsScreen/AboutUsScreen.css";
 
 const AboutUsScreen = () => {
     return (
-        <AboutUsScreenStyled>
-            <AboutUsScreenTitle>Про нас</AboutUsScreenTitle>
-        </AboutUsScreenStyled>
+        <main className="aboutus-screen">
+            <h2 className="aboutus-screen-title">Про нас</h2>
+        </main>
     );
 };
 

@@ -16,13 +16,6 @@
     }
 }
 
-@media(min-width: 320px) and (max-width: 480px) {
-    .container {
-      padding-left: 8px;
-      padding-right: 8px;
-    }
-}
-
 @media(min-width: 768px) {
     .container {
         width: 768px;

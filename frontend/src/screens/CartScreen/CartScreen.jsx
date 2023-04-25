@@ -1,10 +1,10 @@
-import { CartScreenStyled, CartScreenTitle } from "../CartScreen/CartScreen.styled";
+import  "../CartScreen/CartScreen.css";
 
 const CartScreen = () => {
     return (
-        <CartScreenStyled>
-            <CartScreenTitle>Кошик</CartScreenTitle>
-        </CartScreenStyled>
+            <main className="cart-screen">
+                <h2 className="cart-screen-title">Кошик</h2>
+            </main>
     );
 };
 

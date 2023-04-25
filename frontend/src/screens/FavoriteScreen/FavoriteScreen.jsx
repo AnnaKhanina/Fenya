@@ -1,10 +1,10 @@
-import { FavoriteScreenStyled, FavoriteScreenTitle } from "../FavoriteScreen/FavoriteScreen.styled";
+import  "../FavoriteScreen/FavoriteScreen.css";
 
 const FavoriteScreen = () => {
     return (
-        <FavoriteScreenStyled>
-            <FavoriteScreenTitle>Бажане</FavoriteScreenTitle>
-        </FavoriteScreenStyled>
+        <main className="favorite-screen">
+            <h2 className="favorite-screen-title">Бажане</h2>
+        </main>
     );
 };
 

@@ -1,7 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 // import { useState } from "react";
-
-import { Container } from "../App/App.styled";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
@@ -28,7 +26,7 @@ const App = () => {
   // const [ sideToggle, setSideToggle ] = useState(false);
 
   return (
-     <Container>
+     <>
       <Header />
       {/* <Header click={() => setSideToggle(true)}/>        */}
       {/* <SideDrawer show={sideToggle} click={() => setSideToggle(false)} />  
@@ -50,7 +48,7 @@ const App = () => {
           <Route path="*" element={<NotFoundScreen />} />        
       </Routes>
      <Footer />     
-   </Container>   
+   </>   
   ); 
 };
 

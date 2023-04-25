@@ -1,10 +1,10 @@
-import { ContactsScreenStyled, ContactsScreenTitle } from "../ContactsScreen/ContactsSreen.styled";
+import  "../ContactsScreen/ContactsSreen.css";
 
 const ContactsScreen = () => {
     return (
-        <ContactsScreenStyled>
-            <ContactsScreenTitle>Контакти</ContactsScreenTitle>
-        </ContactsScreenStyled>
+        <main className="contacts-screen">
+        <h2 className="contacts-screen-title">Контакти</h2>
+    </main>
     );
 };
 

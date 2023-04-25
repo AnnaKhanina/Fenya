@@ -1,10 +1,10 @@
-import { CooperationScreenStyled, CooperationScreenTitle } from "../CooperationScreen/CooperationScreen.styled";
+import "../CooperationScreen/CooperationScreen.css";
 
 const CooperationScreen = () => {
     return (
-        <CooperationScreenStyled>
-            <CooperationScreenTitle>Співробітництво</CooperationScreenTitle>
-        </CooperationScreenStyled>
+        <main className="cooperation-screen">
+            <h2 className="cooperation-screen-title">Співробітництво</h2>
+        </main>
     );
 };
 

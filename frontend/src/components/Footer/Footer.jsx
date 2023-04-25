@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import  "../Container/Container.css";
-import "../Footer/Footer.css"
+import "../Footer/Footer.css";
+import { IconContext } from "react-icons";
 import * as FaIcons from "react-icons/fa"; 
 
 const Footer = () => {
     return (  
         <IconContext.Provider value={{ color: "#0a0a0a" }}>     
             <footer className="footer-wrapper">
-                <div className="container">
+                <>
                     <div className="footer-container">
                         <div className="footer-top">
                             <ul className="footer-list">
@@ -21,13 +21,13 @@ const Footer = () => {
                                     <Link to="/social" className="social-links">Ми в соцмережі
                                         <ul className="social-list">
                                             <li className="social-list-item">
-                                                <FaIcons.faInstagram />
+                                                <FaIcons.FaInstagram />
                                             </li>
                                             <li className="social-list-item">
-                                                <FaIcons.faViber />
+                                                <FaIcons.FaViber />
                                             </li>
                                             <li className="social-list-item">
-                                                <FaIcons.faTelegram />
+                                                <FaIcons.FaTelegram />
                                             </li>
                                         </ul>                
                                     </Link>  
@@ -43,7 +43,7 @@ const Footer = () => {
                             <p>&copy; Fenya</p>
                         </div>
                     </div> 
-                </div>                                  
+                    </>                                 
             </footer > 
         </IconContext.Provider> 
     )
