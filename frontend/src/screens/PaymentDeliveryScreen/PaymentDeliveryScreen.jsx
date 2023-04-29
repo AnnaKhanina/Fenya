@@ -1,10 +1,10 @@
-import { PaymentDeliveryScreenStyled,PaymentDeliveryScreenTitle } from "./PaymentDeliveryScreen.styled";
+import "./PaymentDeliveryScreen.css";
 
 const PaymentDeliveryScreen = () => {
     return (
-        <PaymentDeliveryScreenStyled>
-            <PaymentDeliveryScreenTitle>Оплата і доставка</PaymentDeliveryScreenTitle>
-        </PaymentDeliveryScreenStyled>
+           <main className="payment-delivery-screen">
+                <h2 className="payment-delivery-screen-title">Оплата і доставка</h2>
+            </main>
     );
 };
 

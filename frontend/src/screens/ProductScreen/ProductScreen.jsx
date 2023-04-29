@@ -1,10 +1,10 @@
-import { ProductScreenStyled, ProductScreenTitle } from "../ProductScreen/ProductScreen.styled";
+import "../ProductScreen/ProductScreen.css";
 
 const ProductScreen = () => {
     return (
-        <ProductScreenStyled>
-            <ProductScreenTitle>Товари</ProductScreenTitle>
-        </ProductScreenStyled>
+        <main className="product-screen">
+            <h2 className="product-screen-title">Товари</h2>
+        </main>
     );
 };
 

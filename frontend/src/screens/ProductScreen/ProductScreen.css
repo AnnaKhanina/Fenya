@@ -1,9 +1,7 @@
-import styled from "styled-components";
+.product-screen {
+    text-align: "center"; 
+} 
 
-export const ProductScreenStyled = styled.main`
-
-`;
-
-export const ProductScreenTitle = styled.h1`
-
-`;
+.product-screen-title {
+    font-size: 64px;
+}

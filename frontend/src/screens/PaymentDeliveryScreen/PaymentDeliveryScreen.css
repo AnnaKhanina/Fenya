@@ -1,12 +1,7 @@
-import styled from "styled-components";
+.payment-delivery-screen {
+    text-align: "center"; 
+}
 
-export const PaymentDeliveryScreenStyled = styled.main`
-    textAlign: "center"; 
-`;
-
-export const PaymentDeliveryScreenTitle  = styled.h2`
-    fontSize: 64;
-`;
-
-export const PaymentDeliveryScreenText  = styled.p`
-`;
+.payment-delivery-screen-title {
+    font-size: 64px;
+}

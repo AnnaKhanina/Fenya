@@ -1,11 +1,11 @@
-import { NotFoundMain, NotFoundTitle, NotFoundText } from "../NotFoundScreen/NotFoundScreen.styled";
+import  "../NotFoundScreen/NotFoundScreen.css";
 
 const NotFound = () => {
     return ( 
-        <NotFoundMain>
-            <NotFoundTitle>404</NotFoundTitle>
-                <NotFoundText>Sorry, we couldn't find that page</NotFoundText>
-        </NotFoundMain>
+        <main className="notfound">
+            <h2 className="notfound-title">404</h2>
+                <p className="notfound-text">Sorry, we couldn't find that page</p>
+        </main>
     );
 };
 

@@ -1,12 +1,11 @@
-import styled from "styled-components";
+.notfound {
+    text-align: "center"; 
+}
 
-export const NotFoundMain = styled.main`
-    textAlign: "center"; 
-`;
+.notfound-title {
+    font-size: 64px;
+}
 
-export const NotFoundTitle  = styled.b`
-    fontSize: 64;
-`;
-
-export const NotFoundText  = styled.p`
-`;
+.notfound-text {
+    font-size: 32px;
+}
