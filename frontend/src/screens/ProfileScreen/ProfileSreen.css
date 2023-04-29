@@ -1,9 +1,7 @@
-import styled from "styled-components";
+.profile-screen {
+    text-align: "center";
+}
 
-export const ProfileScreenStyled = styled.main`
-
-`;
-
-export const ProfileScreenTitle = styled.h1`
-
-`;
+.profile-screen-title {
+    font-size: 64px;
+}

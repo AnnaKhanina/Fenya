@@ -1,10 +1,10 @@
-import { SocialScreenStyled, SocialScreenTitle } from "../SocialScreen/SocialScreen.styled";
+import "../SocialScreen/SocialScreen.css";
 
 const SocialScreen = () => {
     return (
-        <SocialScreenStyled>
-            <SocialScreenTitle>Ми в соцмережі</SocialScreenTitle>
-        </SocialScreenStyled>
+        <main className="social-screen">
+        <h2 className="social-screen-title">Ми в соцмережі</h2>
+    </main>
     );
 };
 

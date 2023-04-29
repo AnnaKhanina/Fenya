@@ -1,10 +1,10 @@
-import { ProfileScreenStyled, ProfileScreenTitle } from "../ProfileScreen/ProfileSreen.styled";
+import  "../ProfileScreen/ProfileSreen.css";
 
 const ProfileScreen = () => {
     return (
-        <ProfileScreenStyled>
-            <ProfileScreenTitle>Особистий кабінет</ProfileScreenTitle>
-        </ProfileScreenStyled>
+        <main className="profile-screen">
+        <h2 className="profile-screen-title">Особистий кабінет</h2>
+    </main>
     );
 };
 

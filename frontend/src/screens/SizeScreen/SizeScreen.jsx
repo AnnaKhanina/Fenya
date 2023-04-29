@@ -1,10 +1,10 @@
-import { SizeScreenStyled, SizeScreenTitle } from "../SizeScreen/SizeScreen.styled";
+import "../SizeScreen/SizeScreen.css";
 
 const SizeScreen = () => {
     return (
-        <SizeScreenStyled>
-            <SizeScreenTitle>Розмірна сітка</SizeScreenTitle>
-        </SizeScreenStyled>
+        <main className="size-screen">
+            <h2 className="size-screen-title">Розмірна сітка</h2>
+        </main>
     );
 };
 

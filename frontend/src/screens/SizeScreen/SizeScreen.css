@@ -1,9 +1,7 @@
-import styled from "styled-components";
+.size-screen {
+    text-align: "center"; 
+}
 
-export const SizeScreenStyled = styled.main`
-
-`;
-
-export const SizeScreenTitle = styled.h1`
-
-`;
+.size-screen-title {
+    font-size: 64px;
+}

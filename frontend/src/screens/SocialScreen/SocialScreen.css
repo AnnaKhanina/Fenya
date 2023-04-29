@@ -1,11 +1,7 @@
-import styled from "styled-components";
+.social-screen {
+    text-align: "center"; 
+}
 
-export const SocialScreenStyled = styled.main`
-    textAlign: "center"; 
-`;
-
-export const SocialScreenTitle  = styled.h2`
-    fontSize: 64;
-`;
-
-export const SocialText  = styled.pSocial
+.social-screen-title {
+    font-size: 64px;
+}
