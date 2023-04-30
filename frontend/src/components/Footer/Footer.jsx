@@ -5,20 +5,20 @@ import * as FaIcons from "react-icons/fa";
 
 const Footer = () => {
     return (  
-        <IconContext.Provider value={{ color: "#0a0a0a" }}>     
+        <IconContext.Provider value={{ color: "#fff" }}>     
             <footer className="footer-wrapper">
-                <>
+               
                     <div className="footer-container">
                         <div className="footer-top">
                             <ul className="footer-list">
                                 <li className="footer-list-item">
-                                    <Link to="/about">Про нас</Link>
+                                    <Link to="/about" className="footer-links">Про нас</Link>
                                 </li>
                                 <li className="footer-list-item">
-                                    <Link to="/сooperation">Співробітництво</Link>
+                                    <Link to="/сooperation" className="footer-links">Співробітництво</Link>
                                 </li>  
                                 <li className="footer-list-item">
-                                    <Link to="/social" className="social-links">Ми в соцмережі
+                                    <Link to="/social" className="footer-links">Ми в соцмережі
                                         <ul className="social-list">
                                             <li className="social-list-item">
                                                 <FaIcons.FaInstagram />
@@ -33,7 +33,7 @@ const Footer = () => {
                                     </Link>  
                                 </li> 
                                 <li className="footer-list-item">
-                                    <Link to="/blog" className="social-links">Lady on the Like</Link>
+                                    <Link to="/blog" className="footer-links">Lady on the Like</Link>
                                 </li>                                                
                             </ul>
                         </div>
@@ -43,7 +43,7 @@ const Footer = () => {
                             <p>&copy; Fenya</p>
                         </div>
                     </div> 
-                    </>                                 
+                                                   
             </footer > 
         </IconContext.Provider> 
     )
