@@ -60,13 +60,13 @@ const Header = () => {
                             <Link to="#" className="menu-bars">
                                 <FaIcons.FaBars onClick={showSidebar} />
                             </Link>
-                            </div>
-                            <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+                        </div>
+                        <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
                             <ul className="nav-menu-items" onClick={showSidebar}>
                                 <li className="navbar-toggle">
-                                <Link to="#" className="menu-bars">
-                                    <AiIcons.AiOutlineClose />
-                                </Link>
+                                    <Link to="#" className="menu-bars">
+                                        <AiIcons.AiOutlineClose />
+                                    </Link>
                                 </li>
 
                                 {SidebarData.map((item, index) => {
@@ -80,7 +80,7 @@ const Header = () => {
                                 );
                                 })}
                             </ul>
-                        </nav>
+                    </nav>
                 </div>
             </IconContext.Provider>
         </>

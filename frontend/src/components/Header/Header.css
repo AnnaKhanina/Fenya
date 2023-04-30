@@ -73,10 +73,6 @@
   .icons-list-item:focus {
     color: var(--navHover);
   }  
- 
-  /* .icons-list-item:hover {
-    color: #FFA4A4;
-  }  */
 
   .cart-logo-badge {
     display: flex;
@@ -92,13 +88,13 @@
     font-size: 16px;
   }
   
-  .navbar-mob {
+  /* .navbar-mob {
     background-color: var(--navBg);
     height: 80px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-  }
+  } */
   
   .menu-bars {
     margin-left: 2rem;
@@ -212,7 +208,11 @@
   @media (min-width: 768px) {
     .navbar-mob {
       display: none;
-    }   
+    } 
+    .navbar-links {
+      display: block;
+      white-space: nowrap;
+    }
   }
 
   @media (max-width: 768px) {
