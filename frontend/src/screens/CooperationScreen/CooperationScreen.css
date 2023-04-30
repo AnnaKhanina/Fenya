@@ -3,5 +3,18 @@
 }
 
 .cooperation-screen-title {
-    font-size: 64px;
+    font-size: 24px;
+}
+
+.cooperation-screen-text {
+    font-size: 16px;
+}
+
+@media (min-width: 767px) {
+    .cooperation-screen-title {
+        font-size: 32px;
+    }
+    .cooperation-screen-text {
+        font-size: 24px;
+    }
 }

@@ -3,5 +3,18 @@
 }
 
 .favorite-screen-title {
-    font-size: 64px;
+    font-size: 24px;
+}
+
+.favorite-screen-text {
+    font-size: 16px;
+}
+
+@media (min-width: 767px) {
+    .favorite-screen-title {
+        font-size: 32px; 
+    }
+    .favorite-screen-text {
+        font-size: 24px;
+    }
 }

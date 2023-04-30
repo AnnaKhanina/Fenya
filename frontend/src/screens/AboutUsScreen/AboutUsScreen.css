@@ -3,18 +3,18 @@
 } 
 
 .aboutus-screen-title {
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .aboutus-screen-text {
-    font-size: 24px;
+    font-size: 16px;
 }
 
 @media (min-width: 767px) {
     .aboutus-screen-title {
-        font-size: 64px;
+        font-size: 32px;
     }
     .aboutus-screen-text {
-        font-size: 32px;
+        font-size: 24px;
     }
 }

@@ -3,9 +3,18 @@
 }
 
 .notfound-title {
-    font-size: 64px;
+    font-size: 24px;
 }
 
 .notfound-text {
-    font-size: 32px;
+    font-size: 16px;
+}
+
+@media (min-width: 767px) {
+    .notfound-title {
+        font-size: 32px; 
+    }
+    .notfound-text {
+        font-size: 24px;
+    }
 }

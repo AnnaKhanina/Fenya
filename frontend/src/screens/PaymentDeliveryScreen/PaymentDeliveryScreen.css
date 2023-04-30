@@ -3,5 +3,18 @@
 }
 
 .payment-delivery-screen-title {
-    font-size: 64px;
+    font-size: 24px;
+}
+
+.payment-delivery-screen-text {
+    font-size: 16px;
+}
+
+@media (min-width: 767px) {
+    .payment-delivery-screen-title {
+        font-size: 32px;
+    }
+    .payment-delivery-screen-text {
+        font-size: 24px;
+    }
 }

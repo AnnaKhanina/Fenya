@@ -3,5 +3,18 @@
 }
 
 .contacts-screen-title {
-    font-size: 64px;
+    font-size: 24px;
+}
+
+.contacts-screen-text {
+    font-size: 16px;
+}
+
+@media (min-width: 767px) {
+    .contacts-screen-title {
+        font-size: 32px;
+    }
+    .contacts-screen-text {
+        font-size: 24px;
+    }
 }
