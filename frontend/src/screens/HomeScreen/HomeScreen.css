@@ -1,12 +1,20 @@
 .home-screen {
-    text-align: "center"; 
-    
+    text-align: "center";    
 }
 
 .home-screen-title {
-    font-size: 64px;
+    font-size: 32px;
 }
 
 .home-screen-text {
-    font-size: 32px;
+    font-size: 24px;
+}
+
+@media (min-width: 767px) {
+    .home-screen-title {
+        font-size: 64px;
+    }
+    .home-screen-text {
+        font-size: 32px;
+    }
 }

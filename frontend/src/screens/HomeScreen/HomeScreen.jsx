@@ -1,5 +1,5 @@
 import  "../HomeScreen/HomeScreen.css";
-import "../../components/Container/Container.css"
+import "../../components/Container/Container.css";
 
 const HomeScreen = () => {
     return (
