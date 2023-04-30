@@ -3,18 +3,18 @@
 }
 
 .home-screen-title {
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .home-screen-text {
-    font-size: 24px;
+    font-size: 16px;
 }
 
 @media (min-width: 767px) {
     .home-screen-title {
-        font-size: 64px;
+        font-size: 32px;
     }
     .home-screen-text {
-        font-size: 32px;
+        font-size: 24px;
     }
 }
