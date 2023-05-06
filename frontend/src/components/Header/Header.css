@@ -161,17 +161,13 @@
   span {
     margin-left: 16px;
   }
+ 
+ 
 
-
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 320px) and (max-width: 767px) {
     .icons-list {
       display: none;
-    }
-    .menu-bars {
-      margin-left: 1px;
-      font-size: 2rem;
-      background: none;
-    }
+    }   
   }
 
   @media (min-width: 767px) {
