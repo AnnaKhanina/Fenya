@@ -43,17 +43,19 @@ const Header = () => {
                         <ul className="icons-list">
                             <li className="icons-list-item">                                                
                                 <FaIcons.FaSearch />                     
-                            </li>                    
-                            <li className="icons-list-item">
-                                <Link to="/profile" className="icons-links"><FaIcons.FaUser/></Link>                        
-                            </li>                       
-                            <li className="icons-list-item">
-                                <Link to="/favorite" className="icons-links"><FaIcons.FaHeart /></Link>                       
-                            </li>
-                            <li className="icons-list-item">
-                            {/*<Link to="/cart" className="icons-links"><FaIcons.FaCartPlus /><span className="cart-logo-badge">0</span></Link> */}
-                                 <Link to="/cart" className="icons-links"><FaIcons.FaCartPlus /></Link> 
                             </li> 
+                            <div className="desktop-icons">
+                                <li className="icons-list-item">
+                                    <Link to="/profile" className="icons-links"><FaIcons.FaUser/></Link>                        
+                                </li>                       
+                                <li className="icons-list-item">
+                                    <Link to="/favorite" className="icons-links"><FaIcons.FaHeart /></Link>                       
+                                </li>
+                                <li className="icons-list-item">
+                                {/*<Link to="/cart" className="icons-links"><FaIcons.FaCartPlus /><span className="cart-logo-badge">0</span></Link> */}
+                                    <Link to="/cart" className="icons-links"><FaIcons.FaCartPlus /></Link> 
+                                </li> 
+                            </div>                  
                         </ul>     
                             <div className="navbar-mob">
                                 <Link to="#" className="menu-bars">

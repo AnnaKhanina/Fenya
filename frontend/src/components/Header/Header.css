@@ -165,9 +165,12 @@
  
 
   @media (min-width: 320px) and (max-width: 767px) {
-    .icons-list {
+    /* .icons-list {
       display: none;
-    }   
+    }    */
+    .desktop-icons {
+      display: none;
+    }
   }
 
   @media (min-width: 767px) {
