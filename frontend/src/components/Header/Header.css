@@ -13,13 +13,17 @@
     align-items: center;  
     padding: auto; 
     margin-left: auto;
-    margin-right: auto; 
-  
+    margin-right: auto;   
   }
 
   .navbar-logo {
     cursor: pointer; 
     padding: 0;
+  }
+
+  .logo-links {
+    list-style: none;
+    text-decoration: none;
   }
 
   .logo-title {
@@ -32,11 +36,6 @@
     line-height: 21px;   
   }
 
-  .logo-links {
-    list-style: none;
-    text-decoration: none;
-  }
-
   .navbar-list {
     display: flex;
     margin-left: auto;  
@@ -47,6 +46,15 @@
     padding-left: 2px;     
   }
 
+  .navbar-list-item{
+    padding-left: 24px;  
+    display: flex; 
+  }
+  /* .navbar-list-item:not(:last-child) {
+    padding-left: 24px;  
+    display: flex; 
+  } */
+
   .icons-list {
     display: flex;
     flex-direction: row;
@@ -56,10 +64,15 @@
     margin-right: 20px;
   }
 
-  .navbar-list-item {
-    padding-left: 24px;  
+ .icons-list-item {
+    padding-left: 14px;  
     display: flex; 
   }
+
+  /* .icons-list-item:not(:last-child) {
+    padding-left: 14px;  
+    display: flex; 
+  } */
 
   .navbar-links,
   .icons-links  {
@@ -177,6 +190,16 @@
       margin-right: 20px;
     }
   }
+ 
+  @media (max-width: 767px) {
+    .navbar-links {
+      display: none;
+    }
+  }
+
+  /* @media (min-width: 480px) and (max-width: 767px) {
+
+  } */
 
   @media (min-width: 767px) {
     .navbar {
@@ -190,6 +213,16 @@
       padding-left: 15px;
     }    
    }
+
+   @media (min-width: 768px) {
+    .navbar-mob {
+      display: none;
+    } 
+    .navbar-links {
+      display: block;
+      white-space: nowrap;
+    }
+  }
 
    @media (min-width: 1024px) {
     .navbar {
@@ -211,6 +244,9 @@
   }
 
   @media (min-width: 2560px) {
+    .navbar {
+      gap: 500px;
+    }
     .navbar-links__item {
       padding-left: 30px;
     }
@@ -220,23 +256,12 @@
     .navbar {
       gap: 1000px;
     }
-  }
-
-  @media (min-width: 768px) {
-    .navbar-mob {
-      display: none;
-    } 
-    .navbar-links {
-      display: block;
-      white-space: nowrap;
+    .navbar-links__item {
+      padding-left: 35px;
     }
   }
 
-  @media (max-width: 767px) {
-    .navbar-links {
-      display: none;
-    }
-  }
+ 
   
 
 
