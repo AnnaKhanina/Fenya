@@ -15,9 +15,12 @@ const Footer = () => {
                            </li>
                            <li className="footer-list-item">
                                <Link to="/сooperation" className="footer-links">Співробітництво</Link>
-                           </li>  
+                           </li>                           
                            <li className="footer-list-item">
-                               <Link to="/social" className="footer-links">Ми в соцмережі
+                               <Link to="/blog" className="footer-links">Lady on the Like</Link>
+                           </li>
+                           <li className="footer-list-item">
+                               <Link to="/social" className="footer-links">Соцмережі
                                    <ul className="social-list">
                                        <li className="social-list-item">
                                            <FaIcons.FaInstagram />
@@ -30,10 +33,7 @@ const Footer = () => {
                                        </li>
                                    </ul>                
                                </Link>  
-                           </li> 
-                           <li className="footer-list-item">
-                               <Link to="/blog" className="footer-links">Lady on the Like</Link>
-                           </li>                                                
+                           </li>                                                 
                        </ul>
                    </div>
                </div>                
