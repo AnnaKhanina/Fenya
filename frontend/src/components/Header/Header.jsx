@@ -39,13 +39,11 @@ const Header = () => {
                                 <Link to="/contacts" className="navbar-links">Контакти</Link>
                             </li>                        
                         </ul>
-
-                        <ul className="icons-list">
-                            <li className="icons-list-item">                                                
-                                <FaIcons.FaSearch />                     
-                            </li> 
-                            <div className="desktop-icons">
-                                <li className="icons-list-item">
+                        <span className="search">                                                
+                            <FaIcons.FaSearch />                     
+                        </span>
+                        <ul className="icons-list">                           
+                            <li className="icons-list-item">
                                     <Link to="/profile" className="icons-links"><FaIcons.FaUser/></Link>                        
                                 </li>                       
                                 <li className="icons-list-item">
@@ -54,8 +52,7 @@ const Header = () => {
                                 <li className="icons-list-item">
                                 {/*<Link to="/cart" className="icons-links"><FaIcons.FaCartPlus /><span className="cart-logo-badge">0</span></Link> */}
                                     <Link to="/cart" className="icons-links"><FaIcons.FaCartPlus /></Link> 
-                                </li> 
-                            </div>                  
+                                </li>                            
                         </ul>     
                             <div className="navbar-mob">
                                 <Link to="#" className="menu-bars">
