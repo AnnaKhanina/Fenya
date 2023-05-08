@@ -1,11 +1,9 @@
 .home-screen {
-    text-align: "center";
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;  
-    padding: auto; 
-    /* padding-left: 20px;
-    padding-right: 20px; */
+    padding: auto;   
     margin-left: auto;
     margin-right: auto; 
 }
@@ -17,13 +15,6 @@
 .home-screen-text {
     font-size: 16px;
 }
-
-/* @media (min-width: 768px) and (max-width: 1023px) {
-    .home-screen {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-} */
 
 @media (min-width: 767px) {
     
