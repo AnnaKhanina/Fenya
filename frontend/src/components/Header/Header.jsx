@@ -15,7 +15,7 @@ const Header = () => {
 
     return ( 
         <>   
-            <IconContext.Provider value={{ color: "#FFF" }}>
+            <IconContext.Provider value={{ color: "#FFF" }}>               
                 <div className="navbar">               
                     <div className="navbar-logo">                          
                             <Link to="/" end className="logo-links">
@@ -78,7 +78,7 @@ const Header = () => {
                                     })}
                                 </ul>
                         </nav>
-                    </div>                
+                    </div>               
             </IconContext.Provider>
         </>
     )

@@ -4,7 +4,7 @@ import "../../components/Container/Container.css";
 const HomeScreen = () => {
     return (
         <main className="home-screen">
-            <div className="container">
+            <div className="container main-container">
                 <h2 className="home-screen-title">Головна</h2>
                 {/* <img src="https://via.placeholder.com/960x240" alt="" /> */}
                 <p className="home-screen-text">

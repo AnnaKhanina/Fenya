@@ -1,8 +1,7 @@
 .container {
     width: 100%; 
     margin-left: 0;
-    margin-right: 0;  
-     
+    margin-right: 0;    
 }
 
 @media (min-width: 320px) {
@@ -11,18 +10,9 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-    .container {
-        padding-left: 20px;
-        padding-right: 20px;
-    }    
-}
-
 @media(min-width: 480px) {
     .container {
-        width: 480px; 
-        padding-left: 40px;
-        padding-right: 40px;
+        width: 480px;        
     }
 }
 
@@ -34,7 +24,7 @@
 
 @media(min-width: 1024px) {
     .container {
-        width: 1024px;
+        width: 1024px;     
     }
 }
 
