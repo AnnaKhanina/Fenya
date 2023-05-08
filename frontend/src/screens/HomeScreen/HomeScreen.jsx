@@ -4,7 +4,7 @@ import "../MainScreen/MainScreen.css";
 
 const HomeScreen = () => {
     return (
-        <main className="screen">
+        <main className="main-screen">
             <div className="container">
                 <h2 className="home-screen-title">Головна</h2>
                 {/* <img src="https://via.placeholder.com/960x240" alt="" /> */}

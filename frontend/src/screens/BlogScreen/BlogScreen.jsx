@@ -4,7 +4,7 @@ import "../MainScreen/MainScreen.css";
 
 const BlogScreen = () => {
     return (
-        <main className="screen">
+        <main className="main-screen">
             <div className="container">
                 <h2 className="blog-screen-title">Lady on the like!</h2>
                 <p className="blog-screen-text">

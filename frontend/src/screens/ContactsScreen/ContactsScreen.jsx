@@ -4,7 +4,7 @@ import "../MainScreen/MainScreen.css";
 
 const ContactsScreen = () => {
     return (
-        <main className="screen">
+        <main className="main-screen">
             <div className="container">
                 <h2 className="contacts-screen-title">Контакти</h2>
                 <p className="contacts-screen-text">

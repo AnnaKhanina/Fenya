@@ -4,7 +4,7 @@ import "../MainScreen/MainScreen.css";
 
 const FavoriteScreen = () => {
     return (
-        <main className="screen">
+        <main className="main-screen">
             <div className="container">
                 <h2 className="favorite-screen-title">Бажане</h2>
                 <p className="favorite-screen-text">

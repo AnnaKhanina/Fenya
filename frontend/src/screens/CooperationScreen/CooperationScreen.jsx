@@ -4,7 +4,7 @@ import "../MainScreen/MainScreen.css";
 
 const CooperationScreen = () => {
     return (
-        <main className="screen">
+        <main className="main-screen">
             <div className="container">
                 <h2 className="cooperation-screen-title">Співробітництво</h2>
                 <p className="cooperation-screen-text">

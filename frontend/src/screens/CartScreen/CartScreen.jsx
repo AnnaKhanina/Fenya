@@ -4,7 +4,7 @@ import "../MainScreen/MainScreen.css";
 
 const CartScreen = () => {
     return (
-            <main className="screen">
+            <main className="main-screen">
                 <div className="container">
                     <h2 className="cart-screen-title">Кошик</h2>
                     <p className="cart-screen-text">
