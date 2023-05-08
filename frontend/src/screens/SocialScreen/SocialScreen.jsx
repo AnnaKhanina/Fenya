@@ -1,9 +1,10 @@
 import "../SocialScreen/SocialScreen.css";
 import "../../components/Container/Container.css";
+import "../MainScreen/MainScreen.css";
 
 const SocialScreen = () => {
     return (
-        <main className="social-screen">
+        <main className="main-screen">
             <div className="container">
                 <h2 className="social-screen-title">Ми в соцмережі</h2>
                 <p className="social-screen-text">

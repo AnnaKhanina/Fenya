@@ -1,9 +1,10 @@
 import "../ProductScreen/ProductScreen.css";
 import "../../components/Container/Container.css";
+import "../MainScreen/MainScreen.css";
 
 const ProductScreen = () => {
     return (
-        <main className="product-screen">
+        <main className="main-screen">
             <div className="container">
                 <h2 className="product-screen-title">Товари</h2>
                 <p className="product-screen-text">

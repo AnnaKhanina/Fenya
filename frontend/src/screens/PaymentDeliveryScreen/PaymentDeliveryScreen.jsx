@@ -1,9 +1,10 @@
 import "./PaymentDeliveryScreen.css";
 import "../../components/Container/Container.css";
+import "../MainScreen/MainScreen.css";
 
 const PaymentDeliveryScreen = () => {
     return (
-           <main className="payment-delivery-screen">
+           <main className="main-screen">
                 <div className="container">
                     <h2 className="payment-delivery-screen-title">Оплата і доставка</h2>
                     <p className="payment-delivery-screen-text">

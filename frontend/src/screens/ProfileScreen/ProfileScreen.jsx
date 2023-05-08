@@ -1,9 +1,10 @@
 import  "../ProfileScreen/ProfileSreen.css";
 import "../../components/Container/Container.css";
+import "../MainScreen/MainScreen.css";
 
 const ProfileScreen = () => {
     return (
-        <main className="profile-screen">
+        <main className="main-screen">
             <div className="container">
                 <h2 className="profile-screen-title">Особистий кабінет</h2>
                 <p className="profile-screen-text">

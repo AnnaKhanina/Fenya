@@ -1,9 +1,10 @@
 import  "../FavoriteScreen/FavoriteScreen.css";
 import "../../components/Container/Container.css";
+import "../MainScreen/MainScreen.css";
 
 const FavoriteScreen = () => {
     return (
-        <main className="favorite-screen">
+        <main className="screen">
             <div className="container">
                 <h2 className="favorite-screen-title">Бажане</h2>
                 <p className="favorite-screen-text">

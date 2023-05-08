@@ -1,9 +1,10 @@
 import  "../CartScreen/CartScreen.css";
 import "../../components/Container/Container.css";
+import "../MainScreen/MainScreen.css";
 
 const CartScreen = () => {
     return (
-            <main className="cart-screen">
+            <main className="screen">
                 <div className="container">
                     <h2 className="cart-screen-title">Кошик</h2>
                     <p className="cart-screen-text">

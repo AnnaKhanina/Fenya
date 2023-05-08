@@ -1,9 +1,10 @@
 import  "../NotFoundScreen/NotFoundScreen.css";
 import "../../components/Container/Container.css";
+import "../MainScreen/MainScreen.css";
 
 const NotFound = () => {
     return ( 
-        <main className="notfound">
+        <main className="main-screen">
             <div className="container">
                 <h2 className="notfound-title">404</h2>
                 <p className="notfound-text">Sorry, we couldn't find that page</p>
