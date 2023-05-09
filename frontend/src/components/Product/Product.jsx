@@ -1,4 +1,4 @@
-import "../Product.css";
+import "./Product.css";
 import {Link} from "react-router-dom";
 
 const Product = () => {
