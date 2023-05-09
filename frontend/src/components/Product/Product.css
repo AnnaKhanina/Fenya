@@ -1,0 +1,54 @@
+:root {
+    --infoBtn: #171717;
+    --infoBtnBg: #fff;
+  }
+
+.product {
+    width: 300px;
+    padding: 1rem;
+    background: var(--infoBtnBg);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    margin: 8px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product > img {
+    height: 170px;
+    border-radius: 8px;
+}
+
+.product-info > p {
+    margin-bottom: 8px;
+}
+
+.info-price {
+    font-weight: bold;
+}
+
+.info-name {
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+.info-description {
+    font-size: 0.8rem;
+}
+
+.info-button {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    color: var(--infoBtn);
+    background: var(--infoBtnBg);
+    padding: 8px 16px;
+    border: 1px solid var(--infoBtn);
+    font-size: 1rem;
+}
+
+.info-button:hover {
+    color: var(--infoBtnBg);
+    background: var(--infoBtn);
+}

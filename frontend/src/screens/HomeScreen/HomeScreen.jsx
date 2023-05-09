@@ -12,7 +12,14 @@ const HomeScreen = () => {
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                     laboriosam placeat incidunt rem illum animi nemo quibusdam quia
                     voluptatum voluptate.
-                </p>    
+                </p>
+                <div className="homescreen-products">
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                </div>    
             </div>
         </main>
     );
