@@ -6,8 +6,8 @@ const PaymentDeliveryScreen = () => {
     return (
            <main className="main-screen">
                 <div className="container">
-                    <h2 className="payment-delivery-screen-title">Оплата і доставка</h2>
-                    <p className="payment-delivery-screen-text">
+                    <h2 className="screen-title">Оплата і доставка</h2>
+                    <p className="delivery-screen-text">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                     laboriosam placeat incidunt rem illum animi nemo quibusdam quia
                     voluptatum voluptate.

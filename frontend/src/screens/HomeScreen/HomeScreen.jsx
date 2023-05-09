@@ -6,9 +6,9 @@ const HomeScreen = () => {
     return (
         <main className="main-screen">
             <div className="container">
-                <h2 className="home-screen-title">Головна</h2>
+                <h2 className="screen-title">Головна</h2>
                 {/* <img src="https://via.placeholder.com/960x240" alt="" /> */}
-                <p className="home-screen-text">
+                <p className="screen-text">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                     laboriosam placeat incidunt rem illum animi nemo quibusdam quia
                     voluptatum voluptate.

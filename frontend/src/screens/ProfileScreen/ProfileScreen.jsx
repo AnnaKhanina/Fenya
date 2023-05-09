@@ -6,8 +6,8 @@ const ProfileScreen = () => {
     return (
         <main className="main-screen">
             <div className="container">
-                <h2 className="profile-screen-title">Особистий кабінет</h2>
-                <p className="profile-screen-text">
+                <h2 className="screen-title">Особистий кабінет</h2>
+                <p className="screen-text">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                         laboriosam placeat incidunt rem illum animi nemo quibusdam quia
                         voluptatum voluptate.

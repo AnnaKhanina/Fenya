@@ -6,8 +6,8 @@ const AboutUsScreen = () => {
     return (
         <main className="main-screen">
             <div className="container">
-                <h2 className="aboutus-screen-title">Про нас</h2>
-                <p className="aboutus-screen-text">
+                <h2 className="screen-title">Про нас</h2>
+                <p className="screen-text">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                     laboriosam placeat incidunt rem illum animi nemo quibusdam quia
                     voluptatum voluptate.

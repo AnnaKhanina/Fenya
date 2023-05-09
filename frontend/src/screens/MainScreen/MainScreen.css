@@ -1,3 +1,8 @@
+:root {
+  --screen-title: #212121;
+  --screen-text: #757575;
+}
+
 .main-screen {
     text-align: center;
     display: flex;
@@ -5,5 +10,37 @@
     align-items: center;  
     padding: auto;   
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;  
+}
+
+.screen-title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+    color: var(--screen-title);
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+
+.screen-text {   
+    margin-top: 0;
+    color: var(--screen-text);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: .03em;
+}
+
+@media (min-width: 768px) {
+    .screen-title {
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 50px;
+        display: block;
+        align-items: flex-start;
+    }
+    .screen-text {
+        font-weight: 500;
+    }
 }

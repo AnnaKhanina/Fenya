@@ -6,8 +6,8 @@ const CooperationScreen = () => {
     return (
         <main className="main-screen">
             <div className="container">
-                <h2 className="cooperation-screen-title">Співробітництво</h2>
-                <p className="cooperation-screen-text">
+                <h2 className="screen-title">Співробітництво</h2>
+                <p className="screen-text">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                     laboriosam placeat incidunt rem illum animi nemo quibusdam quia
                     voluptatum voluptate.
