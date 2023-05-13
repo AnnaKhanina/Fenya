@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-// import { useState } from "react";
+
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
@@ -17,21 +17,10 @@ import CooperationScreen from "../../screens/CooperationScreen/CooperationScreen
 import SocialScreen from "../../screens/SocialScreen/SocialScreen";
 import BlogScreen from "../../screens/BlogScreen/BlogScreen";
 
-// import SideDrawer from "../SideDrawer/SideDrawer";
-// import Backdrop from "../Backdrop/Backdrop";
-
-
 const App = () => {
-
-  // const [ sideToggle, setSideToggle ] = useState(false);
-
   return (
-     <>
-      <Header />
-      {/* <Header click={() => setSideToggle(true)}/>        */}
-      {/* <SideDrawer show={sideToggle} click={() => setSideToggle(false)} />  
-      <Backdrop show={sideToggle} click={() => setSideToggle(false)} /> */}
-       
+    <>
+      <Header />      
       <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="/products" element={<ProductScreen />} />
@@ -46,9 +35,9 @@ const App = () => {
           <Route path="/social" element={<SocialScreen />} /> 
           <Route path="/blog" element={<BlogScreen />} /> 
           <Route path="*" element={<NotFoundScreen />} />        
-      </Routes>
-     <Footer />     
-   </>   
+      </Routes>          
+      <Footer />   
+    </>
   ); 
 };
 

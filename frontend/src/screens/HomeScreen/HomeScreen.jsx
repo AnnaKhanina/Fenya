@@ -15,7 +15,11 @@ const HomeScreen = () => {
                     voluptatum voluptate.
                 </p>
                 <div className="homescreen-products">
-                    <Product />                 
+                    <Product /> 
+                    <Product />   
+                    <Product /> 
+                    <Product /> 
+                    <Product />                         
                 </div>    
             </div>
         </main>
