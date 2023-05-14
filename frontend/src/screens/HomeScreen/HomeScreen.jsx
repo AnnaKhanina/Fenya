@@ -15,7 +15,7 @@ const HomeScreen = () => {
                     voluptatum voluptate.
                 </p>
                 <div className="homescreen-products">
-                <h3 className="screen-title">Останні надходження</h3>
+                
                     <Product /> 
                     <Product />   
                     <Product /> 
