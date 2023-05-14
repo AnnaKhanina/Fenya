@@ -4,13 +4,15 @@
   }
   
   .footer-wrapper {
-    gap: 12px;
-    position: absolute;
+    gap: 12px;   
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: var(--footBg); 
-    
+    max-height: 20vh;
+    background-color: var(--footBg);    
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
 }
 
 .footer-top {
@@ -22,6 +24,14 @@
  .footer-list {
     display: flex;
     list-style: none; 
+    align-items: center;
+    color: #fff;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
     align-items: center;
  }  
 

@@ -1,12 +1,12 @@
 .homescreen-products {
-    /* display: flex;
+    display: flex;
     flex-wrap: wrap;
-    gap: 5px; */
-    display: grid;
+    gap: 5px;
+    /* display: grid; */
     /* grid-template-columns: repeat(4, 1fr); */
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+/* @media (min-width: 320px) and (max-width: 767px) {
     .homescreen-products {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -22,4 +22,4 @@
     .homescreen-products {
         grid-template-columns: repeat(4, 1fr);
     }
-}
+} */

@@ -14,7 +14,7 @@ const Header = () => {
     const showSidebar = () => setSidebar(!sidebar);
 
     return ( 
-        <>   
+        <header>   
             <IconContext.Provider value={{ color: "#FFF" }}>               
                 <div className="navbar">               
                     <div className="navbar-logo">                          
@@ -80,7 +80,7 @@ const Header = () => {
                         </nav>
                     </div>               
             </IconContext.Provider>
-        </>
+        </header>
     )
 };
 

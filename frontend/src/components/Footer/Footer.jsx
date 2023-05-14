@@ -7,7 +7,7 @@ const Footer = () => {
     return (  
         <IconContext.Provider value={{ color: "#fff" }}>     
             <footer className="footer-wrapper">               
-               <div className="footer-container">
+               <div className="footer-container">              
                    <div className="footer-top">
                        <ul className="footer-list">
                            <li className="footer-list-item">
@@ -33,7 +33,10 @@ const Footer = () => {
                                        </li>
                                    </ul>                
                                </Link>  
-                           </li>                                                 
+                           </li>
+                           {/* <li className="footer-list-item"> 
+                            &copy; Fenya                           
+                            </li>                                                  */}
                        </ul>
                    </div>
                </div>                

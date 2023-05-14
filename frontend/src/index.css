@@ -9,9 +9,10 @@ h6 {
 }
 
 * {
-    margin: 0;
+    margin-top: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100vh;
   }
   
   html,
@@ -20,23 +21,9 @@ h6 {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Raleway', sans-serif;
     background: #f5f4fa;
-    height: 100%;
-  }
-  
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-  }
-
-  .main {    
-	  flex: 1 0 auto;
-  }
-
-  .footer {
-    flex: 0 0 auto;
-  }
-
+         
+  } 
+ 
   img {
     display: block;
     max-width: 100%;

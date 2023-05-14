@@ -18,8 +18,7 @@ const HomeScreen = () => {
                     <Product /> 
                     <Product />   
                     <Product /> 
-                    <Product /> 
-                    <Product />                         
+                    <Product />                                         
                 </div>    
             </div>
         </main>

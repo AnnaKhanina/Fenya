@@ -11,7 +11,8 @@
     padding: auto;   
     margin-left: auto;
     margin-right: auto; 
-   
+    min-height: 80vh;   
+   overflow-y: scroll;
 }
 
 .screen-title {
