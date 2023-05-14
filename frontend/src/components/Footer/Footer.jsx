@@ -33,10 +33,7 @@ const Footer = () => {
                                        </li>
                                    </ul>                
                                </Link>  
-                           </li>
-                           {/* <li className="footer-list-item"> 
-                            &copy; Fenya                           
-                            </li>                                                  */}
+                           </li>                          
                        </ul>
                    </div>
                </div>                

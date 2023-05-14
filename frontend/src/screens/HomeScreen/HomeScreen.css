@@ -2,18 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 5px;  
+    margin-bottom: 20px;
 }
 
-@media (min-width: 768px) and (max-width: 1023px)  {
-    .homescreen-products {
-        width: calc(100% / 3);
-        align-items: baseline;
-    } 
-}
-
-@media (min-width: 1024px) {
-    .homescreen-products {
-        width: calc(100% / 4);
-        align-items: baseline;
-    } 
-}

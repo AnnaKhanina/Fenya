@@ -47,3 +47,9 @@
         font-weight: 500;
     }
 }
+
+@media (min-width: 1440px) {
+    .main-screen {
+        align-items: flex-start;
+    }
+}
