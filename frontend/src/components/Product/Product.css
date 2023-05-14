@@ -52,3 +52,15 @@
     color: var(--infoBtnBg);
     background: var(--infoBtn);
 }
+
+@media (min-width: 768px) {
+    .product {
+        width: 330px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .product {
+        width: 360px;
+    }
+}
