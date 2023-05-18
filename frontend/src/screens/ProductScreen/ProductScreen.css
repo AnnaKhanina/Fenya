@@ -1,3 +1,9 @@
+:root {   
+    --prodBgInfo: #fff;
+    --colorBtn: #f4f4f4;
+    --bgBtn: #171717;
+  }
+
 .productscreen {
     max-width: 1440px;
     margin: 1rem auto;
@@ -8,3 +14,94 @@
     display: flex;
     flex: 0.8;
 }
+
+.left-image {
+    margin: 1rem;
+    flex: 0.6;
+}
+
+.left-info {
+    margin: 1rem;
+    flex: 0.4;
+    background: var(--prodBgInfo);
+    height: fit-content;
+    font-size: 0.9rem;
+}
+
+.left-name {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.left-info > p,
+.right-info > p {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.left-info > p:last-child,
+.right-info > p:last-child {
+    border: none;
+}
+
+.productscreen-right {
+    flex: 0.2;
+}
+
+.right-info {
+    width: 250px;
+    margin: 1rem;
+    background: var(--prodBgInfo);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.right-info p {
+    padding: 1rem;
+    font-size: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; 
+}
+
+.right-info p > button {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 16px;
+    background: var(--bgBtn);
+    color: var(--colorBtn);
+    border: 1px solid var(--prodBgInfo);;
+    cursor: pointer;
+}
+
+.right-info select {
+    padding: 10px 16px;
+}
+
+@media (min-width: 768px) {
+    .productscreen {       
+        flex-direction: column;
+    }
+    .productscreen-left {
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .left-image {
+        flex: 1;
+    }
+
+    .left-info {
+        flex: 1;
+    }
+
+    .productscreen-right {
+        flex: 1;
+        padding: 1rem;
+    }
+
+    .right-info {
+        width: 100%;
+        margin: 0;
+    }
+}
+
