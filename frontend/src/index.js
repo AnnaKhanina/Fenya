@@ -13,7 +13,7 @@ const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <BrowserRouter basename="/Fenya/">
+    <BrowserRouter basename="/Fenya">
       <App />
     </BrowserRouter>   
   </StrictMode>
