@@ -7,3 +7,4 @@ const CartItem = () => {
         </div>
     )
 }
+export default CartItem;

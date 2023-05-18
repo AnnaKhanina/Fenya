@@ -1,7 +1,7 @@
 import  "../CartScreen/CartScreen.css";
 import "../../components/Container/Container.css";
 import "../MainScreen/MainScreen.css";
-import "../../components/CartItem/CartItem";
+import CartItem from "../../components/CartItem/CartItem";
 
 const CartScreen = () => {
     return (
