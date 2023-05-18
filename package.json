@@ -19,8 +19,7 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AnnaKhanina/Fenya/issues"
-  },
-  "homepage": "https://github.com/AnnaKhanina/Fenya",
+  }, 
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
