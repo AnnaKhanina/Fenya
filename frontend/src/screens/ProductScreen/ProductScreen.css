@@ -2,22 +2,30 @@
     --prodBgInfo: #fff;
     --colorBtn: #f4f4f4;
     --bgBtn: #171717;
+    --text: #3d3e41;
   }
 
 .productscreen {
     max-width: 1440px;
     margin: 1rem auto;
     display: flex;
+    flex-direction: column;
 }
 
 .productscreen-left {
     display: flex;
     flex: 0.8;
+    flex-direction: column;
 }
 
 .left-image {
     margin: 1rem;
-    flex: 0.6;
+    flex: 0.6;   
+}
+
+.left-image > img {
+    width: 450px;
+    height: 300px;
 }
 
 .left-info {
@@ -26,17 +34,34 @@
     background: var(--prodBgInfo);
     height: fit-content;
     font-size: 0.9rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 .left-name {
+    font-family: "Verdana";
+    font-style: normal;
     font-weight: bold;
     font-size: 1.3rem;
+    color: var(--text); 
+}
+
+.left-text {
+    font-family: "Verdana";
+    font-style: normal;
+    color: var(--screen-text);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: .03em;
 }
 
 .left-info > p,
 .right-info > p {
     padding: 1rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-family: "Verdana";
+    font-style: normal;    
+    color: var(--screen-text);
 }
 
 .left-info > p:last-child,
@@ -49,7 +74,7 @@
 }
 
 .right-info {
-    width: 250px;
+    width: 250px;   
     margin: 1rem;
     background: var(--prodBgInfo);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
@@ -60,8 +85,13 @@
     font-size: 0.8rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px; 
+    gap: 5px;    
 }
+
+.right-text {
+    font-weight: bold;
+}
+
 
 .right-info p > button {
     display: flex;
@@ -71,27 +101,27 @@
     color: var(--colorBtn);
     border: 1px solid var(--prodBgInfo);;
     cursor: pointer;
+    font-family: "Verdana";
+    font-style: normal;  
 }
 
 .right-info select {
     padding: 10px 16px;
 }
 
-@media (min-width: 768px) {
-    .productscreen {       
-        flex-direction: column;
-    }
-    .productscreen-left {
-        flex-direction: column;
-        flex: 1;
-    }
-
-    .left-image {
+@media (min-width: 768px) { 
+   .left-image {
         flex: 1;
     }
 
     .left-info {
         flex: 1;
+    }
+
+    .left-text {
+        color: var(--screen-text);
+        font-size: 18px;
+        font-weight: 500;      
     }
 
     .productscreen-right {
@@ -100,8 +130,23 @@
     }
 
     .right-info {
-        width: 100%;
+        width: 50%;
         margin: 0;
     }
 }
 
+/* @media (min-width: 1024px) {
+    .productscreen-left,
+    .productscreen-right  {       
+        flex-direction: row;
+        align-items: flex-start;       
+    }
+} */
+
+@media (min-width: 1024px) {
+    .productscreen,
+    .productscreen-left {       
+        flex-direction: row;
+        align-items: flex-start;       
+    }
+}
