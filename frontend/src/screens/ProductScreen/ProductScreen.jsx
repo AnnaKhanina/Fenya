@@ -51,45 +51,32 @@ const ProductScreen = () => {
                         <li className="product-list-item">
                             <img src="https://scx1.b-cdn.net/csz/news/800a/2021/cat-1.jpg" alt="жіноча білизна"/>
                         </li>
-                        <li className="product-list-item">
-                            <div className="left-info">
-                                <p className="left-name">Трусики жіночі</p>                          
-                                <p className="left-text">Опис: ажурні трусики від виробника</p>
-                            </div>
+                        <li className="product-list-item">                          
+                            <p className="product-name">Трусики жіночі</p>                          
+                            <p className="product-text">Опис: ажурні трусики від виробника</p>                 
                         </li>
-                        <li className="product-list-item"></li>
-                    </ul>
-                 
-                        <div className="left-image">
-                        <img src="https://scx1.b-cdn.net/csz/news/800a/2021/cat-1.jpg" alt="жіноча білизна"/>
-                        </div>            
-                        <div className="left-info">
-                            <p className="left-name">Трусики жіночі</p>                          
-                            <p className="left-text">Опис: ажурні трусики від виробника</p>
-                        </div>
-                  
-                  
-                        <div className="right-info">
-                            <p>
+                        <li className="product-list-item">                          
+                            <p className="product-name">
                                 Ціна: <span className="right-text">259 грн</span>
                             </p>
-                            <p>
-                                Наявність: <span className="right-text">є в наявності</span>
+                            <p className="product-name">
+                                Наявність: <span className="span-text">є в наявності</span>
                             </p>
-                            <p>
+                            <p className="product-name">
                                 Кількість
-                                <select className="right-text">
+                                <select className="product-span">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
                                 </select>
                             </p>
-                             <p>
-                               <button type="button" >Додати в кошик</button> 
-                            </p>  
-                        </div>
-                    </div>                   
+                            <p>
+                            <button type="button" >Додати в кошик</button> 
+                            </p>                             
+                        </li>
+                    </ul>                      
+                </div>                   
                 </div>
       
         </main>
