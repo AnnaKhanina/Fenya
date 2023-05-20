@@ -203,6 +203,12 @@
     .navbar-links {
       display: block;
       white-space: nowrap;
+      font-size: 19px;
+      line-height: 22px; 
+    }
+    .icons-links {
+      font-size: 19px;
+      line-height: 22px; 
     }
   }
 
@@ -210,12 +216,21 @@
     .navbar-links__item {
       padding-left: 20px;
     } 
-    
+    .navbar-links,
+    .icons-links {
+      font-size: 20px;
+      line-height: 23px; 
+    }
   }
 
    @media (min-width: 1440px) {   
     .navbar-links__item {
       padding-left: 25px;
+    }
+    .navbar-links,
+    .icons-links {
+      font-size: 21px;
+      line-height: 24px; 
     }
   }
 
@@ -223,11 +238,21 @@
     .navbar-links__item {
       padding-left: 30px;
     }
+    .navbar-links,
+    .icons-links {
+      font-size: 22px;
+      line-height: 25px; 
+    }
   }
 
   @media(min-width: 4320px) {    
     .navbar-links__item {
       padding-left: 35px;
+    }
+    .navbar-links,
+    .icons-links {
+      font-size: 23px;
+      line-height: 26px; 
     }
   }
 

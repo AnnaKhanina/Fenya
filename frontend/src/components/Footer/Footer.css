@@ -1,6 +1,7 @@
 :root {
     --footBg: #060b26;
     --links: #fff;
+    --socialHover: #FFA4A4;
   }
   
   .footer-wrapper {
@@ -36,7 +37,14 @@
     color: var(--links);  
     display: flex;
     align-items: center;
- }    
+ }   
+ 
+ .footer-links:hover,
+ .footer-links:focus,
+ .social-list-item:hover,
+ .social-list-item:focus {
+    color: var(--socialHover);
+ }
 
 .social-list {
     display: flex;
@@ -121,11 +129,53 @@
         padding-bottom: 4px;        
         padding-left: 24px;         
     }
+    .footer-list {
+        font-size: 19px;
+        line-height: 22px; 
+    }
     .social-list {
         display: flex;
         gap: 5px;
     }
 }
 
+@media (min-width: 1024px)  {
+    .footer-list {
+        font-size: 20px;
+        line-height: 23px; 
+    }
+    .social-list {        
+        gap: 6px;
+    }
+}
 
+@media (min-width: 1440px)  {
+    .footer-list {
+        font-size: 21px;
+        line-height: 24px; 
+    }
+    .social-list {        
+        gap: 7px;
+    }
+}
+
+@media (min-width: 2560px)  {
+    .footer-list {
+        font-size: 22px;
+        line-height: 25px; 
+    }
+    .social-list {        
+        gap: 7px;
+    }
+}
+
+@media (min-width: 4320px)  {
+    .footer-list {
+        font-size: 23px;
+        line-height: 26px; 
+    }
+    .social-list {        
+        gap: 8px;
+    }
+}
    
