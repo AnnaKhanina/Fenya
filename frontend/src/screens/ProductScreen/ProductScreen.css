@@ -5,7 +5,13 @@
     --text: #3d3e41;
   }
 
+  .product-container { 
+    max-width: 2560px;
+  }
+
+
 .productscreen {   
+    max-width: 2560px;
     display: flex;    
     flex-direction: column;   
     justify-content: space-evenly;
@@ -36,11 +42,16 @@
 
 .product-image {    
     width: 100%;
+    padding: 5px;
 }
 
 .product-name {    
     font-weight: 700;    
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.product-name-qty {
+    border: none;
 }
 
 .span-text {
@@ -52,16 +63,56 @@
     margin-left: 5px;
 }
 
+.product-favorite-button {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    border: none;
+    background: none;
+}
+
+.icon-text {
+    margin-left: 5px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .product-button {
     display: flex;
     flex-direction: column;
     padding: 10px 16px;
-    background: var(--bgBtn);
-    color: var(--colorBtn);
-    border: 1px solid var(--prodBgInfo);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    
+    color: var(--colorBtn);
+    background: var(--bgBtn);
+    width: 260px;
+    height: 60px;
 }
+
+.button-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.product-icons {
+    display: flex;
+    flex-direction: column;  
+    list-style: none;      
+    text-decoration: none;    
+    gap: 8px;    
+    text-align: center;  
+    padding-left: 5px; 
+    padding-right: 5px;
+}
+
 
 @media (min-width: 768px) {
     .product-list {
@@ -95,11 +146,21 @@
 @media (min-width: 2560px) {
     .productscreen {
         margin-top: 40px;
+        
     }
     .product-list {
         font-size: 22px;  
-        line-height: 25px;   
+        line-height: 25px; 
+        display: flex;
+        gap: 150px;       
     }
+    .product-image {    
+        width: 400px;
+        padding: 5px;
+    }
+    .product-qty {        
+        margin-left: 20px;
+    }    
 }
 
 @media (min-width: 4320px) {
