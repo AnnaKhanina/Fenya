@@ -49,7 +49,7 @@ const ProductScreen = () => {
                 <div className="productscreen">
                     <ul className="product-list">
                         <li className="product-list-item">
-                            <img src="https://scx1.b-cdn.net/csz/news/800a/2021/cat-1.jpg" alt="жіноча білизна"/>
+                            <img className="product-image" src="https://scx1.b-cdn.net/csz/news/800a/2021/cat-1.jpg" alt="жіноча білизна"/>
                         </li>
                         <li className="product-list-item">                          
                             <p className="product-name">Трусики жіночі</p>                          
@@ -57,12 +57,12 @@ const ProductScreen = () => {
                         </li>
                         <li className="product-list-item">                          
                             <p className="product-name">
-                                Ціна: <span className="right-text">259 грн</span>
+                                Ціна: <span className="span-text">259 грн</span>
                             </p>
                             <p className="product-name">
                                 Наявність: <span className="span-text">є в наявності</span>
                             </p>
-                            <p className="product-name">
+                            <p className="qty-name">
                                 Кількість
                                 <select className="product-span">
                                     <option value="1">1</option>
@@ -72,7 +72,7 @@ const ProductScreen = () => {
                                 </select>
                             </p>
                             <p>
-                            <button type="button" >Додати в кошик</button> 
+                            <button className="product-button" type="button" >Додати в кошик</button> 
                             </p>                             
                         </li>
                     </ul>                      
