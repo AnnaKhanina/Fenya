@@ -27,20 +27,13 @@
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
+    line-height: 21px;    
  }  
 
  .footer-links {
     list-style: none;
     text-decoration: none;
-    color: var(--links);
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
+    color: var(--links);  
     display: flex;
     align-items: center;
  }    

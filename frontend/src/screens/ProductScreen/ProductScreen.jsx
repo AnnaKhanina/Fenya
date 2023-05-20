@@ -62,9 +62,9 @@ const ProductScreen = () => {
                             <p className="product-name">
                                 Наявність: <span className="span-text">є в наявності</span>
                             </p>
-                            <p className="qty-name">
+                            <p className="product-name">
                                 Кількість
-                                <select className="product-span">
+                                <select className="product-qty">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
