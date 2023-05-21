@@ -8,12 +8,17 @@ const CartScreen = () => {
             <main className="main-screen">
                 <div className="container">
                     <div className="cartscreen-left">
-
-                    </div>
-                    <h2 className="screen-title">Кошик</h2>                    
-                    <CartItem/>
+                        <h2 className="screen-title">Кошик</h2> 
+                        <CartItem/>
+                    </div>                    
                     <div className="cartscreen-right">
-                        
+                        <div className="cartscreen-info">                           
+                            <p>Кількість</p>
+                            <p>259грн</p>                            
+                        <div>
+                            <button>замовити</button>
+                        </div>
+                        </div>
                     </div> 
                 </div>                
             </main>
