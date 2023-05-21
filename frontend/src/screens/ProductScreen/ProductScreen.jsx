@@ -5,12 +5,16 @@ import "../ProductScreen/ProductScreen.css";
 import "../../components/Container/Container.css";
 import "../MainScreen/MainScreen.css";
 import "../../components/Header/Header.css";
+import IconBreadcrumbs from "../../components/Breadcrumb/Breadcrumb";
 
 const ProductScreen = () => {
     return (        
         <main className="main-screen">
             <IconContext.Provider value={{ color: "#060b26" }}> 
             <div className="container product-container">
+                <div>
+                    <IconBreadcrumbs />
+                </div>
                  <h2 className="screen-title">Трусики жіночі</h2>                 
                 <div className="productscreen">
                     <ul className="product-list">

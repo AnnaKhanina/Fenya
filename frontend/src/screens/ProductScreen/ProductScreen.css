@@ -3,6 +3,7 @@
     --colorBtn: #f4f4f4;
     --bgBtn: #060b26;
     --text: #3d3e41;
+    --active: #FFA4A4;
   }
 
 .product-container { 
@@ -69,8 +70,17 @@
 
 .color-list-item {
     list-style: none;      
-    text-decoration: none;   
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s;   
 }
+
+.color-list-item:hover,
+.color-list-item:focus {
+    border: 2px solid var(--active);
+  }
 
 .product-name-qty {
     border: none;
