@@ -10,19 +10,14 @@ const ProductScreen = () => {
         <main className="main-screen">
             <IconContext.Provider value={{ color: "#060b26" }}> 
             <div className="container product-container">
-                {/* <h2 className="screen-title">Товари</h2>
-                <p className="screen-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto,
-                        laboriosam placeat incidunt rem illum animi nemo quibusdam quia
-                        voluptatum voluptate.
-                </p> */}  
+                 <h2 className="screen-title">Трусики жіночі</h2>                 
                 <div className="productscreen">
                     <ul className="product-list">
                         <li className="product-list-item">
                             <img className="product-image" src="https://scx1.b-cdn.net/csz/news/800a/2021/cat-1.jpg" alt="жіноча білизна"/>
                         </li>
                         <li className="product-list-item">                          
-                            <p className="product-name">Трусики жіночі</p>                          
+                            <p className="product-name">Трусики ажурні Anna</p>                          
                             <p className="product-text">Опис: ажурні трусики від виробника</p>                 
                         </li>
                         <li className="product-list-item">                          
@@ -44,7 +39,9 @@ const ProductScreen = () => {
                             <ul className="product-icons">
                                 <li className="product-icons-item">
                                     <button className="product-button" type="button">
-                                        <p className="button-text">купити</p>
+                                        <div className="button-text">
+                                            <p>купити</p>
+                                        </div>
                                     </button> 
                                 </li> 
                                 <li className="product-icons-item">
