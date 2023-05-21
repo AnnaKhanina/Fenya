@@ -49,6 +49,23 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+.color-variants {
+    display: flex;
+    flex-wrap: wrap;  
+    list-style: none;      
+    text-decoration: none;    
+    gap: 3px;    
+    text-align: center;  
+    padding-left: 5px; 
+    padding-right: 5px;
+}
+
+/* .color-list-item {
+    margin: 16px;
+    background: var(--prodBgInfo);
+    text-align: start;  
+} */
+
 .product-name-qty {
     border: none;
 }
