@@ -14,7 +14,7 @@ const ProductScreen = () => {
                  <h2 className="screen-title">Трусики жіночі</h2>                 
                 <div className="productscreen">
                     <ul className="product-list">
-                        <li className="product-list-item">
+                        <li className="product-list-item img">
                             <img className="product-image" src="https://scx1.b-cdn.net/csz/news/800a/2021/cat-1.jpg" alt="жіноча білизна"/>
                         </li>
                         <li className="product-list-item">                          
@@ -24,19 +24,19 @@ const ProductScreen = () => {
                                 <p className="product-name">Вибір кольору</p>
                                 <ul className="color-list">
                                     <li className="color-list-item">
-                                        <img className="product-image" src="https://scx1.b-cdn.net/csz/news/800a/2021/cat-1.jpg" alt="жіноча білизна"/>
+                                        <img className="product-image-variants" src="https://scx1.b-cdn.net/csz/news/800a/2021/cat-1.jpg" alt="жіноча білизна"/>
                                     </li>
                                     <li className="color-list-item">
-                                        <img className="product-image" src="https://scx1.b-cdn.net/csz/news/800a/2021/cat-1.jpg" alt="жіноча білизна"/>
+                                        <img className="product-image-variants" src="https://scx1.b-cdn.net/csz/news/800a/2021/cat-1.jpg" alt="жіноча білизна"/>
                                     </li>
                                     <li className="color-list-item">
-                                        <img className="product-image" src="https://scx1.b-cdn.net/csz/news/800a/2021/cat-1.jpg" alt="жіноча білизна"/>
+                                        <img className="product-image-variants" src="https://scx1.b-cdn.net/csz/news/800a/2021/cat-1.jpg" alt="жіноча білизна"/>
                                     </li>
                                     <li className="color-list-item">
-                                        <img className="product-image" src="https://scx1.b-cdn.net/csz/news/800a/2021/cat-1.jpg" alt="жіноча білизна"/>
+                                        <img className="product-image-variants" src="https://scx1.b-cdn.net/csz/news/800a/2021/cat-1.jpg" alt="жіноча білизна"/>
                                     </li>
                                     <li className="color-list-item">
-                                        <img className="product-image" src="https://scx1.b-cdn.net/csz/news/800a/2021/cat-1.jpg" alt="жіноча білизна"/>
+                                        <img className="product-image-variants" src="https://scx1.b-cdn.net/csz/news/800a/2021/cat-1.jpg" alt="жіноча білизна"/>
                                     </li>
                                 </ul>
                             </div>
