@@ -10,7 +10,7 @@ import "../../components/Header/Header.css";
 const ProductScreen = () => {
     return (        
         <main className="main-screen">
-            <IconContext.Provider> 
+            <IconContext.Provider value={{ color: "#060b26" }}> 
                 <div className="container product-container">
                     {/* <div>
                         <IconBreadcrumbs />

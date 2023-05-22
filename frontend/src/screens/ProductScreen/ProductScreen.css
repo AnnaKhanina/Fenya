@@ -110,13 +110,13 @@
     border-radius: 50%;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: var(--bgBtn);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--colorBtn);
 }
 
 .icon:hover,
 .icon:focus {
-    color: var(--active);
+    background-color: var(--active);
 }
 
 .product-button {
@@ -127,7 +127,7 @@
     color: var(--colorBtn);
     background: var(--bgBtn);
     width: 233px;
-    height: 60px;
+    height: 60px;    
 }
 
 .button-text {  
