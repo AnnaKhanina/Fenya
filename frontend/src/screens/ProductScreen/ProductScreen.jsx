@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import { IconContext } from "react-icons";
 import * as FaIcons from "react-icons/fa"; 
 import "../ProductScreen/ProductScreen.css";
@@ -62,7 +62,7 @@ const ProductScreen = () => {
                                         <option value="XXL">XXL</option>
                                         <option value="Batal">Batal</option>
                                     </select>
-                                    <Link to="/size" className="navbar-links" target="_blank">Таблиця розмірів</Link>
+                                    
                                 </p>
                                 <p className="product-name-qty">
                                     Кількість
