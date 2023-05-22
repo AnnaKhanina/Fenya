@@ -64,7 +64,7 @@ const ProductScreen = () => {
                                     </select>
                                     
                                 </p>
-                                <p className="product-name-qty">
+                                <p className="product-name">
                                     Кількість
                                     <select className="product-qty">
                                         <option value="1">1</option>
