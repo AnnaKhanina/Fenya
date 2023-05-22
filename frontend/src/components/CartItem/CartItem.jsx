@@ -15,7 +15,7 @@ const CartItem = () => {
                         <img src="https://scx1.b-cdn.net/csz/news/800a/2021/cat-1.jpg" alt ="жіноча білизна"/>
                     </div>
                     <Link to={`/product/${111}`} className="cartitem-name">
-                        <p>Трусики жіночі сліпери Anna</p>
+                        <p>Трусики жіночі Anna</p>
                     </Link>
                     <p className="cartitem-price">259грн</p>
                     <select className="cartitem-select">

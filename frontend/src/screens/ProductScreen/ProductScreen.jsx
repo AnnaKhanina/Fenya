@@ -91,10 +91,10 @@ const ProductScreen = () => {
                             </li>
                             <li className="product-list-item">
                                 <p className="product-name">Доставка</p>
-                                <ul className="product-delivery">
-                                    <li className="product-delivery-item">Самовивіз — безкоштовно</li>
-                                    <li className="product-delivery-item">Адресна доставка по Харкову — 99 грн</li>
-                                    <li className="product-delivery-item">Нова пошта — за тарифами перевізника</li>                                
+                                <ul className="product-delivery">                                   
+                                    <li className="product-delivery-item">Адресна доставка по Харкову — 59 грн</li>
+                                    <li className="product-delivery-item">Нова пошта — за тарифами перевізника</li>
+                                    <li className="product-delivery-item">Укр пошта — за тарифами перевізника</li>                                                                
                                 </ul>
                             </li>
                         </ul>                      

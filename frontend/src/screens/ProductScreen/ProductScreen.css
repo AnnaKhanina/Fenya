@@ -1,7 +1,7 @@
 :root {   
     --prodBgInfo: #fff;
-    --colorBtn: #f4f4f4;
-    --bgBtn: #060b26;
+    --bgBtn: #f4f4f4;
+    --colorBtn: #060b26;
     --text: #3d3e41;
     --active: #FFA4A4;    
   }
@@ -70,7 +70,7 @@
     border: 2px solid transparent;
     border-radius: 8px;
     cursor: pointer;
-    transition: all 0.5s;   
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);   
 }
 
 .color-list-item:hover,
@@ -94,9 +94,14 @@
 .product-favorite-button {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
-    border: none;
+    align-items: baseline;   
     background: none;
+    border: none; 
+}
+
+.product-favorite-button:hover,
+.product-favorite-button:focus {
+    border: 2px solid var(--active);
 }
 
 .icon-text {
@@ -118,7 +123,7 @@
 .icon:focus {
     background-color: var(--active);
 }
-
+/* 
 .product-button {
     display: flex;
     flex-direction: column;   
@@ -128,7 +133,32 @@
     background: var(--bgBtn);
     width: 233px;
     height: 60px;    
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);   
 }
+
+.product-button:hover,
+.product-button:focus {
+    background: var(--active);
+} */
+
+.product-button {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    color: var(--infoBtn);
+    background: var(--infoBtnBg);
+    padding: 8px 16px;
+    border: 1px solid var(--infoBtn);
+    font-size: 1rem;    
+}
+
+.product-button:hover,
+.product-button:focus {
+    color: var(--infoBtnBg);
+    background: var(--infoBtn);
+}
+
 
 .button-text {  
     margin: auto;

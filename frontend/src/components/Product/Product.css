@@ -48,7 +48,8 @@
     font-size: 1rem;
 }
 
-.info-button:hover {
+.info-button:hover,
+.info-button:focus {
     color: var(--infoBtnBg);
     background: var(--infoBtn);
 }
