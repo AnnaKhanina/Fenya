@@ -10,20 +10,20 @@ const CartScreen = () => {
             <main className="main-screen">
                 <IconContext.Provider value={{ color: "#FFF" }}>  
                     <div className="container">
-                        <div className="cartscreen"> 
-                            <div className="cartscreen-left">
-                                <h2 className="screen-title">Кошик</h2> 
+                        <h2 className="screen-title">Кошик</h2> 
+                        <div className="cartscreen">
+                            <ul className="cartscreen-list">
+                                <li className="cartscreen-list-item">
                                 <CartItem/>
-                            </div>                    
-                            <div className="cartscreen-right">
-                                <div className="cartscreen-info">                           
-                                    <p className="cartscreen-name">Кількість (0)</p>
-                                    <p className="cartscreen-name">259грн</p>                            
-                                <div>
-                                    <button className="cartscreen-button">замовити</button>
-                                </div>
-                                </div>
-                            </div> 
+                                </li>
+                                <li className="cartscreen-list-item">
+                                    <div className="cartscreen-info">                           
+                                        <p className="cartscreen-name">Кількість (0)</p>
+                                        <p className="cartscreen-name">259грн</p>                            
+                                        <button className="cartscreen-button">замовити</button>                                        
+                                    </div>
+                                </li>
+                            </ul>                           
                         </div>                         
                     </div>
                 </IconContext.Provider>                

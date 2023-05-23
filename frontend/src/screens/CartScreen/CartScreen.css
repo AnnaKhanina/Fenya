@@ -6,43 +6,60 @@
   }
 
 .cartitem-screen {
+    max-width: 2560px;
+    display: flex;    
+    flex-direction: column;   
+    justify-content: space-evenly;
+}
+
+.cartscreen-list {
     display: flex;
-    min-width: 1440px;
-    margin: 32px auto;
-}
-
-.cartscreen-left {
-    flex: 0.7;
-    margin-right: 16px;
-    background-color: transparent;
-    padding: 16px;
-}
-
-.cartscreen-right {
-    flex: 0.3;
-    background: var(--cartScreenBg);
+    flex-wrap: wrap;  
+    list-style: none;      
+    text-decoration: none;    
+    gap: 8px;
+    align-items: center;
+    justify-content: center;    
+    text-align: center;  
+    padding-left: 5px; 
+    padding-right: 5px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px; 
+    color: var(--text);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-    height: fit-content;
 }
 
-.cartscreen-info {
+ .cartscreen-list-item {
+    margin: 16px;
+    background: var(--cartScreenBg);
+    text-align: start;  
+ }
+
+/* .cartscreen-info {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 16px;
+} */
+/* 
+.cartscreen-info:last-child {
+    border: none;
+} */
+
+.cartscreen-name {
+    padding: 8px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding: 16px;
 }
 
-.cartscreen-info:last-child {
-    border: none;
-}
-
-.cartscreen-name {
-    padding: 8px;
-}
-
 .cartscreen-button {
-    padding: 10px 17px;
+    padding: 8px 16px;
+    font-size: 16px; 
     width: 100%;
-    background: var(--cartScreenName);
-    color: var(--cartScreenBtn);
+    text-align: center;
+    text-decoration: none;
+    background: var(--cartScreenBg);
+    color: var(--cartScreenName);
     border: 1px solid var(--cartScreenName);
     cursor: pointer;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);;
@@ -51,23 +68,19 @@
 .cartscreen-button:hover,
 .cartscreen-button:focus {
     opacity: 0.9;
+    color: var(--cartScreenBg);
+    background: var(--cartScreenName);
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 768px) {
     .cartscreen {
-      min-width: 900px;
+        width: 330px;
+        flex-direction: column;
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1440px) {
     .cartscreen {
-      min-width: 800px;
-      flex-direction: column;
-    }
-    .cartscreen-left {
-        margin: 0;
-    }
-    .cartscreen-right {
-        margin: 16px;
+        width: 360px;
     }
 }
