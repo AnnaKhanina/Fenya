@@ -10,19 +10,21 @@ const CartScreen = () => {
             <main className="main-screen">
                 <IconContext.Provider value={{ color: "#FFF" }}>  
                     <div className="container">
-                        <div className="cartscreen-left">
-                            <h2 className="screen-title">Кошик</h2> 
-                            <CartItem/>
-                        </div>                    
-                        <div className="cartscreen-right">
-                            <div className="cartscreen-info">                           
-                                <p>Кількість</p>
-                                <p>259грн</p>                            
-                            <div>
-                                <button className="cartscreen-button">замовити</button>
-                            </div>
-                            </div>
-                        </div> 
+                        <div className="cartscreen"> 
+                            <div className="cartscreen-left">
+                                <h2 className="screen-title">Кошик</h2> 
+                                <CartItem/>
+                            </div>                    
+                            <div className="cartscreen-right">
+                                <div className="cartscreen-info">                           
+                                    <p className="cartscreen-name">Кількість (0)</p>
+                                    <p className="cartscreen-name">259грн</p>                            
+                                <div>
+                                    <button className="cartscreen-button">замовити</button>
+                                </div>
+                                </div>
+                            </div> 
+                        </div>                         
                     </div>
                 </IconContext.Provider>                
             </main>
