@@ -5,6 +5,8 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 //import logo from '../../images/logoFenya.png';
 import "../Header/Header.css";
+import "../../components/Container/Container.css";
+
 import { SidebarData } from "../SliderbarData/SliderbarData";
 
 const Header = () => {

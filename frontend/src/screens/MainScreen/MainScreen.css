@@ -11,12 +11,12 @@
     padding: auto;   
     margin-left: auto;
     margin-right: auto; 
-    min-height: 80vh;   
+    /* min-height: 80vh;    */
    overflow-y: scroll;
 }
 
 .screen-title {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 28px;
     font-weight: 700;
     line-height: 33px;
@@ -28,25 +28,25 @@
 .screen-text {   
     margin-top: 0;
     color: var(--screen-text);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 24px;
-    letter-spacing: .03em;
+    line-height: 20px;
+    letter-spacing: .04em;
     text-align: start;  
 }
 
 @media (min-width: 768px) {
     .screen-title {
-        font-size: 36px;
+        /* font-size: 36px;
         line-height: 42px;
-        margin-bottom: 50px;
+        margin-bottom: 50px; */
         display: block;
         align-items: flex-start;
     }
-    .screen-text {
+    /* .screen-text {
         font-weight: 500;
         font-size: 20px;
-    }
+    } */
 }
 
 @media (min-width: 1440px) {

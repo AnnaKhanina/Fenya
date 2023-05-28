@@ -1,5 +1,6 @@
 .container {
     width: 100%; 
+    min-height: 80vh;
     margin-left: 0;
     margin-right: 0; 
     padding-left: 20px;
@@ -40,6 +41,8 @@
 @media(min-width: 2560px) {
     .container {
         width: 2560px;
+        /* padding-left: 350px;
+        padding-right: 350px; */
     }
 }
 

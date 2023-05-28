@@ -8,12 +8,14 @@
     background-color: var(--navBg);
     height: 80px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     list-style: none;
     align-items: center;  
     padding: auto; 
     margin-left: auto;
-    margin-right: auto;   
+    margin-right: auto; 
+    padding-left: 20px;
+    padding-right: 20px;  
   }
 
   .navbar-logo {

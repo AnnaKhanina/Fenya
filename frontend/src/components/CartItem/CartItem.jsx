@@ -6,7 +6,7 @@ import "../CartItem/CartItem.css";
 const CartItem = () => {
     return (                      
             <div className="cartitem">
-                <IconContext.Provider value={{ color: "#060b26" }}>                   
+                <IconContext.Provider value={{ color: "#fff" }}>                   
                     <img className="cartitem-image img" src="https://scx1.b-cdn.net/csz/news/800a/2021/cat-1.jpg" alt ="жіноча білизна"/>                
                     <Link to={`/product/${111}`} className="cartitem-name">
                         <p>Трусики жіночі Anna</p>
