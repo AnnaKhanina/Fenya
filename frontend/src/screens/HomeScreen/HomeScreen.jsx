@@ -24,18 +24,27 @@ const HomeScreen = () => {
         <main className="main-screen">
             <div className="container">  
             <h2 className="screen-title">Останні надходження</h2>                                
-                <div className="homescreen-products">
-                    {/* <Product /> 
-                    <Product />   
-                    <Product /> 
-                    <Product />     
-                    <Product /> 
-                    <Product />   
-                    <Product /> 
-                    <Product /> */}
-                    {loading ? <h2>Loading...</h2> : error ? <h2>{error}</h2> : products.map(product => (
+                <div className="homescreen-products">                   
+                    {/* {loading ? (<h2>Loading...</h2>) : error ? (<h2>{error}</h2>) : products.map(product) => (
                         <Product/>
-                    )) }
+                    ))
+                    )} */}
+                     {loading ? (
+          <h2>Loading...</h2>
+        ) : error ? (
+          <h2>{error}</h2>
+        ) : (
+          products.map((product) => (
+            <Product
+              key={product._id}
+              name={product.name}
+              description={product.description}
+              price={product.price}
+              imageUrl={product.imageUrl}
+              productId={product._id}
+            />
+          ))
+        )}
                 </div>    
             </div>
         </main>
