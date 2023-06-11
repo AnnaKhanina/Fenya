@@ -1,12 +1,12 @@
 {
   "name": "fenya",
   "version": "1.0.0",
-  "description": "",
+  "description": "",  
   "main": "index.js",
   "homepage": "https://github.com/AnnaKhanina/Fenya/",
   "scripts": {
     "start": "node backend/server.js",
-    "server": "nodemon backend/server.js",
+    "server": "nodemon backend/server.js --ignore client",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seederScript"
