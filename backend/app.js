@@ -1,7 +1,6 @@
 const express = require("express");
 const logger = require("morgan");
 const cors = require("cors");
-// const { errorHandler } = require("./helpers/index");
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const productRoutes = require("./routes/productRoutes");
@@ -18,20 +17,19 @@ app.get("/", function (req, res) {
   res.send("DataBase of FenyaDB");
 });
 
+app.use("/api/products", productRoutes);
+
 const testProxy = createProxyMiddleware ({
   target: 'http://localhost:3000/',
   changeOrigin: true,
 });
 
 app.use('/api', testProxy);
-app.listen(3000);
-
-app.use("api/products", productRoutes);
 
 app.use((req, res) => {
   res.status(404).json({ message: "Not found" });
 });
 
-// app.use(errorHandler);
+app.listen(3000);
 
 module.exports = app;
