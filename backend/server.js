@@ -1,18 +1,19 @@
-const app = require('./app');
-const PORT = process.env.PORT || 3000;
-require('dotenv').config();
+require("dotenv").config();
+const express = require("express");
+const productRoutes = require("./routes/productRoutes");
+const connectDB = require("./config/db");
 
-const { mongoDbConnect } = require('./config/db');
+connectDB();
 
-const runConnection = async () => {
-  try {
-    await mongoDbConnect();
-    app.listen(PORT, () => {
-      console.log(`Server running. Use our API on port: ${PORT}`);
-    });
-  } catch (error) {
-    console.log(error);
-  }
-};
+const app = express();
 
-runConnection();
+app.use(express.json());
+
+app.get("/", (req, res) => {
+  res.json({ message: "API running..." });
+});
+
+app.use("/api/products", productRoutes);
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
