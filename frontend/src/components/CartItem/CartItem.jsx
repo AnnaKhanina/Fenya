@@ -3,22 +3,30 @@ import { IconContext } from "react-icons";
 import * as FaIcons from "react-icons/fa"; 
 import "../CartItem/CartItem.css";
 
-const CartItem = () => {
+const CartItem = (item, qtyChangeHandler, removeHandler) => {
     return (                      
             <div className="cartitem">
                 <IconContext.Provider value={{ color: "#fff" }}>                   
-                    <img className="cartitem-image img" src="https://scx1.b-cdn.net/csz/news/800a/2021/cat-1.jpg" alt ="жіноча білизна"/>                
-                    <Link to={`/product/${111}`} className="cartitem-name">
-                        <p>Трусики жіночі Anna</p>
+                    <img className="cartitem-image img"src={item.imageUrl} alt={item.name}/>                
+                    <Link to={`/product/${item.product}`} className="cartitem-name">
+                        <p>{item.name}</p>
                     </Link>
-                    <p className="cartitem-price">259грн</p>
-                    <select className="cartitem-select">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
+                    <p className="cartitem-price">${item.price}</p>
+                    <select
+                       className="cartitem-select"
+                       value={item.qty}
+                       onChange={(e) => qtyChangeHandler(item.product, e.target.value)}
+                    >
+                        {[...Array(item.countInStock).keys()].map((x) => (
+                            <option key={x + 1} value={x + 1}>
+                                {x + 1}
+                            </option>
+                        ))}
                     </select>
-                    <button className="cartitem-deleteBtn">
+                    <button
+                        className="cartitem-deleteBtn"
+                        onClick={() => removeHandler(item.product)}
+                    >
                         <span className="cartitem-icon"><FaIcons.FaTrash /></span>
                     </button>
                 </IconContext.Provider>
