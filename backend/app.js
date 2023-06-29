@@ -1,6 +1,6 @@
 const express = require("express");
 const logger = require("morgan");
-const productsRouter = require("./routes/productRouter");
+const productRoutes = require("./routes/productRoutes");
 
 const app = express();
 
@@ -13,7 +13,7 @@ app.get("/", function (req, res) {
   res.send("DataBase of FenyaDB");
 });
 
-app.use("/api/products", productsRouter);
+app.use("/api/products", productRoutes);
 app.use(express.static("public"));
 
 app.use((req, res) => {
