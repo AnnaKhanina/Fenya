@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import { IconContext } from "react-icons";
 import * as FaIcons from "react-icons/fa"; 
 import * as AiIcons from "react-icons/ai";
@@ -15,6 +16,13 @@ const Header = () => {
 
     const showSidebar = () => setSidebar(!sidebar);
 
+    const cart = useSelector((state) => state.cart);
+    const { cartItems } = cart;
+
+    const getCartCount = () => {
+        return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
+      };
+
     return ( 
         <header>   
             <IconContext.Provider value={{ color: "#FFF" }}>               
@@ -22,10 +30,7 @@ const Header = () => {
                     <div className="navbar-logo">                          
                             <Link to="/" end className="logo-links">
                                 <h2 className="logo-title">Fenya</h2>
-                            </Link>  
-                            {/* <Link to="/" end>                   
-                                        <img src={logo} alt="Logo" />                                     
-                            </Link>                      */}
+                            </Link>           
                         </div>
                         <ul className="navbar-list">            
                             <li className="navbar-list-item">
@@ -51,9 +56,12 @@ const Header = () => {
                                 <li className="icons-list-item">
                                     <Link to="/favorite" className="icons-links"><FaIcons.FaHeart /></Link>                       
                                 </li>
-                                <li className="icons-list-item">
-                                {/*<Link to="/cart" className="icons-links"><FaIcons.FaCartPlus /><span className="cart-logo-badge">0</span></Link> */}
-                                    <Link to="/cart" className="icons-links"><FaIcons.FaCartPlus /></Link> 
+                                <li className="icons-list-item">                               
+                                    <Link to="/cart" className="icons-links"><FaIcons.FaCartPlus />
+                                    <span>
+                                        Cart <span className="cartlogo-badge">{getCartCount()}</span>
+                                    </span>
+                                    </Link> 
                                 </li>                            
                         </ul>     
                             <div className="navbar-mob">

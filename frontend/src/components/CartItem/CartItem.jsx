@@ -5,15 +5,15 @@ import "../CartItem/CartItem.css";
 
 const CartItem = (item, qtyChangeHandler, removeHandler) => {
     return (                      
-            <div className="cartitem">
+            <div className="cartItem">
                 <IconContext.Provider value={{ color: "#fff" }}>                   
-                    <img className="cartitem-image img"src={item.imageUrl} alt={item.name}/>                
+                    <img className="cartItem-image img"src={item.imageUrl} alt={item.name}/>                
                     <Link to={`/product/${item.product}`} className="cartitem-name">
                         <p>{item.name}</p>
                     </Link>
-                    <p className="cartitem-price">${item.price}</p>
+                    <p className="cartItem-price">${item.price}</p>
                     <select
-                       className="cartitem-select"
+                       className="cartItem-select"
                        value={item.qty}
                        onChange={(e) => qtyChangeHandler(item.product, e.target.value)}
                     >
@@ -24,10 +24,10 @@ const CartItem = (item, qtyChangeHandler, removeHandler) => {
                         ))}
                     </select>
                     <button
-                        className="cartitem-deleteBtn"
+                        className="cartItem-deleteBtn"
                         onClick={() => removeHandler(item.product)}
                     >
-                        <span className="cartitem-icon"><FaIcons.FaTrash /></span>
+                        <span className="cartItem-icon"><FaIcons.FaTrash /></span>
                     </button>
                 </IconContext.Provider>
             </div>    

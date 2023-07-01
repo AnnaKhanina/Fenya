@@ -1,3 +1,8 @@
+import { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+
+import { getProductDetails } from "../redux/actions/productActions";
+import { addToCart } from "../redux/actions/cartActions";
 
 import { IconContext } from "react-icons";
 import * as FaIcons from "react-icons/fa"; 
@@ -7,17 +12,81 @@ import "../MainScreen/MainScreen.css";
 import "../../components/Header/Header.css";
 // import IconBreadcrumbs from "../../components/Breadcrumb/Breadcrumb";
 
-const ProductScreen = () => {
+const ProductScreen = ({ match, history }) => {
+    const [qty, setQty] = useState(1);
+    const dispatch = useDispatch();
+  
+    const productDetails = useSelector((state) => state.getProductDetails);
+    const { loading, error, product } = productDetails;
+  
+    useEffect(() => {
+      if (product && match.params.id !== product._id) {
+        dispatch(getProductDetails(match.params.id));
+      }
+    }, [dispatch, match, product]);
+  
+    const addToCartHandler = () => {
+      dispatch(addToCart(product._id, qty));
+      history.push(`/cart`);
+    };
+
+
     return (        
         <main className="main-screen">
             <IconContext.Provider value={{ color: "#060b26" }}> 
                 <div className="container product-container">
                     {/* <div>
                         <IconBreadcrumbs />
-                    </div> */}
-                    <h2 className="screen-title">Трусики жіночі</h2>                 
+                    </div> */}                                    
                     <div className="productscreen">
-                        <ul className="product-list">
+                    {loading ? (
+        <h2>Loading...</h2>
+      ) : error ? (
+        <h2>{error}</h2>
+      ) : (
+        <>
+          <div className="productscreen-left">
+            <div className="left-image">
+              <img src={product.imageUrl} alt={product.name} />
+            </div>
+            <div className="left-info">
+              <p className="left-name">{product.name}</p>
+              <p>Price: ${product.price}</p>
+              <p>Description: {product.description}</p>
+            </div>
+          </div>
+          <div className="productscreen-right">
+            <div className="right-info">
+              <p>
+                Price:
+                <span>${product.price}</span>
+              </p>
+              <p>
+                Status:
+                <span>
+                  {product.countInStock > 0 ? "In Stock" : "Out of Stock"}
+                </span>
+              </p>
+              <p>
+                Qty
+                <select value={qty} onChange={(e) => setQty(e.target.value)}>
+                  {[...Array(product.countInStock).keys()].map((x) => (
+                    <option key={x + 1} value={x + 1}>
+                      {x + 1}
+                    </option>
+                  ))}
+                </select>
+              </p>
+              <p>
+                <button type="button" onClick={addToCartHandler}>
+                  Додати у кошик
+                </button>
+              </p>
+            </div>
+          </div>
+        </>
+      )}
+                        {/* <ul className="product-list">
                             <li className="product-list-item img">
                                 <img className="product-image" src="https://scx1.b-cdn.net/csz/news/800a/2021/cat-1.jpg" alt="жіноча білизна"/>
                             </li>
@@ -97,7 +166,7 @@ const ProductScreen = () => {
                                     <li className="product-delivery-item">Укр пошта — за тарифами перевізника</li>                                                                
                                 </ul>
                             </li>
-                        </ul>                      
+                        </ul>                       */}
                     </div>                   
                 </div>
             </IconContext.Provider>    

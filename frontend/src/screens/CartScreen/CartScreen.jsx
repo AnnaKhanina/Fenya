@@ -3,6 +3,7 @@ import "../../components/Container/Container.css";
 import "../MainScreen/MainScreen.css";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import CartItem from "../../components/CartItem/CartItem";
 import { IconContext } from "react-icons";
 
@@ -39,22 +40,36 @@ const CartScreen = () => {
             <main className="main-screen">
                 <IconContext.Provider value={{ color: "#FFF" }}>  
                     <div className="container">
-                        <h2 className="screen-title">Кошик</h2> 
-                        {/* <div className="cartscreen">
-                            <ul className="cartscreen-list">
-                                <li className="cartscreen-list-item">
-                                <CartItem/>
-                                </li>
-                                <li className="cartscreen-list-item">
-                                    <div className="cartscreen-info">                           
-                                        <p className="cartscreen-name">Кількість (0)</p>
-                                        <p className="cartscreen-name">259грн</p>                            
-                                        <button className="cartscreen-button">замовити</button>                                        
-                                    </div>
-                                </li>
-                            </ul>                           
-                        </div>                          */}
-                                                
+                      <div className="cartscreen">
+                        <div className="cartscreen-left">
+                          <h2 className="screen-title">Кошик</h2>
+
+                          {cartItems.length === 0 ? (
+                            <div>
+                              Ваш кошик порожній <Link to="/">назад</Link>
+                            </div>
+                          ) : (
+                            cartItems.map((item) => (
+                              <CartItem
+                                key={item.product}
+                                item={item}
+                                qtyChangeHandler={qtyChangeHandler}
+                                removeHandler={removeFromCartHandler}
+                              />
+                            ))
+                          )}
+                        </div>
+
+                        <div className="cartscreen-right">
+                          <div className="cartscreen-info">
+                            <p>Усьго ({getCartCount()})</p>
+                            <p>${getCartSubTotal()}</p>
+                          </div>
+                          <div>
+                            <button className="cartscreen-button">Перейти до оформлення замовлення</button>
+                          </div>
+                        </div>
+                      </div> 
                     </div>
                 </IconContext.Provider>                
             </main>
