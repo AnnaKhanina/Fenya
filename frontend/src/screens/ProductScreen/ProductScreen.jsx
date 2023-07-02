@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-import { getProductDetails } from "../redux/actions/productActions";
-import { addToCart } from "../redux/actions/cartActions";
+import { getProductDetails } from "../../redux/actions/productActions";
+import { addToCart } from "../../redux/actions/cartActions";
 
 import { IconContext } from "react-icons";
-import * as FaIcons from "react-icons/fa"; 
+// import * as FaIcons from "react-icons/fa"; 
 import "../ProductScreen/ProductScreen.css";
 import "../../components/Container/Container.css";
 import "../MainScreen/MainScreen.css";
