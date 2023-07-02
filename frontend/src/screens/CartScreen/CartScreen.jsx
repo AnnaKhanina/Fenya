@@ -35,7 +35,6 @@ const CartScreen = () => {
       .toFixed(2);
   };
 
-const CartScreen = () => {
     return (
             <main className="main-screen">
                 <IconContext.Provider value={{ color: "#FFF" }}>  
