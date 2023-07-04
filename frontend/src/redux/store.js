@@ -1,33 +1,30 @@
-import { createStore, combineReducers, applyMiddleware } from "redux";
-// import { configureStore } from "@reduxjs/toolkit";
-import thunk from "redux-thunk";
-import { composeWithDevTools } from "redux-devtools-extension";
+import { createStore, applyMiddleware, combineReducers } from 'redux';
+import thunk from 'redux-thunk';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import productReducers from './reducers/productReducers';
+import cartReducers from './reducers/cartReducers';
 
-import { cartReducer } from "./reducers/cartReducers";
-import { getProductsReducer, getProductDetailsReducer } from "./reducers/productReducers";
+// Проверяем наличие сохраненного состояния в localStorage
+const persistedState = localStorage.getItem('reduxState')
+  ? JSON.parse(localStorage.getItem('reduxState'))
+  : {};
 
-const reducer = combineReducers({
-    cart: cartReducer,
-    getProducts: getProductsReducer,
-    getProductDetails: getProductDetailsReducer
+const rootReducer = combineReducers({
+  products: productReducers,
+  cart: cartReducers,
 });
 
 const middleware = [thunk];
 
-const cartItemsInLocalStorage = localStorage.getItem("cart")
-  ? JSON.parse(localStorage.getItem("cart"))
-  : [];
-
-const INITIAL_STATE = {
-  cart: {
-    cartItems: cartItemsInLocalStorage,
-  },
-};
-
 const store = createStore(
-  reducer,
-  INITIAL_STATE,
+  rootReducer,
+  persistedState,
   composeWithDevTools(applyMiddleware(...middleware))
 );
+
+// Подписываемся на изменения состояния и сохраняем его в localStorage
+store.subscribe(() => {
+  localStorage.setItem('reduxState', JSON.stringify(store.getState()));
+});
 
 export default store;
