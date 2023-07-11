@@ -12,11 +12,13 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className="product-card">
+      <img src={product.imageUrl} alt={product.name} />
       <h3>{product.name}</h3>
-      <p>Price: ${product.price}</p>
-      <p>Size: {product.size}</p>
-      <p>Color: {product.color}</p>
-      <button onClick={addToCartHandler}>Add to Cart</button>
+      <p>Ціна: {product.price}грн</p>
+      <p>Розмір: {product.size}</p>
+      <p>Колір: {product.color}</p>
+      <p>Кількість: {product.quantity}</p>
+      <button onClick={addToCartHandler}>Додати до кошику</button>
     </div>
   );
 };

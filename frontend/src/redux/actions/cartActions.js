@@ -1,9 +1,8 @@
 import * as actionTypes from '../constants/actionTypes';
-import { ADD_TO_CART } from "../constants/actionTypes";
 
 export const addToCart = (product) => (dispatch, getState) => {
   dispatch({
-    type: ADD_TO_CART,
+    type: actionTypes.ADD_TO_CART_REQUEST,
     payload: {
       _id: product._id,
       name: product.name,
@@ -11,6 +10,7 @@ export const addToCart = (product) => (dispatch, getState) => {
       imageUrl: product.imageUrl,
       size: product.size,
       color: product.color,
+      countInStock: product.countInStock,
     },
   });
   localStorage.setItem(

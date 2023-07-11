@@ -4,7 +4,7 @@ import "../MainScreen/MainScreen.css";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import CartItem from "../../components/CartItem/CartItem";
+import Cart from "../../components/Cart/Cart";
 import { IconContext } from "react-icons";
 
 import { addToCart, removeFromCart } from "../../redux/actions/cartActions";
@@ -49,7 +49,7 @@ const CartScreen = () => {
                             </div>
                           ) : (
                             cartItems.map((item) => (
-                              <CartItem
+                              <Cart
                                 key={item.product}
                                 item={item}
                                 qtyChangeHandler={qtyChangeHandler}

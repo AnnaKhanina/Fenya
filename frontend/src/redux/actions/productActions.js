@@ -22,8 +22,12 @@ export const addToCart = (productId) => async (dispatch, getState) => {
   dispatch({ type: actionTypes.ADD_TO_CART_REQUEST });
 
   try {
-    const response = await api.getProductById(productId);
+    const response = await api.getProducts(productId);
     const product = response.data;
+
+    if (product.countInStock === 0) {
+      throw new Error('Товар відсутній на складі');
+    }
 
     dispatch({
       type: actionTypes.ADD_TO_CART_SUCCESS,

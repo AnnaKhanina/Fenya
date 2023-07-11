@@ -38,7 +38,9 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { removeFromCart } from "../redux/actions/cartActions";
-import "../CartItem/CartItem.css";
+import "./Cart.css";
+import { IconContext } from "react-icons";
+import * as FaIcons from "react-icons/fa"; 
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -50,21 +52,32 @@ const Cart = () => {
 
   return (
     <div className="cart">
-      <h2>Cart</h2>
-      {cartItems.length === 0 ? (
-        <p>Your cart is empty.</p>
-      ) : (
-        <ul>
-          {cartItems.map((item) => (
-            <li key={item.productId}>
-              <span>{item.product.name}</span>
-              <button onClick={() => removeFromCartHandler(item.productId)}>
-                Remove
-              </button>
-            </li>
-          ))}
-        </ul>
-      )}
+      <IconContext.Provider value={{ color: "#fff" }}>  
+        <h2 className="cart-title">Кошик</h2>
+        {cartItems.length === 0 ? (
+          <p className="cart-text">Ваш кошик порожній</p>
+        ) : (
+          <ul className="cart-list">
+            {cartItems.map((item) => (
+              <li className="cart-item" key={item.productId}>
+                <div className="cart-image">
+                  <img src={item.product.imageUrl} alt={item.product.name} />
+                </div>
+                <div className="cart-info">
+                  <span className="cart-name">{item.product.name}</span>
+                  <span className="cart-stock">Кількість на складі: {item.product.countInStock}</span>
+                </div>
+                <div className="cart-actions">
+                  <button className="cart-deleteBtn" onClick={() => removeFromCartHandler(item.productId)}>
+                    Видалити
+                    <span className="cart-icon"><FaIcons.FaTrash /></span>
+                  </button>
+                </div>
+              </li>
+            ))}
+          </ul>
+        )}
+      </IconContext.Provider>
     </div>
   );
 };

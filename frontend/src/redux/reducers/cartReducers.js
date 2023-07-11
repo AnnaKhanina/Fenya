@@ -6,15 +6,15 @@ const initialState = {
 
 const cartReducers = (state = initialState, action) => {
   switch (action.type) {
-    case actionTypes.ADD_TO_CART:
+    case actionTypes.ADD_TO_CART_REQUEST:
       const newItem = action.payload;
-      const existingItem = state.cartItems.find((item) => item.id === newItem.id);
+      const existingItem = state.cartItems.find((item) => item._id === newItem._id);
 
       if (existingItem) {
         return {
           ...state,
           cartItems: state.cartItems.map((item) =>
-            item.id === newItem.id ? { ...item, quantity: item.quantity + 1 } : item
+            item._id === newItem._id ? { ...item, quantity: item.quantity + 1 } : item
           ),
         };
       } else {
@@ -28,7 +28,7 @@ const cartReducers = (state = initialState, action) => {
       const removedProductId = action.payload;
       return {
         ...state,
-        cartItems: state.cartItems.filter((item) => item.id !== removedProductId),
+        cartItems: state.cartItems.filter((item) => item._id !== removedProductId),
       };
 
     case actionTypes.UPDATE_CART_ITEM_QUANTITY:
@@ -36,7 +36,7 @@ const cartReducers = (state = initialState, action) => {
       return {
         ...state,
         cartItems: state.cartItems.map((item) =>
-          item.id === productId ? { ...item, quantity } : item
+          item._id === productId ? { ...item, quantity } : item
         ),
       };
 
@@ -45,7 +45,7 @@ const cartReducers = (state = initialState, action) => {
       return {
         ...state,
         cartItems: state.cartItems.map((item) =>
-          item.id === selectedProductId ? { ...item, size } : item
+          item._id === selectedProductId ? { ...item, size } : item
         ),
       };
 
