@@ -1,7 +1,7 @@
 import * as actionTypes from '../constants/actionTypes';
 import * as api from '../api';
 
-export const fetchProducts = () => async (dispatch) => {
+export const getProducts = () => async (dispatch) => {
   dispatch({ type: actionTypes.FETCH_PRODUCTS_REQUEST });
 
   try {

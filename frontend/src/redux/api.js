@@ -29,3 +29,13 @@ export const removeFromCart = async (productId) => {
     throw error.response.data.message;
   }
 };
+
+// Функция для получения новых поступлений
+export const getNewArrivals = async () => {
+  try {
+    const response = await axios.get("/api/new-arrivals");
+    return response.data;
+  } catch (error) {
+    throw error.response.data.message;
+  }
+};

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../../redux/actions/cartActions';
-import { getProduct } from '../../redux/actions/productActions';
+import { getProducts } from '../../redux/actions/productActions';
 
 import { IconContext } from "react-icons";
 import "../ProductScreen/ProductScreen.css";
@@ -19,7 +19,7 @@ const ProductScreen = ({ match }) => {
   const { loading, error, product } = productDetails;
 
   useEffect(() => {
-    dispatch(getProduct(productId));
+    dispatch(getProducts(productId));
   }, [dispatch, productId]);
 
   const handleAddToCart = () => {
