@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addToCart } from '../actions/cartActions';
-import { getProduct } from '../actions/productActions';
+import { addToCart } from '../../redux/actions/cartActions';
+import { getProduct } from '../../redux/actions/productActions';
 
 import { IconContext } from "react-icons";
 import "../ProductScreen/ProductScreen.css";

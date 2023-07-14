@@ -5,7 +5,7 @@ import  "../HomeScreen/HomeScreen.css";
 import "../../components/Container/Container.css";
 import "../MainScreen/MainScreen.css";
 
-import  ProductCard  from "../../components/Product/Product";
+import  ProductCard  from "../../components/ProductCard/ProductCard";
 
 import {getProducts as listProducts} from "../../redux/actions/productActions";
 
