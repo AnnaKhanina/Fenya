@@ -1,11 +1,11 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
  
 import  "../HomeScreen/HomeScreen.css";
 import "../../components/Container/Container.css";
 import "../MainScreen/MainScreen.css";
 
-import  Product  from "../../components/Product/Product";
+import  ProductCard  from "../../components/Product/Product";
 
 import {getProducts as listProducts} from "../../redux/actions/productActions";
 
@@ -31,7 +31,7 @@ const HomeScreen = () => {
                     <h2>{error}</h2>
                   ) : (
                     products.map((product) => (
-                      <Product
+                      <ProductCard
                         key={product._id}
                         name={product.name}
                         description={product.description}

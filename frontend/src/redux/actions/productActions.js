@@ -44,3 +44,21 @@ export const addToCart = (productId) => async (dispatch, getState) => {
     });
   }
 };
+
+//нові надходження
+export const fetchNewArrivals = () => async (dispatch) => {
+  dispatch({ type: actionTypes.FETCH_NEW_ARRIVALS_REQUEST });
+
+  try {
+    const response = await api.getNewArrivals();
+    dispatch({
+      type: actionTypes.FETCH_NEW_ARRIVALS_SUCCESS,
+      payload: response.data,
+    });
+  } catch (error) {
+    dispatch({
+      type: actionTypes.FETCH_NEW_ARRIVALS_FAILURE,
+      payload: error.message,
+    });
+  }
+};

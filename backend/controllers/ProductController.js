@@ -111,3 +111,16 @@ exports.deleteProduct = async (req, res) => {
     res.status(500).json({ error: "Internal server error" });
   }
 };
+
+//нові надходження
+exports.getNewArrivals = async (req, res) => {
+  try {
+    const newArrivals = await Product.find()
+      .sort('-dateAdded') // Сортировка по убыванию даты добавления
+      .limit(10); // Ограничение количества возвращаемых новых поступлений
+
+    res.json(newArrivals);
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to fetch new arrivals' });
+  }
+};
