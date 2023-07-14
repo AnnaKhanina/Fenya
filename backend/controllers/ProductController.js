@@ -1,4 +1,4 @@
-const Product = require("../models/ProductModel");
+// const Product = require("../models/ProductModel");
 
 // const createProduct = async (req, res) => {
 //   try {
@@ -48,7 +48,7 @@ const Product = require("../models/ProductModel");
 //   getProductById,
 // };       
 
-const Product = require("../models/Product");
+const Product = require("../models/ProductModel");
 
 // GET /products
 exports.getAllProducts = async (req, res) => {
