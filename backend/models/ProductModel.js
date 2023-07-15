@@ -13,14 +13,22 @@ const productSchema = mongoose.Schema({
      type: Number,
      required: true,
    },
-   countInStock: {
-     type: Number,
-     required: true,
-   },
-   imageUrl: {
+    imageUrl: {
      type: String,
      required: true,
    },
+   size: {
+    type: String,
+    required: true,
+   },
+   color: {
+    type: String,
+    required: true,
+   },
+   countInStock: {
+     type: Number,
+     required: true,
+   },  
    dateAdded: {
     type: Date,
     default: Date.now,

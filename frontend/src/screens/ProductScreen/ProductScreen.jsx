@@ -41,10 +41,10 @@ const ProductScreen = ({ match }) => {
                     ) : (
                       <div>
                         <h2>{product.name}</h2>
-                        <p>Price: ${product.price}</p>
-                        <p>Size: {product.size}</p>
-                        <p>Color: {product.color}</p>
-                        <button onClick={handleAddToCart}>Add to Cart</button>
+                        <p>Ціна: ${product.price}</p>
+                        <p>Розмір: {product.size}</p>
+                        <p>Колір: {product.color}</p>
+                        <button onClick={handleAddToCart}>Додадати у кошик</button>
                       </div>
                     )}
                     </div>                   
