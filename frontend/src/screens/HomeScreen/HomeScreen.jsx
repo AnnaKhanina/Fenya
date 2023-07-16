@@ -12,7 +12,7 @@ const HomeScreen = () => {
             <ProductCard
               key={product._id}
               name={product.name}
-              imageUrl={product.imageUrl}
+              // imageUrl={product.imageUrl}
               description={product.description}
               price={product.price}
               size={product.size}

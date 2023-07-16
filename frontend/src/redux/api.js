@@ -10,6 +10,16 @@ export const getProducts = async () => {
   }
 };
 
+
+export const getProductById = async (productId) => {
+  try {
+    const response = await axios.get("/api/products/${productId}");
+    return response.data;
+  } catch (error) {
+    throw error.response.data.message;
+  }
+};
+
 // Функция для добавления товара в корзину
 export const addToCart = async (productId, quantity) => {
   try {

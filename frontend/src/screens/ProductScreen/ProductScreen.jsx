@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../../redux/actions/cartActions';
-import { getProductById } from '../../redux/actions/productDetailsActions';
+import { getProductById } from '../../redux/api';
 
 import { IconContext } from 'react-icons';
 import '../ProductScreen/ProductScreen.css';
@@ -35,7 +35,7 @@ const ProductScreen = ({ match }) => {
               <p>Помилка: {error}</p>
             ) : product ? ( // Добавлено условие, чтобы проверить наличие продукта перед отображением его деталей
               <div>
-                <img src={product.imageUrl} alt={product.name} />
+                {/* <img src={product.imageUrl} alt={product.name} /> */}
                 <h2>{product.name}</h2>
                 <p>Опис: {product.description}</p>
                 <p>Ціна: {product.price} грн</p>
