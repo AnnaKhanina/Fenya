@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/actions/cartActions";
 import { Link } from 'react-router-dom';
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product}) => {
   const dispatch = useDispatch();
 
   const handleAddToCart  = () => {
@@ -28,3 +28,4 @@ const ProductCard = ({ product }) => {
 };
 
 export default ProductCard;
+

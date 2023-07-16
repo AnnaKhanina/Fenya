@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import {Navigate, Route, Routes } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
@@ -10,7 +10,7 @@ import ContactsScreen from "../../screens/ContactsScreen/ContactsScreen";
 import  CartScreen  from "../../screens/CartScreen/CartScreen";
 import FavoriteScreen from "../../screens/FavoriteScreen/FavoriteScreen";
 import ProfileScreen from "../../screens/ProfileScreen/ProfileScreen";
-import  NotFoundScreen   from "../../screens/NotFoundScreen/NotFoundScreen";
+// import  NotFoundScreen   from "../../screens/NotFoundScreen/NotFoundScreen";
 import AboutUsScreen from "../../screens/AboutUsScreen/AboutUsScreen";
 import CooperationScreen from "../../screens/CooperationScreen/CooperationScreen";
 import SocialScreen from "../../screens/SocialScreen/SocialScreen";
@@ -33,7 +33,9 @@ const App = () => {
           <Route path="/сooperation" element={<CooperationScreen />} /> 
           <Route path="/social" element={<SocialScreen />} /> 
           <Route path="/blog" element={<BlogScreen />} /> 
-          <Route path="*" element={<NotFoundScreen />} />        
+          {/* <Route path="*" element={<NotFoundScreen />} />         */}
+          
+          <Route path="*" element={<Navigate to="/" />} />
       </Routes>          
       <Footer /> 
  
