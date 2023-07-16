@@ -57,3 +57,17 @@ export const selectCartItemSize = (productId, size) => (dispatch, getState) => {
   const { cart } = getState();
   localStorage.setItem('cart', JSON.stringify(cart));
 };
+
+export const selectCartItemColor = (productId, color) => (dispatch, getState) => {
+  dispatch({
+    type: actionTypes.SELECT_CART_ITEM_COLOR,
+    payload: {
+      productId,
+      color,
+    },
+  });
+
+  // Save updated cart to localStorage
+  const { cart } = getState();
+  localStorage.setItem('cart', JSON.stringify(cart));
+};

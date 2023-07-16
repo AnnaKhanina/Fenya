@@ -3,6 +3,7 @@ import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import productReducers from './reducers/productReducers';
 import cartReducers from './reducers/cartReducers';
+import productDetailsReducers from './reducers/productDetailsReducers';
 
 // Проверяем наличие сохраненного состояния в localStorage
 const persistedState = localStorage.getItem('reduxState')
@@ -11,6 +12,7 @@ const persistedState = localStorage.getItem('reduxState')
 
 const rootReducer = combineReducers({
   products: productReducers,
+  productDetails: productDetailsReducers,
   cart: cartReducers,
 });
 

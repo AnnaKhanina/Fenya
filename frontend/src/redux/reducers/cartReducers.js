@@ -41,11 +41,20 @@ const cartReducers = (state = initialState, action) => {
       };
 
     case actionTypes.SELECT_CART_ITEM_SIZE:
-      const { productId: selectedProductId, size } = action.payload;
+      const { productId: selectedSizeProductId, size } = action.payload;
       return {
         ...state,
         cartItems: state.cartItems.map((item) =>
-          item._id === selectedProductId ? { ...item, size } : item
+          item._id === selectedSizeProductId ? { ...item, size } : item
+        ),
+      };
+
+    case actionTypes.SELECT_CART_ITEM_COLOR:
+      const { productId: selectedColorProductId, color } = action.payload;
+      return {
+        ...state,
+        cartItems: state.cartItems.map((item) =>
+          item._id === selectedColorProductId ? { ...item, color } : item
         ),
       };
 
@@ -55,4 +64,3 @@ const cartReducers = (state = initialState, action) => {
 };
 
 export default cartReducers;
-

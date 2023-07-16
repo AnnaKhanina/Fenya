@@ -6,7 +6,7 @@ import { addToCart } from "../../redux/actions/cartActions";
 const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
 
-  const addToCartHandler = () => {
+  const handleAddToCart  = () => {
     dispatch(addToCart(product));
   };
 
@@ -14,11 +14,12 @@ const ProductCard = ({ product }) => {
     <div className="product-card">
       <img src={product.imageUrl} alt={product.name} />
       <h3>{product.name}</h3>
+      <p>Опис: {product.description}</p>
       <p>Ціна: {product.price}грн</p>
       <p>Розмір: {product.size}</p>
       <p>Колір: {product.color}</p>
       <p>Кількість: {product.quantity}</p>
-      <button onClick={addToCartHandler}>Додати до кошику</button>
+      <button onClick={handleAddToCart }>Додати до кошику</button>
     </div>
   );
 };

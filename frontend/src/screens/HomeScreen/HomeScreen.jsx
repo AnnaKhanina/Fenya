@@ -12,9 +12,12 @@ const HomeScreen = () => {
             <ProductCard
               key={product._id}
               name={product.name}
+              imageUrl={product.imageUrl}
               description={product.description}
               price={product.price}
-              imageUrl={product.imageUrl}
+              size={product.size}
+              color={product.color}
+              countInStock={product.countInStock}
               productId={product._id}
             />
           ))}
