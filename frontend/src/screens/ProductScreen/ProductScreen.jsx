@@ -35,7 +35,7 @@ const ProductScreen = ({ match }) => {
               <p>Помилка: {error}</p>
             ) : product ? ( // Добавлено условие, чтобы проверить наличие продукта перед отображением его деталей
               <div>
-                {/* <img src={product.imageUrl} alt={product.name} /> */}
+                <img src={product.imageUrl} alt={product.name} />
                 <h2>{product.name}</h2>
                 <p>Опис: {product.description}</p>
                 <p>Ціна: {product.price} грн</p>
