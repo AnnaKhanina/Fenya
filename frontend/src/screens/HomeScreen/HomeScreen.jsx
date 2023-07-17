@@ -13,7 +13,7 @@ const HomeScreen = () => {
 
     // Отправляем запрос к серверу для получения данных о продуктах
     axios
-      .get(`${apiUrl/api/products}`)
+      .get(`${apiUrl}/api/products`)
       .then((response) => {
         setProducts(response.data);
         setLoading(false);
