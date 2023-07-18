@@ -23,17 +23,6 @@ exports.getProductById = async (req, res) => {
   }
 };
 
-// POST /products
-// exports.createProduct = async (req, res) => {
-//   try {
-//     const product = new Product(req.body);
-//     const savedProduct = await product.save();
-//     res.status(201).json(savedProduct);
-//   } catch (error) {
-//     res.status(500).json({ error: "Internal server error" });
-//   }
-// };
-
 exports.createProduct = async (req, res) => {
   try {
     const { name, description, price, imageUrl, size, color, countInStock } = req.body;
